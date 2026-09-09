@@ -1,0 +1,23 @@
+# ============================================================
+# Cevano IT Solutions — local development variables template
+# ============================================================
+# This is a TEMPLATE — safe to commit to git (no real secrets here).
+#
+# To test the contact form locally with `wrangler pages dev`:
+#   1. Copy this file:  cp .dev.vars.example .dev.vars
+#   2. Fill in your real values in .dev.vars
+#   3. Run: npx wrangler pages dev . 
+#
+# .dev.vars is already in .gitignore — it will NEVER be committed once
+# created. Do not rename this file to .dev.vars and fill in real secrets
+# unless you're sure .gitignore is working (`git status` should not list it).
+#
+# IMPORTANT: This file has NO effect on the live Cloudflare Pages
+# deployment. Production values must still be entered separately in the
+# Cloudflare dashboard (see below) — that step cannot be skipped by
+# creating this file.
+
+RESEND_API_KEY=re_your_real_resend_api_key_here
+TO_EMAIL=enquiries@cevano.co.uk
+FROM_EMAIL=Cevano Website <onboarding@resend.dev>
+TURNSTILE_SECRET_KEY=

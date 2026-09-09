@@ -1,0 +1,32 @@
+# ============================================================
+# Cevano IT Solutions — Cloudflare Pages headers configuration
+# ============================================================
+# Cloudflare Pages reads this file automatically at deploy time — no
+# server config needed. It replaces the security-header and caching rules
+# that used to live in .htaccess on Hostinger/Apache.
+#
+# Notes:
+# - HTTPS is enforced automatically by Cloudflare for every Pages project;
+#   there is no separate redirect rule to write here.
+# - Reference: https://developers.cloudflare.com/pages/configuration/headers/
+
+# ---- Security headers (all routes) ----
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=()
+
+# ---- Long-lived caching for static assets ----
+/assets/img/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/css/*
+  Cache-Control: public, max-age=2592000
+
+/js/*
+  Cache-Control: public, max-age=2592000
+
+# ---- The contact form API must never be cached ----
+/api/*
+  Cache-Control: no-store

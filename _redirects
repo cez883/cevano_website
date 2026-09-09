@@ -1,0 +1,21 @@
+# ============================================================
+# Cevano IT Solutions — Cloudflare Pages redirects configuration
+# ============================================================
+# Reference: https://developers.cloudflare.com/pages/configuration/redirects/
+#
+# This site's canonical URLs (sitemap.xml, <link rel="canonical">, Open
+# Graph tags) all use the www subdomain: https://www.cevano.co.uk
+#
+# The rule below 301-redirects the bare apex domain to www, so both
+# cevano.co.uk and www.cevano.co.uk work, but only one canonical version
+# is ever indexed by search engines. This requires BOTH cevano.co.uk and
+# www.cevano.co.uk to be added as Custom Domains on the Cloudflare Pages
+# project (see README-deployment.md, "Connecting the custom domain").
+#
+# If you'd rather have the bare apex (cevano.co.uk, no www) be canonical
+# instead, delete the rule below and let me know — the canonical tags,
+# sitemap, and Open Graph URLs across every page would need updating to
+# match, since they're generated from a single SITE_URL constant in
+# build.py.
+
+https://cevano.co.uk/*  https://www.cevano.co.uk/:splat  301!
