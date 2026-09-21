@@ -17,8 +17,12 @@ ICON_SUN = '''<svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="curr
 ICON_MOON = '''<svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>'''
 ICON_MENU = '''<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>'''
 ICON_CHECK = '''<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>'''
-ICON_FACEBOOK = '''<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3z"/></svg>'''
-ICON_LINKEDIN = '''<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"/><path d="M8 11v5"/><path d="M8 8v.01"/><path d="M12 16v-5"/><path d="M16 16v-3a2 2 0 0 0 -4 0v3"/></svg>'''
+# Facebook 'f' and LinkedIn 'in' marks below are traced directly from Meta's
+# and LinkedIn's official logo files (outline of the real glyph, not a
+# hand-drawn approximation), rendered as a flat fill so they read as a thin,
+# single-colour mark consistent with the other line icons on this site.
+ICON_FACEBOOK = '''<svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.59 2.23 L13.76 2.0 L12.09 2.37 L10.97 2.94 L9.95 3.97 L9.26 5.42 L8.95 7.15 L8.92 9.71 L6.38 9.73 L6.38 13.5 L8.92 13.51 L8.92 21.65 L11.12 22.0 L13.4 21.93 L13.4 13.51 L16.73 13.5 L17.41 9.81 L13.41 9.73 L13.48 7.33 L13.89 6.41 L14.65 5.86 L17.62 5.66 Z"/></svg>'''
+ICON_LINKEDIN = '''<svg viewBox="0 0 24 24" fill="currentColor" fill-rule="evenodd"><path d="M19.64 9.68 L20.91 12.59 L21.0 20.93 L17.25 20.93 L17.16 13.52 L16.41 12.26 L15.05 11.98 L13.97 12.35 L13.22 13.62 L13.12 20.93 L9.42 20.98 L9.38 9.02 L12.89 8.98 L12.94 10.62 L15.89 8.7 L18.19 8.88 Z M3.38 8.98 L7.03 9.02 L6.98 20.98 L3.28 20.93 Z M4.97 3.02 L5.81 3.12 L6.52 3.49 L7.03 4.05 L7.36 4.99 L7.31 5.7 L6.94 6.49 L6.33 7.05 L5.44 7.38 L4.5 7.29 L3.89 6.96 L3.23 6.21 L3.0 5.46 L3.05 4.71 L3.42 3.91 L4.03 3.35 Z"/></svg>'''
 
 # ------------------------------------------------------------------
 # Social profile links (used in the footer and in JSON-LD "sameAs")
