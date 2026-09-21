@@ -14,7 +14,10 @@ schema_home_en = '''<script type="application/ld+json">
   "email": "enquiries@cevano.co.uk",
   "areaServed": ["Northampton", "Kettering", "Milton Keynes", "Rugby", "Northamptonshire", "Warwickshire", "Buckinghamshire"],
   "image": "https://www.cevano.co.uk/assets/img/og-image.jpg",
-  "sameAs": []
+  "sameAs": [
+    "https://www.facebook.com/profile.php?id=61594328187021",
+    "https://www.linkedin.com/company/cevano-it-solutions/"
+  ]
 }
 </script>'''
 
@@ -210,7 +213,10 @@ schema_home_pl = '''<script type="application/ld+json">
   "email": "enquiries@cevano.co.uk",
   "areaServed": ["Northampton", "Kettering", "Milton Keynes", "Rugby", "Northamptonshire", "Warwickshire", "Buckinghamshire"],
   "image": "https://www.cevano.co.uk/assets/img/og-image.jpg",
-  "sameAs": []
+  "sameAs": [
+    "https://www.facebook.com/profile.php?id=61594328187021",
+    "https://www.linkedin.com/company/cevano-it-solutions/"
+  ]
 }
 </script>'''
 

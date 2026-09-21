@@ -17,6 +17,16 @@ ICON_SUN = '''<svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="curr
 ICON_MOON = '''<svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>'''
 ICON_MENU = '''<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>'''
 ICON_CHECK = '''<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>'''
+ICON_FACEBOOK = '''<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3z"/></svg>'''
+ICON_LINKEDIN = '''<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"/><path d="M8 11v5"/><path d="M8 8v.01"/><path d="M12 16v-5"/><path d="M16 16v-3a2 2 0 0 0 -4 0v3"/></svg>'''
+
+# ------------------------------------------------------------------
+# Social profile links (used in the footer and in JSON-LD "sameAs")
+# ------------------------------------------------------------------
+SOCIAL_LINKS = [
+    ("Facebook", "https://www.facebook.com/profile.php?id=61594328187021", ICON_FACEBOOK),
+    ("LinkedIn", "https://www.linkedin.com/company/cevano-it-solutions/", ICON_LINKEDIN),
+]
 
 THEME_INIT_SCRIPT = '''<script>(function(){try{var t=localStorage.getItem("cevano-theme");if(t==="dark"||t==="light"){document.documentElement.setAttribute("data-theme",t);}else if(window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches){document.documentElement.setAttribute("data-theme","dark");}}catch(e){}})();</script>'''
 
@@ -185,6 +195,10 @@ def footer_html(lang, lang_prefix, asset_prefix):
             (services_href + "#data-analytics", "Analiza danych i Power BI"),
         ]
     services_li = "\n".join(f'<li><a href="{h}">{lbl}</a></li>' for h, lbl in services_items)
+    social_links_html = "\n        ".join(
+        f'<a href="{url}" target="_blank" rel="noopener noreferrer" aria-label="{name}">{icon}</a>'
+        for name, url, icon in SOCIAL_LINKS
+    )
     return f'''<footer class="site-footer">
   <div class="container footer-grid">
     <div class="footer-brand">
@@ -198,6 +212,9 @@ def footer_html(lang, lang_prefix, asset_prefix):
         1 Gresham Drive, West Hunsbury<br>
         Northampton, NN4 9SB
       </p>
+      <div class="footer-social">
+        {social_links_html}
+      </div>
     </div>
     <div class="footer-col">
       <h4>{t['footer_company']}</h4>

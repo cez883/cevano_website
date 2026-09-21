@@ -427,6 +427,15 @@ html[data-theme="dark"] .site-footer{ background:#050C18; }
 .footer-brand img{ height:44px; width:auto; margin-bottom:16px; }
 .footer-brand p{ color:#93A3C0; font-size:14px; max-width:34ch; }
 .footer-brand .company-meta{ color:#7B8CAC; font-size:13px; line-height:1.6; margin-top:14px; }
+.footer-social{ display:flex; gap:12px; margin-top:18px; }
+.footer-social a{
+  display:flex; align-items:center; justify-content:center;
+  width:36px; height:36px; border-radius:50%;
+  border:1px solid rgba(255,255,255,0.16); color:#B9C6DE;
+  transition: border-color .15s ease, color .15s ease, background-color .15s ease;
+}
+.footer-social a:hover{ color:#fff; border-color: var(--blue-light); background: rgba(61,151,242,0.12); }
+.footer-social svg{ width:18px; height:18px; }
 .footer-col h4{ color:#fff; font-size:14px; margin-bottom:16px; font-family: var(--font-body); font-weight:700; }
 .footer-col ul li{ margin-bottom:10px; }
 .footer-col a{ color:#B9C6DE; font-size:14.5px; }
