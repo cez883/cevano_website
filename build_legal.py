@@ -22,7 +22,7 @@ body_privacy_en = f'''
 
     <h2>Who we are</h2>
     <p>Cevano IT Solutions ("Cevano", "we", "us") provides IT support, Microsoft 365 and data analytics services to small businesses and individuals. This policy explains how we handle personal data collected through this website and in the course of providing our services.</p>
-    <p>Registered company details: Cevano IT Solutions, company number 17428300. Registered office: 1 Gresham Drive, West Hunsbury, Northampton, NN4 9SB.</p>
+    <p>Registered company details: Cevano IT Solutions, company number 17428300. Registered office: Lytchett House, 13 Freeland Park, Wareham Road, Poole, Dorset, BH16 6FA.</p>
 
     <h2>Data we collect</h2>
     <p>When you use our contact form or email us directly, we collect the information you choose to provide, which may include your name, company name, email address, phone number, and the details of your enquiry. We do not ask for more information than we need to respond to you.</p>
@@ -96,7 +96,7 @@ body_terms_en = f'''
     <p>These terms apply to your use of this website (cevano.co.uk), operated by Cevano IT Solutions. They do not constitute a service contract — the specific terms for any IT support, Microsoft 365 or data analytics work will be agreed with you separately before work begins.</p>
 
     <h2>Company information</h2>
-    <p>Cevano IT Solutions. Registered company number: 17428300. Registered office: 1 Gresham Drive, West Hunsbury, Northampton, NN4 9SB. VAT number (if applicable): {FLAG_EN}.</p>
+    <p>Cevano IT Solutions. Registered company number: 17428300. Registered office: Lytchett House, 13 Freeland Park, Wareham Road, Poole, Dorset, BH16 6FA. VAT number (if applicable): {FLAG_EN}.</p>
 
     <h2>Use of this website</h2>
     <p>This website is provided for general information about our services. While we take care to keep it accurate and up to date, we make no guarantees about completeness or fitness for a particular purpose, and content may change without notice.</p>
@@ -144,7 +144,7 @@ body_privacy_pl = f'''
 
     <h2>Kim jesteśmy</h2>
     <p>Cevano IT Solutions („Cevano”, „my”) świadczy usługi wsparcia IT, Microsoft 365 oraz analizy danych dla małych firm i osób prywatnych. Niniejsza polityka wyjaśnia, w jaki sposób przetwarzamy dane osobowe zbierane za pośrednictwem tej strony internetowej oraz w ramach świadczenia naszych usług.</p>
-    <p>Dane rejestrowe firmy: Cevano IT Solutions, numer rejestracyjny 17428300. Siedziba: 1 Gresham Drive, West Hunsbury, Northampton, NN4 9SB.</p>
+    <p>Dane rejestrowe firmy: Cevano IT Solutions, numer rejestracyjny 17428300. Siedziba: Lytchett House, 13 Freeland Park, Wareham Road, Poole, Dorset, BH16 6FA.</p>
 
     <h2>Jakie dane zbieramy</h2>
     <p>Korzystając z formularza kontaktowego lub pisząc do nas bezpośrednio, zbieramy dane, które zdecydujesz się podać — mogą to być imię i nazwisko, nazwa firmy, adres e-mail, numer telefonu oraz treść zapytania. Nie prosimy o więcej informacji, niż jest to potrzebne do udzielenia odpowiedzi.</p>
@@ -218,7 +218,7 @@ body_terms_pl = f'''
     <p>Niniejszy regulamin dotyczy korzystania z tej strony internetowej (cevano.co.uk), prowadzonej przez Cevano IT Solutions. Nie stanowi on umowy o świadczenie usług — szczegółowe warunki dla konkretnych prac związanych ze wsparciem IT, Microsoft 365 czy analizą danych będą ustalane odrębnie przed rozpoczęciem prac.</p>
 
     <h2>Dane firmy</h2>
-    <p>Cevano IT Solutions. Numer rejestracyjny firmy: 17428300. Siedziba: 1 Gresham Drive, West Hunsbury, Northampton, NN4 9SB. Numer VAT (jeśli dotyczy): {FLAG_PL}.</p>
+    <p>Cevano IT Solutions. Numer rejestracyjny firmy: 17428300. Siedziba: Lytchett House, 13 Freeland Park, Wareham Road, Poole, Dorset, BH16 6FA. Numer VAT (jeśli dotyczy): {FLAG_PL}.</p>
 
     <h2>Korzystanie ze strony</h2>
     <p>Ta strona ma charakter informacyjny i przedstawia nasze usługi. Dokładamy starań, aby treści były aktualne i rzetelne, jednak nie gwarantujemy ich kompletności ani przydatności do konkretnego celu, a zawartość może ulec zmianie bez wcześniejszego powiadomienia.</p>

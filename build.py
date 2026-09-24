@@ -213,8 +213,9 @@ def footer_html(lang, lang_prefix, asset_prefix):
       <p>{t['footer_tagline']}</p>
       <p class="company-meta">
         {company_no_label} 17428300<br>
-        1 Gresham Drive, West Hunsbury<br>
-        Northampton, NN4 9SB
+        Lytchett House, 13 Freeland Park<br>
+        Wareham Road, Poole<br>
+        Dorset, BH16 6FA
       </p>
       <div class="footer-social">
         {social_links_html}
