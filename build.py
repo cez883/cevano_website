@@ -49,7 +49,7 @@ T = {
         "lang_name": "EN", "alt_lang_name": "PL",
         "theme_label": "Toggle dark mode",
         "menu_label": "Menu",
-        "cookie_text": "We use a small number of essential and analytics cookies to help this website work reliably and to understand how it's used. See our Privacy &amp; Cookie Policy for details.",
+        "cookie_text": "We only use essential cookies needed for this website to work properly — no analytics or tracking. See our Privacy &amp; Cookie Policy for details.",
         "cookie_accept": "Accept",
         "cookie_dismiss": "Dismiss",
     },
@@ -64,7 +64,7 @@ T = {
         "lang_name": "PL", "alt_lang_name": "EN",
         "theme_label": "Przełącz tryb ciemny",
         "menu_label": "Menu",
-        "cookie_text": "Używamy niewielkiej liczby niezbędnych plików cookie oraz plików analitycznych, aby strona działała prawidłowo i abyśmy mogli rozumieć, jak jest wykorzystywana. Szczegóły znajdziesz w naszej Polityce prywatności i&nbsp;cookies.",
+        "cookie_text": "Używamy wyłącznie niezbędnych plików cookie, potrzebnych do prawidłowego działania strony — bez analityki i śledzenia. Szczegóły znajdziesz w naszej Polityce prywatności i&nbsp;cookies.",
         "cookie_accept": "Akceptuję",
         "cookie_dismiss": "Zamknij",
     }

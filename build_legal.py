@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 from build import *
 
-FLAG_EN = '<span class="placeholder-flag">Placeholder — to be completed by Cevano</span>'
-FLAG_PL = '<span class="placeholder-flag">Do uzupełnienia przez Cevano</span>'
+LAST_UPDATED_EN = "13 October 2026"
+LAST_UPDATED_PL = "13 października 2026"
 
 # ================================================================
 # PRIVACY POLICY — EN
@@ -18,11 +18,12 @@ body_privacy_en = f'''
 
 <section class="section">
   <div class="container legal-content">
-    <p><em>Last updated: {FLAG_EN} (insert date this policy was published).</em></p>
+    <p><em>Last updated: {LAST_UPDATED_EN}</em></p>
 
     <h2>Who we are</h2>
     <p>Cevano IT Solutions ("Cevano", "we", "us") provides IT support, Microsoft 365 and data analytics services to small businesses and individuals. This policy explains how we handle personal data collected through this website and in the course of providing our services.</p>
     <p>Registered company details: Cevano IT Solutions, company number 17428300. Registered office: Lytchett House, 13 Freeland Park, Wareham Road, Poole, Dorset, BH16 6FA.</p>
+    <p>Cevano IT Solutions is registered with the Information Commissioner's Office (ICO) as a data controller. ICO registration number: ZC270728.</p>
 
     <h2>Data we collect</h2>
     <p>When you use our contact form or email us directly, we collect the information you choose to provide, which may include your name, company name, email address, phone number, and the details of your enquiry. We do not ask for more information than we need to respond to you.</p>
@@ -42,10 +43,9 @@ body_privacy_en = f'''
     <p>We keep enquiry and client data for as long as reasonably necessary to respond to you, provide our services, and meet any legal or accounting requirements, after which it is deleted or anonymised.</p>
 
     <h2>Cookies</h2>
-    <p>This website uses a limited number of cookies:</p>
+    <p>This website uses only essential cookies. We do not use analytics, advertising or tracking cookies.</p>
     <ul>
       <li><strong>Essential cookies</strong> — needed for the website to function correctly (for example, remembering your dark/light theme preference and that you've seen the cookie notice). These are stored in your browser and are not shared with third parties.</li>
-      <li><strong>Analytics cookies</strong> {FLAG_EN} (confirm here which analytics service, if any, is in use — for example Google Analytics or Plausible — and update this section to match).</li>
     </ul>
     <p>You can control or delete cookies through your browser settings at any time.</p>
 
@@ -90,13 +90,13 @@ body_terms_en = f'''
 
 <section class="section">
   <div class="container legal-content">
-    <p><em>Last updated: {FLAG_EN} (insert date this policy was published).</em></p>
+    <p><em>Last updated: {LAST_UPDATED_EN}</em></p>
 
     <h2>About these terms</h2>
     <p>These terms apply to your use of this website (cevano.co.uk), operated by Cevano IT Solutions. They do not constitute a service contract — the specific terms for any IT support, Microsoft 365 or data analytics work will be agreed with you separately before work begins.</p>
 
     <h2>Company information</h2>
-    <p>Cevano IT Solutions. Registered company number: 17428300. Registered office: Lytchett House, 13 Freeland Park, Wareham Road, Poole, Dorset, BH16 6FA. VAT number (if applicable): {FLAG_EN}.</p>
+    <p>Cevano IT Solutions. Registered company number: 17428300. Registered office: Lytchett House, 13 Freeland Park, Wareham Road, Poole, Dorset, BH16 6FA.</p>
 
     <h2>Use of this website</h2>
     <p>This website is provided for general information about our services. While we take care to keep it accurate and up to date, we make no guarantees about completeness or fitness for a particular purpose, and content may change without notice.</p>
@@ -140,11 +140,12 @@ body_privacy_pl = f'''
 
 <section class="section">
   <div class="container legal-content">
-    <p><em>Ostatnia aktualizacja: {FLAG_PL} (uzupełnić datę publikacji).</em></p>
+    <p><em>Ostatnia aktualizacja: {LAST_UPDATED_PL}</em></p>
 
     <h2>Kim jesteśmy</h2>
     <p>Cevano IT Solutions („Cevano”, „my”) świadczy usługi wsparcia IT, Microsoft 365 oraz analizy danych dla małych firm i osób prywatnych. Niniejsza polityka wyjaśnia, w jaki sposób przetwarzamy dane osobowe zbierane za pośrednictwem tej strony internetowej oraz w ramach świadczenia naszych usług.</p>
     <p>Dane rejestrowe firmy: Cevano IT Solutions, numer rejestracyjny 17428300. Siedziba: Lytchett House, 13 Freeland Park, Wareham Road, Poole, Dorset, BH16 6FA.</p>
+    <p>Cevano IT Solutions jest zarejestrowane w brytyjskim Information Commissioner's Office (ICO) jako administrator danych. Numer rejestracji ICO: ZC270728.</p>
 
     <h2>Jakie dane zbieramy</h2>
     <p>Korzystając z formularza kontaktowego lub pisząc do nas bezpośrednio, zbieramy dane, które zdecydujesz się podać — mogą to być imię i nazwisko, nazwa firmy, adres e-mail, numer telefonu oraz treść zapytania. Nie prosimy o więcej informacji, niż jest to potrzebne do udzielenia odpowiedzi.</p>
@@ -164,10 +165,9 @@ body_privacy_pl = f'''
     <p>Dane dotyczące zapytań i klientów przechowujemy tak długo, jak jest to zasadnie konieczne do udzielenia odpowiedzi, świadczenia usług oraz spełnienia wymogów prawnych lub księgowych, po czym są usuwane lub anonimizowane.</p>
 
     <h2>Pliki cookie</h2>
-    <p>Ta strona wykorzystuje ograniczoną liczbę plików cookie:</p>
+    <p>Ta strona wykorzystuje wyłącznie niezbędne pliki cookie. Nie używamy plików cookie analitycznych, reklamowych ani śledzących.</p>
     <ul>
       <li><strong>Niezbędne pliki cookie</strong> — konieczne do prawidłowego działania strony (np. zapamiętywanie wybranego motywu jasnego/ciemnego oraz informacji o wyświetleniu powiadomienia o cookies). Są przechowywane w Twojej przeglądarce i nie są udostępniane podmiotom trzecim.</li>
-      <li><strong>Analityczne pliki cookie</strong> {FLAG_PL} (potwierdzić, z jakiego narzędzia analitycznego korzystamy, np. Google Analytics lub Plausible, i zaktualizować tę sekcję).</li>
     </ul>
     <p>W każdej chwili możesz kontrolować lub usuwać pliki cookie w ustawieniach swojej przeglądarki.</p>
 
@@ -212,13 +212,13 @@ body_terms_pl = f'''
 
 <section class="section">
   <div class="container legal-content">
-    <p><em>Ostatnia aktualizacja: {FLAG_PL} (uzupełnić datę publikacji).</em></p>
+    <p><em>Ostatnia aktualizacja: {LAST_UPDATED_PL}</em></p>
 
     <h2>O niniejszym regulaminie</h2>
     <p>Niniejszy regulamin dotyczy korzystania z tej strony internetowej (cevano.co.uk), prowadzonej przez Cevano IT Solutions. Nie stanowi on umowy o świadczenie usług — szczegółowe warunki dla konkretnych prac związanych ze wsparciem IT, Microsoft 365 czy analizą danych będą ustalane odrębnie przed rozpoczęciem prac.</p>
 
     <h2>Dane firmy</h2>
-    <p>Cevano IT Solutions. Numer rejestracyjny firmy: 17428300. Siedziba: Lytchett House, 13 Freeland Park, Wareham Road, Poole, Dorset, BH16 6FA. Numer VAT (jeśli dotyczy): {FLAG_PL}.</p>
+    <p>Cevano IT Solutions. Numer rejestracyjny firmy: 17428300. Siedziba: Lytchett House, 13 Freeland Park, Wareham Road, Poole, Dorset, BH16 6FA.</p>
 
     <h2>Korzystanie ze strony</h2>
     <p>Ta strona ma charakter informacyjny i przedstawia nasze usługi. Dokładamy starań, aby treści były aktualne i rzetelne, jednak nie gwarantujemy ich kompletności ani przydatności do konkretnego celu, a zawartość może ulec zmianie bez wcześniejszego powiadomienia.</p>
