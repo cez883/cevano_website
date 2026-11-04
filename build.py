@@ -49,9 +49,10 @@ T = {
         "lang_name": "EN", "alt_lang_name": "PL",
         "theme_label": "Toggle dark mode",
         "menu_label": "Menu",
-        "cookie_text": "We only use essential cookies needed for this website to work properly — no analytics or tracking. See our Privacy &amp; Cookie Policy for details.",
-        "cookie_accept": "Accept",
-        "cookie_dismiss": "Dismiss",
+        "cookie_text": "Can we use analytics cookies? Google Analytics helps us see which pages are useful. It only runs if you accept, and we never use it for advertising. See our Privacy &amp; Cookie Policy for details.",
+        "cookie_accept": "Accept analytics",
+        "cookie_reject": "Reject",
+        "cookie_settings": "Cookie settings",
     },
     "pl": {
         "nav_home": "Strona główna", "nav_services": "Usługi", "nav_about": "O nas", "nav_contact": "Kontakt",
@@ -64,9 +65,10 @@ T = {
         "lang_name": "PL", "alt_lang_name": "EN",
         "theme_label": "Przełącz tryb ciemny",
         "menu_label": "Menu",
-        "cookie_text": "Używamy wyłącznie niezbędnych plików cookie, potrzebnych do prawidłowego działania strony — bez analityki i śledzenia. Szczegóły znajdziesz w naszej Polityce prywatności i&nbsp;cookies.",
-        "cookie_accept": "Akceptuję",
-        "cookie_dismiss": "Zamknij",
+        "cookie_text": "Czy możemy używać analitycznych plików cookie? Google Analytics pokazuje nam, które strony są przydatne. Działa tylko po Twojej zgodzie i nigdy nie używamy go do reklam. Szczegóły znajdziesz w naszej Polityce prywatności i&nbsp;cookies.",
+        "cookie_accept": "Akceptuję analitykę",
+        "cookie_reject": "Odrzucam",
+        "cookie_settings": "Ustawienia cookies",
     }
 }
 
@@ -247,6 +249,7 @@ def footer_html(lang, lang_prefix, asset_prefix):
     <span>&copy; {year} Cevano IT Solutions. {t['footer_rights']}</span>
     <div class="footer-legal-links">
       <a href="mailto:enquiries@cevano.co.uk">enquiries@cevano.co.uk</a>
+      <a href="#" data-cookie-settings>{t['cookie_settings']}</a>
     </div>
   </div>
 </footer>
@@ -257,11 +260,11 @@ def cookie_banner_html(lang, lang_prefix):
     privacy_href = lang_prefix + "legal/privacy-policy.html"
     text = t["cookie_text"].replace('Privacy &amp; Cookie Policy', f'<a href="{privacy_href}">Privacy &amp; Cookie Policy</a>') \
         if lang == "en" else t["cookie_text"].replace('Polityce prywatności i&nbsp;cookies', f'<a href="{privacy_href}">Polityce prywatności i&nbsp;cookies</a>')
-    return f'''<div class="cookie-banner" data-cookie-banner role="dialog" aria-label="Cookie notice">
+    return f'''<div class="cookie-banner" data-cookie-banner role="dialog" aria-label="Cookie consent">
   <p>{text}</p>
   <div class="cookie-actions">
+    <button type="button" class="btn btn-primary btn-sm" data-cookie-reject>{t['cookie_reject']}</button>
     <button type="button" class="btn btn-primary btn-sm" data-cookie-accept>{t['cookie_accept']}</button>
-    <button type="button" class="btn btn-outline btn-sm" data-cookie-dismiss>{t['cookie_dismiss']}</button>
   </div>
 </div>'''
 

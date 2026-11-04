@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 from build import *
 
-LAST_UPDATED_EN = "13 October 2026"
-LAST_UPDATED_PL = "13 października 2026"
+LAST_UPDATED_EN = "4 November 2026"
+LAST_UPDATED_PL = "4 listopada 2026"
 
 # ================================================================
 # PRIVACY POLICY — EN
@@ -43,11 +43,16 @@ body_privacy_en = f'''
     <p>We keep enquiry and client data for as long as reasonably necessary to respond to you, provide our services, and meet any legal or accounting requirements, after which it is deleted or anonymised.</p>
 
     <h2>Cookies</h2>
-    <p>This website uses only essential cookies. We do not use analytics, advertising or tracking cookies.</p>
+    <p>This website uses essential browser storage and, only if you agree, Google Analytics cookies. We do not use advertising cookies.</p>
     <ul>
-      <li><strong>Essential cookies</strong> — needed for the website to function correctly (for example, remembering your dark/light theme preference and that you've seen the cookie notice). These are stored in your browser and are not shared with third parties.</li>
+      <li><strong>Essential storage</strong> — needed for the website to work as you expect: <code>cevano-theme</code> remembers your dark/light theme, and <code>cevano-analytics-consent</code> remembers your cookie choice for 12 months. These are kept in your browser and are not shared with third parties.</li>
+      <li><strong>Analytics cookies (optional)</strong> — <code>_ga</code> and <code>_ga_N0N6N3TM8P</code>, set by Google Analytics, kept for up to 13 months. They are only set after you click "Accept analytics". They help us understand which pages are visited and how people find the site.</li>
     </ul>
-    <p>You can control or delete cookies through your browser settings at any time.</p>
+    <p>You can change your choice at any time using "Cookie settings" at the bottom of every page. If you reject analytics, Google Analytics is switched off and its cookies are deleted. You can also delete cookies through your browser settings.</p>
+
+    <h2>Google Analytics</h2>
+    <p>If you accept analytics cookies, we use Google Analytics 4, provided by Google Ireland Limited, which acts as our data processor. It collects information such as the pages you visit, how long you stay, the type of device and browser you use, and your approximate location (city or country). Google Analytics 4 does not log or store IP addresses. We have turned off Google signals and advertising features, so this data is not used to show you ads. Analytics data is kept for 14 months and then deleted.</p>
+    <p>Our legal basis is your consent. Google may process this data in the United States; such transfers are covered by the UK–US data bridge or the UK International Data Transfer Addendum.</p>
 
     <h2>Sharing your data</h2>
     <p>We do not sell your personal data, and we only share it with the specific service providers needed to run this website and respond to your enquiry:</p>
@@ -55,6 +60,7 @@ body_privacy_en = f'''
       <li><strong>Cloudflare</strong> — hosts this website and processes web traffic (including standard technical data such as IP addresses) as part of delivering the site and protecting it from abuse. Cloudflare acts as our infrastructure provider.</li>
       <li><strong>Resend</strong> — the transactional email service used to deliver contact form submissions to our inbox. When you submit the contact form, your name, email address, and message pass through Resend in order to reach us.</li>
       <li><strong>Microsoft 365 / Exchange Online</strong> — our business email is hosted with Microsoft 365. Enquiries sent through the contact form, or emailed to us directly, are ultimately received and stored in our Microsoft 365 mailbox.</li>
+      <li><strong>Google (Google Analytics)</strong> — only if you accept analytics cookies; see the Google Analytics section above.</li>
     </ul>
     <p>We don't collect or store visitor IP addresses ourselves for contact form submissions. Cloudflare, as our hosting and security provider, processes standard connection data (such as IP addresses) as part of normal web infrastructure operation and abuse prevention — this is not something Cevano separately collects, stores, or has direct access to beyond aggregate, anonymised traffic statistics.</p>
     <p>We otherwise only share data where required by law.</p>
@@ -165,11 +171,16 @@ body_privacy_pl = f'''
     <p>Dane dotyczące zapytań i klientów przechowujemy tak długo, jak jest to zasadnie konieczne do udzielenia odpowiedzi, świadczenia usług oraz spełnienia wymogów prawnych lub księgowych, po czym są usuwane lub anonimizowane.</p>
 
     <h2>Pliki cookie</h2>
-    <p>Ta strona wykorzystuje wyłącznie niezbędne pliki cookie. Nie używamy plików cookie analitycznych, reklamowych ani śledzących.</p>
+    <p>Ta strona wykorzystuje niezbędną pamięć przeglądarki oraz — wyłącznie za Twoją zgodą — pliki cookie Google Analytics. Nie używamy plików cookie reklamowych.</p>
     <ul>
-      <li><strong>Niezbędne pliki cookie</strong> — konieczne do prawidłowego działania strony (np. zapamiętywanie wybranego motywu jasnego/ciemnego oraz informacji o wyświetleniu powiadomienia o cookies). Są przechowywane w Twojej przeglądarce i nie są udostępniane podmiotom trzecim.</li>
+      <li><strong>Niezbędna pamięć przeglądarki</strong> — potrzebna, aby strona działała zgodnie z oczekiwaniami: <code>cevano-theme</code> zapamiętuje motyw jasny/ciemny, a <code>cevano-analytics-consent</code> zapamiętuje Twój wybór dotyczący cookies przez 12 miesięcy. Dane te pozostają w Twojej przeglądarce i nie są udostępniane podmiotom trzecim.</li>
+      <li><strong>Analityczne pliki cookie (opcjonalne)</strong> — <code>_ga</code> oraz <code>_ga_N0N6N3TM8P</code>, ustawiane przez Google Analytics, przechowywane maksymalnie 13 miesięcy. Są zapisywane dopiero po kliknięciu „Akceptuję analitykę”. Pomagają nam zrozumieć, które strony są odwiedzane i jak użytkownicy trafiają na stronę.</li>
     </ul>
-    <p>W każdej chwili możesz kontrolować lub usuwać pliki cookie w ustawieniach swojej przeglądarki.</p>
+    <p>Swój wybór możesz zmienić w każdej chwili, klikając „Ustawienia cookies” na dole każdej strony. Jeśli odrzucisz analitykę, Google Analytics zostanie wyłączony, a jego pliki cookie usunięte. Pliki cookie możesz też usuwać w ustawieniach przeglądarki.</p>
+
+    <h2>Google Analytics</h2>
+    <p>Jeśli zaakceptujesz analityczne pliki cookie, korzystamy z Google Analytics 4, dostarczanego przez Google Ireland Limited, który działa jako podmiot przetwarzający nasze dane. Zbiera on informacje takie jak odwiedzane strony, czas spędzony na stronie, rodzaj urządzenia i przeglądarki oraz przybliżona lokalizacja (miasto lub kraj). Google Analytics 4 nie zapisuje ani nie przechowuje adresów IP. Wyłączyliśmy Google signals i funkcje reklamowe, więc dane te nie są wykorzystywane do wyświetlania Ci reklam. Dane analityczne przechowujemy przez 14 miesięcy, a następnie są usuwane.</p>
+    <p>Podstawą prawną jest Twoja zgoda. Google może przetwarzać te dane w Stanach Zjednoczonych; takie transfery są objęte mechanizmem UK–US data bridge lub UK International Data Transfer Addendum.</p>
 
     <h2>Udostępnianie danych</h2>
     <p>Nie sprzedajemy Twoich danych osobowych i udostępniamy je wyłącznie dostawcom usług niezbędnym do prowadzenia tej strony i odpowiedzi na Twoje zapytanie:</p>
@@ -177,6 +188,7 @@ body_privacy_pl = f'''
       <li><strong>Cloudflare</strong> — hostuje tę stronę internetową i przetwarza ruch sieciowy (w tym standardowe dane techniczne, takie jak adresy IP) w ramach udostępniania strony i ochrony jej przed nadużyciami. Cloudflare pełni rolę naszego dostawcy infrastruktury.</li>
       <li><strong>Resend</strong> — usługa transakcyjnej wysyłki e-maili wykorzystywana do dostarczania zgłoszeń z formularza kontaktowego na naszą skrzynkę. Wysyłając formularz kontaktowy, Twoje imię i nazwisko, adres e-mail oraz wiadomość przechodzą przez Resend, aby do nas dotrzeć.</li>
       <li><strong>Microsoft 365 / Exchange Online</strong> — nasza firmowa poczta jest hostowana w Microsoft 365. Zapytania wysłane przez formularz kontaktowy lub bezpośrednio e-mailem trafiają ostatecznie do naszej skrzynki Microsoft 365.</li>
+      <li><strong>Google (Google Analytics)</strong> — wyłącznie po zaakceptowaniu analitycznych plików cookie; szczegóły w sekcji Google Analytics powyżej.</li>
     </ul>
     <p>Sami nie zbieramy ani nie przechowujemy adresów IP odwiedzających w związku ze zgłoszeniami z formularza kontaktowego. Cloudflare, jako nasz dostawca hostingu i zabezpieczeń, przetwarza standardowe dane połączenia (takie jak adresy IP) w ramach normalnego funkcjonowania infrastruktury internetowej i ochrony przed nadużyciami — nie jest to coś, co Cevano samodzielnie zbiera, przechowuje lub do czego ma bezpośredni dostęp, poza zagregowanymi, zanonimizowanymi statystykami ruchu.</p>
     <p>Poza tym udostępniamy dane wyłącznie w sytuacjach wymaganych przez prawo.</p>

@@ -1,6 +1,62 @@
 (function () {
   "use strict";
 
+  /* ---------- Google Analytics (tylko po zgodzie) ---------- */
+  var GA_MEASUREMENT_ID = "G-N0N6N3TM8P";          // usługa "Cevano IT Solutions" w GA
+  var CONSENT_KEY = "cevano-analytics-consent";      // zapis decyzji w localStorage
+  var CONSENT_MAX_AGE_MS = 365 * 24 * 3600 * 1000;   // decyzja ważna 12 miesięcy
+  var gaLoaded = false;
+
+  // Zwraca "granted", "denied" albo null (brak decyzji / decyzja starsza niż 12 miesięcy)
+  function readAnalyticsConsent() {
+    try {
+      // Stary klucz ze starego banera (tylko niezbędne cookies) — już nie jest zgodą na analitykę
+      localStorage.removeItem("cevano-cookie-consent");
+      var saved = JSON.parse(localStorage.getItem(CONSENT_KEY) || "null");
+      if (!saved || (saved.choice !== "granted" && saved.choice !== "denied")) return null;
+      if (Date.now() - saved.time > CONSENT_MAX_AGE_MS) return null;
+      return saved.choice;
+    } catch (e) { return null; }
+  }
+
+  function saveAnalyticsConsent(choice) {
+    try { localStorage.setItem(CONSENT_KEY, JSON.stringify({ choice: choice, time: Date.now() })); } catch (e) {}
+  }
+
+  // Ładuje gtag.js tylko na prawdziwej domenie (nie na podglądzie *.pages.dev ani lokalnie)
+  function loadGoogleAnalytics() {
+    if (gaLoaded) return;
+    if (!/(^|\.)cevano\.co\.uk$/.test(window.location.hostname)) return;
+    gaLoaded = true;
+    window["ga-disable-" + GA_MEASUREMENT_ID] = false;
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { window.dataLayer.push(arguments); };
+    window.gtag("js", new Date());
+    window.gtag("config", GA_MEASUREMENT_ID, {
+      allow_google_signals: false,               // bez Google signals
+      allow_ad_personalization_signals: false,   // bez reklam
+      cookie_expires: 13 * 30 * 24 * 3600        // cookies _ga ok. 13 miesięcy
+    });
+    var s = document.createElement("script");
+    s.async = true;
+    s.src = "https://www.googletagmanager.com/gtag/js?id=" + GA_MEASUREMENT_ID;
+    document.head.appendChild(s);
+  }
+
+  // Po "Reject": wyłącza GA na tej stronie i usuwa cookies _ga*
+  function disableGoogleAnalytics() {
+    window["ga-disable-" + GA_MEASUREMENT_ID] = true;
+    var host = window.location.hostname;
+    var domains = ["", host, "." + host, ".cevano.co.uk"];
+    document.cookie.split(";").forEach(function (c) {
+      var name = c.split("=")[0].trim();
+      if (name.indexOf("_ga") !== 0) return;
+      domains.forEach(function (d) {
+        document.cookie = name + "=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/" + (d ? "; domain=" + d : "");
+      });
+    });
+  }
+
   /* ---------- Theme (light/dark) ---------- */
   var root = document.documentElement;
   var stored = null;
@@ -43,18 +99,35 @@
       });
     });
 
-    /* ---------- Cookie consent banner ---------- */
+    /* ---------- Cookie consent banner + Google Analytics ---------- */
+    // Google Analytics ładuje się WYŁĄCZNIE po kliknięciu "Accept analytics"
+    // (PECR / UK GDPR). "Reject" wyłącza GA i usuwa jego cookies.
+    // Decyzja jest pamiętana 12 miesięcy, potem pytamy ponownie.
+    // "Cookie settings" w stopce pokazuje baner ponownie.
     var cookieBanner = document.querySelector("[data-cookie-banner]");
     if (cookieBanner) {
-      var consent = null;
-      try { consent = localStorage.getItem("cevano-cookie-consent"); } catch (e) {}
-      if (!consent) {
+      var choice = readAnalyticsConsent();
+      if (choice === "granted") {
+        loadGoogleAnalytics();
+      } else if (choice === null) {
         cookieBanner.classList.add("visible");
       }
-      cookieBanner.querySelectorAll("[data-cookie-accept], [data-cookie-dismiss]").forEach(function (btn) {
-        btn.addEventListener("click", function () {
-          try { localStorage.setItem("cevano-cookie-consent", "1"); } catch (e) {}
-          cookieBanner.classList.remove("visible");
+      var acceptBtn = cookieBanner.querySelector("[data-cookie-accept]");
+      var rejectBtn = cookieBanner.querySelector("[data-cookie-reject]");
+      if (acceptBtn) acceptBtn.addEventListener("click", function () {
+        saveAnalyticsConsent("granted");
+        cookieBanner.classList.remove("visible");
+        loadGoogleAnalytics();
+      });
+      if (rejectBtn) rejectBtn.addEventListener("click", function () {
+        saveAnalyticsConsent("denied");
+        cookieBanner.classList.remove("visible");
+        disableGoogleAnalytics();
+      });
+      document.querySelectorAll("[data-cookie-settings]").forEach(function (link) {
+        link.addEventListener("click", function (e) {
+          e.preventDefault();
+          cookieBanner.classList.add("visible");
         });
       });
     }
