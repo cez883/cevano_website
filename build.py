@@ -10,6 +10,11 @@ import os
 ROOT = os.path.dirname(os.path.abspath(__file__))
 SITE_URL = "https://www.cevano.co.uk"
 
+# Wersja plików CSS/JS — dopisywana do adresu (?v=...), bo Cloudflare trzyma
+# /css/* i /js/* w pamięci podręcznej 30 dni (_headers). ZMIEŃ tę wartość
+# (np. na dzisiejszą datę) przy każdej zmianie css/style.css lub js/main.js.
+ASSET_VERSION = "20261104"
+
 # ------------------------------------------------------------------
 # Icons (inline SVG, currentColor / CSS vars so they theme automatically)
 # ------------------------------------------------------------------
@@ -109,7 +114,7 @@ def head(lang, asset_prefix, title, description, canonical_path, alt_canonical_p
 <link rel="manifest" href="{asset_prefix}site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="{asset_prefix}css/style.css">
+<link rel="stylesheet" href="{asset_prefix}css/style.css?v={ASSET_VERSION}">
 {THEME_INIT_SCRIPT}
 </head>
 '''
@@ -282,7 +287,7 @@ def page(lang, lang_prefix, asset_prefix, active, title, description, canonical_
 {ftr}
 {cookie}
 {schema}
-<script src="{asset_prefix}js/main.js" defer></script>
+<script src="{asset_prefix}js/main.js?v={ASSET_VERSION}" defer></script>
 {extra_scripts}
 </body>
 </html>
