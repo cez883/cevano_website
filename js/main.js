@@ -138,28 +138,6 @@
       });
     }
 
-    /* ---------- Scroll reveal ---------- */
-    var prefersReducedMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (window.IntersectionObserver && !prefersReducedMotion) {
-      var revealTargets = document.querySelectorAll(
-        ".section-head, .service-grid, .subservice-grid, .why-grid, .cta-banner, " +
-        ".about-layout, .detail-grid, .process-grid, .form-card, .contact-info, .legal-content"
-      );
-      var revealObserver = new IntersectionObserver(function (entries) {
-        entries.forEach(function (entry) {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("is-visible");
-            revealObserver.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.1, rootMargin: "0px 0px -60px 0px" });
-
-      revealTargets.forEach(function (el) {
-        el.classList.add("reveal");
-        revealObserver.observe(el);
-      });
-    }
-
     /* ---------- Services mini-nav: active section on scroll ---------- */
     var miniNav = document.querySelector("[data-mini-nav]");
     if (miniNav) {

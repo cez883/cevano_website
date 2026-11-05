@@ -42,7 +42,7 @@ typography:
     letterSpacing: "-0.01em"
   headline:
     fontFamily: "Space Grotesk, Segoe UI, sans-serif"
-    fontSize: "clamp(1.6rem, 3vw, 2.2rem)"
+    fontSize: "clamp(1.65rem, 3vw, 2.2rem)"
     fontWeight: 600
     lineHeight: 1.15
     letterSpacing: "-0.01em"
@@ -153,7 +153,7 @@ Light and dark themes are both first-class. Dark mode is a deep night-navy, not 
 - Space Grotesk headings over Public Sans body.
 - Hairline 1px rules carry structure; shadows are almost absent.
 - Small, crisp corners (4px controls, 8px containers).
-- Calm motion: short colour fades and a 2px lift on hover only.
+- Calm motion: short colour fades and a 2px lift on hover only. Nothing animates on scroll; content is visible at rest.
 
 ## Colors
 
@@ -201,9 +201,9 @@ Form feedback only: `success-bg`/`success-ink` and `error-bg`/`error-ink`, each 
 
 ### Hierarchy
 - **Display** (600, clamp(2.1rem, 4vw, 3.2rem), 1.15): home hero h1 only, capped at 14ch so it breaks into short lines. Inner page h1 uses clamp(1.9rem, 3.4vw, 2.6rem), capped at 20ch.
-- **Headline** (600, clamp(1.6rem, 3vw, 2.2rem), 1.15): section h2. Detail sections use 1.7rem.
-- **Title** (600, 1.05–1.25rem, 1.15): card and step h3.
-- **Body** (400, 17px, 1.6): paragraphs in Slate, max 62ch. Card text steps down to 14.5–15px. Lede is 1.15rem, max 46ch.
+- **Headline** (600, clamp(1.65rem, 3vw, 2.2rem), 1.15): every content h2, one size (section heads, service detail sections, the closing banner).
+- **Title** (600, 1.25rem, 1.15): every card, step and problem h3, one size, always at least 1.3× below h2. Label-style headings (panel titles, contact-page block titles) are the only exception and are set like Labels.
+- **Body** (400, 17px, 1.6): paragraphs in Slate, max 62ch. Card and list text is 16px, never smaller for running text. Lede is 1.15rem, max 46ch.
 - **Label** (700, 13–15px): eyebrows and kickers in Deep Working Blue, form labels in Ink, buttons, nav (600, 15px). Sentence case; no uppercase tracking.
 
 ### Named Rules
@@ -299,6 +299,7 @@ Office Navy (dark: `footer-dark`) with four columns: brand blurb plus company nu
 - **Do** reserve Working Blue (`#0072D6`) for things a visitor can click.
 - **Do** keep corners at 4px for controls and 8px for containers.
 - **Do** keep hover motion to colour fades (0.15–0.18s) and a 2px lift; honour `prefers-reduced-motion`.
+- **Do** let the home hero fill the first screen under the header (capped at 900px), so the next section's heading is never cut by the fold.
 - **Do** design every new element for both light and dark themes using the existing CSS variables.
 - **Do** keep text in sentence case, with headings capped in `ch` and paragraphs at 62ch.
 - **Do** give every control at least a 44px touch target at ≤900px, even when the visible mark is smaller.
@@ -313,3 +314,4 @@ Office Navy (dark: `footer-dark`) with four columns: brand blurb plus company nu
 - **Don't** show team or office-staff imagery, or any personal name or photo; the business is one person and the site stays impersonal (see PRODUCT.md).
 - **Don't** put white text on `dark-blue-mid`; it fails contrast.
 - **Don't** give hover lift, fill or border changes to anything that is not a link or button.
+- **Don't** fade or slide content in on scroll; it hides content when the script or observer fails.

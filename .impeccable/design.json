@@ -174,11 +174,6 @@
         "name": "theme",
         "value": ".25s ease",
         "purpose": "Body background and colour on theme switch."
-      },
-      {
-        "name": "reveal",
-        "value": ".55s ease, translateY(18px)",
-        "purpose": "Scroll reveal fade-up."
       }
     ],
     "breakpoints": [
@@ -282,7 +277,7 @@
       "Space Grotesk headings over Public Sans body.",
       "Hairline 1px rules carry structure; shadows are almost absent.",
       "Small, crisp corners (4px controls, 8px containers).",
-      "Calm motion: short colour fades and a 2px lift on hover only."
+      "Calm motion: short colour fades and a 2px lift on hover only. Nothing animates on scroll; content is visible at rest."
     ],
     "rules": [
       {
@@ -319,7 +314,8 @@
       "Do design every new element for both light and dark themes using the existing CSS variables.",
       "Do keep text in sentence case, with headings capped in `ch` and paragraphs at 62ch.",
       "Do give every control at least a 44px touch target at ≤900px, even when the visible mark is smaller.",
-      "Do list services in priority order everywhere: Microsoft 365, Websites & Landing Pages, IT Support, Data Analytics & Power BI."
+      "Do list services in priority order everywhere: Microsoft 365, Websites & Landing Pages, IT Support, Data Analytics & Power BI.",
+      "Do let the home hero fill the first screen under the header (capped at 900px), so the next section's heading is never cut by the fold."
     ],
     "donts": [
       "Don't add shadows at rest; only the cookie banner floats.",
@@ -329,7 +325,8 @@
       "Don't use large corner radii (above 8px) on cards or buttons.",
       "Don't show team or office-staff imagery, or any personal name or photo; the business is one person and the site stays impersonal (see PRODUCT.md).",
       "Don't put white text on `dark-blue-mid`; it fails contrast.",
-      "Don't give hover lift, fill or border changes to anything that is not a link or button."
+      "Don't give hover lift, fill or border changes to anything that is not a link or button.",
+      "Don't fade or slide content in on scroll; it hides content when the script or observer fails."
     ]
   }
 }

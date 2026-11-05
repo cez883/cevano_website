@@ -13,7 +13,7 @@ SITE_URL = "https://www.cevano.co.uk"
 # Wersja plików CSS/JS — dopisywana do adresu (?v=...), bo Cloudflare trzyma
 # /css/* i /js/* w pamięci podręcznej 30 dni (_headers). ZMIEŃ tę wartość
 # (np. na dzisiejszą datę) przy każdej zmianie css/style.css lub js/main.js.
-ASSET_VERSION = "20261105-9"
+ASSET_VERSION = "20261105-10"
 
 # ------------------------------------------------------------------
 # Icons (inline SVG, currentColor / CSS vars so they theme automatically)
@@ -143,21 +143,17 @@ def header_html(lang, lang_prefix, asset_prefix, active, alt_href):
           <a href="{alt_href}">{other_lang_label}</a><span aria-hidden="true">|</span><a href="{home_href}" aria-current="true">{this_lang_label}</a>
         </div>'''
 
-    logo_path = asset_prefix + "assets/img/logo-trimmed.png"
-    logo_webp = asset_prefix + "assets/img/logo-trimmed.webp"
-    logo_white_path = asset_prefix + "assets/img/logo-white.png"
-    logo_white_webp = asset_prefix + "assets/img/logo-white.webp"
+    logo_path = asset_prefix + "assets/img/logo-trimmed-200.png"
+    logo_white_path = asset_prefix + "assets/img/logo-white-200.png"
     return f'''<a class="skip-link" href="#main">{t['skip']}</a>
 <header class="site-header">
   <div class="header-inner">
     <a class="brand" href="{home_href}" aria-label="Cevano IT Solutions — home">
       <picture class="logo-light">
-        <source srcset="{logo_webp}" type="image/webp">
-        <img src="{logo_path}" alt="Cevano IT Solutions" width="195" height="120">
+        <img src="{logo_path}" alt="Cevano IT Solutions" width="200" height="123">
       </picture>
       <picture class="logo-dark">
-        <source srcset="{logo_white_webp}" type="image/webp">
-        <img src="{logo_white_path}" alt="Cevano IT Solutions" width="192" height="120">
+        <img src="{logo_white_path}" alt="Cevano IT Solutions" width="200" height="125">
       </picture>
     </a>
     <nav class="main-nav" aria-label="Primary">
@@ -191,8 +187,7 @@ def footer_html(lang, lang_prefix, asset_prefix):
     contact_href = lang_prefix + "contact.html"
     privacy_href = lang_prefix + "legal/privacy-policy.html"
     terms_href = lang_prefix + "legal/terms.html"
-    logo_path = asset_prefix + "assets/img/logo-white.png"
-    logo_webp = asset_prefix + "assets/img/logo-white.webp"
+    logo_path = asset_prefix + "assets/img/logo-white-200.png"
     year = "2026"
     company_no_label = "Company No." if lang == "en" else "Numer firmy"
     if lang == "en":
@@ -217,10 +212,7 @@ def footer_html(lang, lang_prefix, asset_prefix):
     return f'''<footer class="site-footer">
   <div class="container footer-grid">
     <div class="footer-brand">
-      <picture>
-        <source srcset="{logo_webp}" type="image/webp">
-        <img src="{logo_path}" alt="Cevano IT Solutions" width="176" height="110" loading="lazy">
-      </picture>
+      <img src="{logo_path}" alt="Cevano IT Solutions" width="200" height="125" loading="lazy">
       <p>{t['footer_tagline']}</p>
       <p class="company-meta">
         {company_no_label} 17428300<br>
@@ -258,7 +250,7 @@ def footer_html(lang, lang_prefix, asset_prefix):
     <span>&copy; {year} Cevano IT Solutions. {t['footer_rights']}</span>
     <div class="footer-legal-links">
       <a href="mailto:enquiries@cevano.co.uk">enquiries@cevano.co.uk</a>
-      <a href="#" data-cookie-settings>{t['cookie_settings']}</a>
+      <button type="button" class="link-button" data-cookie-settings>{t['cookie_settings']}</button>
     </div>
   </div>
 </footer>

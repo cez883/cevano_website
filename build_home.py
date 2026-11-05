@@ -29,7 +29,7 @@ body_home_en = f'''
       <p class="lede">We manage Microsoft 365 for small businesses (accounts, licences, security and devices) and take care of the IT support and websites around it.</p>
       <div class="hero-ctas">
         <a class="btn btn-primary" href="contact.html">Get in touch</a>
-        <a class="btn btn-outline" href="services.html">Our services</a>
+        <a class="btn btn-outline" href="services.html">See our services</a>
       </div>
       <p class="hero-email">Prefer email? Write to <a href="mailto:enquiries@cevano.co.uk">enquiries@cevano.co.uk</a></p>
       <p class="trust-badge">
@@ -223,7 +223,7 @@ body_home_pl = f'''
       <p class="lede">Zarządzamy Microsoft 365 w małych firmach (konta, licencje, bezpieczeństwo i urządzenia) i zajmujemy się wsparciem IT oraz stronami internetowymi wokół niego.</p>
       <div class="hero-ctas">
         <a class="btn btn-primary" href="contact.html">Skontaktuj się</a>
-        <a class="btn btn-outline" href="services.html">Nasze usługi</a>
+        <a class="btn btn-outline" href="services.html">Zobacz usługi</a>
       </div>
       <p class="hero-email">Wolisz e-mail? Napisz na <a href="mailto:enquiries@cevano.co.uk">enquiries@cevano.co.uk</a></p>
       <p class="trust-badge">
