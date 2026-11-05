@@ -29,3 +29,8 @@ Thumbs.db
 # --- Wrangler / Cloudflare local state ---
 .wrangler/
 node_modules/
+
+# --- Local design-tool output (taste-skill, impeccable critiques) ---
+.taste-skill/
+.impeccable/critique/
+.impeccable/live/
