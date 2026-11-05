@@ -146,7 +146,7 @@ body_contact_pl = '''
         <h2>Gdzie pracujemy</h2>
         <p>Na miejscu w okolicach Northampton, Kettering, Milton Keynes, Rugby i okolic — wsparcie zdalne dostępne również dalej.</p>
         <div class="area-tags">
-          <span>Northampton</span><span>Kettering</span><span>Milton Keynes</span><span>Rugby</span><span>Zdalnie w całej UK</span>
+          <span>Northampton</span><span>Kettering</span><span>Milton Keynes</span><span>Rugby</span><span>Zdalnie w całej Wielkiej Brytanii</span>
         </div>
       </div>
     </div>
@@ -187,7 +187,7 @@ body_contact_pl = '''
           <div class="form-row">
             <label for="service_pl">Usługa / obszar wsparcia</label>
             <select id="service_pl" name="service">
-              <option value="">Nie jestem pewien / zapytanie ogólne</option>
+              <option value="">Nie wiem / zapytanie ogólne</option>
               <option value="Microsoft 365">Microsoft 365</option>
               <option value="Website / landing page">Strona internetowa / landing page</option>
               <option value="IT Support">Wsparcie IT</option>
@@ -225,6 +225,6 @@ body_contact_pl = '''
 write("pl/contact.html", page(
     "pl", "", "../", "contact",
     "Kontakt z Cevano IT Solutions | Skontaktuj się",
-    "Skontaktuj się z Cevano IT Solutions w sprawie wsparcia IT, Microsoft 365 lub analizy danych — obsługujemy Northampton, Kettering, Milton Keynes, Rugby oraz klientów zdalnych w całej UK.",
+    "Skontaktuj się z Cevano IT Solutions w sprawie wsparcia IT, Microsoft 365 lub analizy danych — obsługujemy Northampton, Kettering, Milton Keynes, Rugby oraz klientów zdalnych w całej Wielkiej Brytanii.",
     "contact.html", "contact.html", body_contact_pl, alt_href="../contact.html"
 ))
