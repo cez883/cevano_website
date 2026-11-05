@@ -267,7 +267,10 @@ html[data-theme="dark"] .service-card:hover{ background: var(--bg-alt); }
   font-family: var(--font-head); font-weight:600; font-size: 14px; color: var(--slate);
 }
 .flow-row .dot{ width:6px;height:6px;border-radius:50%; background:var(--blue-light); }
-.flow-row .line{ flex:0 0 40px; height:1px; background: var(--line); }
+.flow-row span{ white-space: nowrap; }
+.flow-row .line{ flex:0 1 40px; min-width:12px; height:1px; background: var(--line); }
+.flow-row .dot{ flex:none; }
+@media (max-width: 600px){ .flow-row{ display:none; } }
 
 /* ---------- Secondary services ---------- */
 .subservice-grid{
@@ -422,7 +425,7 @@ html[data-theme="dark"] .cta-banner .btn-primary{ background:var(--blue-mid); co
 html[data-theme="dark"] .site-footer{ background:#050C18; }
 .footer-grid{
   display:grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 40px;
-  padding: 60px 0 40px;
+  padding-top: 60px; padding-bottom: 40px;
 }
 .footer-brand img{ height:44px; width:auto; margin-bottom:16px; }
 .footer-brand p{ color:#93A3C0; font-size:14px; max-width:34ch; }
@@ -442,7 +445,7 @@ html[data-theme="dark"] .site-footer{ background:#050C18; }
 .footer-col a:hover{ color:#fff; }
 .footer-bottom{
   border-top: 1px solid rgba(255,255,255,0.12);
-  padding: 22px 0; display:flex; justify-content:space-between; align-items:center;
+  padding-top: 22px; padding-bottom: 22px; display:flex; justify-content:space-between; align-items:center;
   flex-wrap:wrap; gap:12px; font-size:13px; color:#8092AF;
 }
 .footer-bottom a{ color:#8092AF; }
