@@ -281,6 +281,7 @@ html[data-theme="dark"] .service-card:hover{ background: var(--bg-alt); }
 .service-card h3{ font-size: 1.25rem; }
 .service-card p{ font-size: 15px; }
 .service-card .btn-ghost{ margin-top:auto; align-self:flex-start; }
+.service-card .btn-ghost::after{ content:""; position:absolute; inset:0; }
 
 /* Lead service: spans the full row, copy beside its concrete outcomes */
 .service-card.is-lead{
@@ -320,14 +321,7 @@ html[data-theme="dark"] .service-card:hover{ background: var(--bg-alt); }
 .subservice-card{
   background: var(--surface); border:1px solid var(--line); border-radius: var(--radius-m);
   padding: 26px 24px;
-  transition: border-color .18s ease, transform .18s ease, box-shadow .18s ease;
 }
-.subservice-card:hover{
-  border-color: var(--blue-light);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(11,27,51,0.06);
-}
-html[data-theme="dark"] .subservice-card:hover{ box-shadow: 0 8px 20px rgba(0,0,0,0.25); }
 .subservice-card h3{ font-size: 1.05rem; margin-bottom:8px; }
 .subservice-card p{ font-size:14.5px; margin-bottom: 12px; }
 .subservice-card ul li{
@@ -339,17 +333,28 @@ html[data-theme="dark"] .subservice-card:hover{ box-shadow: 0 8px 20px rgba(0,0,
 }
 @media (max-width: 860px){ .subservice-grid{ grid-template-columns:1fr; } }
 
-/* ---------- Why cards ---------- */
-.why-grid{
-  display:grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap: 1px;
-  background: var(--line); border:1px solid var(--line); border-radius: var(--radius-m); overflow:hidden;
+/* ---------- Microsoft 365 problems (home) ---------- */
+.problem-grid{
+  display:grid; grid-template-columns: 1fr 1fr;
+  border-top: 1px solid var(--line);
 }
-.why-card{ background: var(--surface); padding: 28px 24px; transition: background-color .18s ease; }
-.why-card:hover{ background: var(--bg-alt); }
-html[data-theme="dark"] .why-card:hover{ background: #101F38; }
-.why-card h3{ font-size: 1.05rem; margin-bottom: 8px; }
-.why-card p{ font-size: 14.5px; margin:0; }
-.why-more{ display:inline-block; margin-top: 24px; }
+.problem{ padding: 30px 30px 30px 0; border-bottom: 1px solid var(--line); }
+.problem:nth-child(even){ padding-left: 30px; padding-right: 0; border-left: 1px solid var(--line); }
+.problem h3{ font-size: 1.1rem; margin-bottom: 8px; }
+.problem p{ font-size: 15px; margin: 0; }
+.review-offer{
+  margin-top: 40px; padding: 28px 30px;
+  background: var(--bg-alt); border: 1px solid var(--line); border-radius: var(--radius-m);
+  display:flex; align-items:center; justify-content:space-between; gap: 24px; flex-wrap: wrap;
+}
+.review-offer h3{ font-size: 1.15rem; margin-bottom: 4px; }
+.review-offer p{ margin: 0; }
+@media (max-width: 760px){
+  .problem-grid{ grid-template-columns: 1fr; }
+  .problem, .problem:nth-child(even){ padding: 24px 0; border-left: none; }
+  .review-offer{ padding: 24px; }
+  .review-offer .btn{ width:100%; }
+}
 
 /* ---------- About ---------- */
 .about-layout{ display:grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items:start; }

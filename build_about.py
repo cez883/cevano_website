@@ -17,7 +17,7 @@ body_about_en = f'''
     <div>
       <h2>Practical technology support, without the complexity</h2>
       <p>Cevano IT Solutions provides practical technology support for individuals, sole traders, startups and small businesses. Many of the businesses we work with don't have — and don't need — an internal IT department. What they need is a provider who understands their technology, explains things clearly, and is flexible enough to fit around how they actually work.</p>
-      <p>We bring three things together that are usually handled by separate suppliers: everyday IT support, Microsoft 365 administration, and data analytics using Power BI. Keeping these under one roof means fewer handovers, fewer suppliers to manage, and technology decisions that are considered together rather than in isolation.</p>
+      <p>We bring together four things that are usually handled by separate suppliers: Microsoft 365 administration, websites and landing pages, everyday IT support, and data analytics using Power BI. Keeping these under one roof means fewer handovers, fewer suppliers to manage, and technology decisions that are considered together rather than in isolation.</p>
       <p>Our approach is straightforward: understand the problem, explain the options in plain language, and put in place something practical that actually fits your business — not the most complicated solution available.</p>
     </div>
     <div>
@@ -86,7 +86,7 @@ body_about_pl = f'''
     <div>
       <h2>Praktyczne wsparcie technologiczne bez zbędnej złożoności</h2>
       <p>Cevano IT Solutions zapewnia praktyczne wsparcie technologiczne dla osób prywatnych, jednoosobowych działalności, startupów i małych firm. Wiele firm, z którymi współpracujemy, nie ma — i nie potrzebuje — wewnętrznego działu IT. Potrzebują natomiast dostawcy, który rozumie ich technologię, jasno tłumaczy sprawy techniczne i jest wystarczająco elastyczny, aby dopasować się do sposobu, w jaki faktycznie pracują.</p>
-      <p>Łączymy trzy obszary, którymi zwykle zajmują się osobni dostawcy: codzienne wsparcie IT, administrację Microsoft 365 oraz analizę danych z użyciem Power BI. Dzięki temu, że wszystko znajduje się w jednym miejscu, jest mniej przekazywania spraw między firmami, mniej dostawców do koordynowania, a decyzje technologiczne podejmowane są całościowo, a nie w oderwaniu od siebie.</p>
+      <p>Łączymy cztery obszary, którymi zwykle zajmują się osobni dostawcy: administrację Microsoft 365, strony internetowe i landing page, codzienne wsparcie IT oraz analizę danych z użyciem Power BI. Dzięki temu, że wszystko znajduje się w jednym miejscu, jest mniej przekazywania spraw między firmami, mniej dostawców do koordynowania, a decyzje technologiczne podejmowane są całościowo, a nie w oderwaniu od siebie.</p>
       <p>Nasze podejście jest proste: zrozumieć problem, jasno przedstawić dostępne opcje i wdrożyć rozwiązanie, które faktycznie pasuje do Twojej firmy — a nie najbardziej skomplikowane z dostępnych.</p>
     </div>
     <div>

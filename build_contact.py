@@ -18,7 +18,7 @@ body_contact_en = '''
       <div class="info-block">
         <h2>Email</h2>
         <a class="email-link" href="mailto:enquiries@cevano.co.uk">enquiries@cevano.co.uk</a>
-        <p>The quickest way to reach us — describe what you need and we'll reply as soon as we can.</p>
+        <p>Prefer email to the form? Describe what you need and we'll reply as soon as we can.</p>
       </div>
       <div class="info-block">
         <h2>What happens next</h2>
@@ -89,7 +89,7 @@ body_contact_en = '''
         <div class="form-row">
           <label for="message">Message <span class="req">*</span></label>
           <p class="field-hint" id="message_hint">Briefly describe the problem or project, roughly how many people or devices are involved, and whether it's urgent.</p>
-          <textarea id="message" name="message" required aria-describedby="message_hint" placeholder="Tell us what you need help with. For example, IT support, Microsoft 365, a new office setup, Power BI reporting or another technology requirement."></textarea>
+          <textarea id="message" name="message" required aria-describedby="message_hint" placeholder="For example: a leaver still has access, an email went missing, we need a new landing page, or a laptop needs setting up."></textarea>
         </div>
 
         <div class="form-row">
@@ -132,7 +132,7 @@ body_contact_pl = '''
       <div class="info-block">
         <h2>E-mail</h2>
         <a class="email-link" href="mailto:enquiries@cevano.co.uk">enquiries@cevano.co.uk</a>
-        <p>Najszybszy sposób, aby się z nami skontaktować — opisz, czego potrzebujesz, a odpowiemy najszybciej jak to możliwe.</p>
+        <p>Wolisz e-mail od formularza? Opisz, czego potrzebujesz, a odpowiemy najszybciej, jak to możliwe.</p>
       </div>
       <div class="info-block">
         <h2>Co dalej</h2>
@@ -203,7 +203,7 @@ body_contact_pl = '''
         <div class="form-row">
           <label for="message_pl">Wiadomość <span class="req">*</span></label>
           <p class="field-hint" id="message_pl_hint">Opisz krótko problem lub projekt, ile osób lub urządzeń to dotyczy i czy sprawa jest pilna.</p>
-          <textarea id="message_pl" name="message" required aria-describedby="message_pl_hint" placeholder="Napisz, z czym potrzebujesz pomocy. Na przykład wsparcie IT, Microsoft 365, organizacja nowego biura, raportowanie Power BI lub inna potrzeba technologiczna."></textarea>
+          <textarea id="message_pl" name="message" required aria-describedby="message_pl_hint" placeholder="Na przykład: były pracownik wciąż ma dostęp, zaginął e-mail, potrzebujemy nowego landing page albo trzeba skonfigurować laptopa."></textarea>
         </div>
 
         <div class="form-row">

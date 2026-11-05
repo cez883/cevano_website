@@ -13,7 +13,7 @@ SITE_URL = "https://www.cevano.co.uk"
 # Wersja plików CSS/JS — dopisywana do adresu (?v=...), bo Cloudflare trzyma
 # /css/* i /js/* w pamięci podręcznej 30 dni (_headers). ZMIEŃ tę wartość
 # (np. na dzisiejszą datę) przy każdej zmianie css/style.css lub js/main.js.
-ASSET_VERSION = "20261105-7"
+ASSET_VERSION = "20261105-8"
 
 # ------------------------------------------------------------------
 # Icons (inline SVG, currentColor / CSS vars so they theme automatically)

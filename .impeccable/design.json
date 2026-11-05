@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-05T14:00:00Z",
+  "generatedAt": "2026-11-05T15:00:00Z",
   "title": "Design System: Cevano IT Solutions",
   "extensions": {
     "colorMeta": {
@@ -328,7 +328,8 @@
       "Don't add uppercase tracked micro-labels.",
       "Don't use large corner radii (above 8px) on cards or buttons.",
       "Don't show team or office-staff imagery, or any personal name or photo; the business is one person and the site stays impersonal (see PRODUCT.md).",
-      "Don't put white text on `dark-blue-mid`; it fails contrast."
+      "Don't put white text on `dark-blue-mid`; it fails contrast.",
+      "Don't give hover lift, fill or border changes to anything that is not a link or button."
     ]
   }
 }

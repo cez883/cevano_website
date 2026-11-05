@@ -26,7 +26,7 @@ body_home_en = f'''
   <div class="container hero-grid">
     <div>
       <h1>Microsoft 365, set up properly and kept that way.</h1>
-      <p class="lede">We manage Microsoft 365 for small businesses (accounts, licences, security and devices) and take care of the IT support and websites around it. On-site around Northampton, Kettering, Milton Keynes and Rugby, remote across the UK.</p>
+      <p class="lede">We manage Microsoft 365 for small businesses (accounts, licences, security and devices) and take care of the IT support and websites around it.</p>
       <div class="hero-ctas">
         <a class="btn btn-primary" href="contact.html">Get in touch</a>
         <a class="btn btn-outline" href="services.html">Our services</a>
@@ -34,7 +34,7 @@ body_home_en = f'''
       <p class="hero-email">Prefer email? Write to <a href="mailto:enquiries@cevano.co.uk">enquiries@cevano.co.uk</a></p>
       <p class="trust-badge">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg>
-        Supporting small businesses across Northamptonshire
+        On-site around Northampton, Kettering, Milton Keynes and Rugby. Remote across the UK.
       </p>
     </div>
     <div class="hero-visual">{hero_visual('en')}</div>
@@ -115,27 +115,37 @@ body_home_en = f'''
   </div>
 </section>
 
-<section class="section" id="why-cevano">
+<section class="section" id="m365-problems">
   <div class="container">
     <div class="section-head">
-      <span class="kicker">Why Cevano</span>
-      <h2>Built for small businesses without an IT department</h2>
+      <span class="kicker">Microsoft 365</span>
+      <h2>Common Microsoft 365 problems we sort out</h2>
     </div>
-    <div class="why-grid">
-      <div class="why-card">
-        <h3>One point of contact</h3>
-        <p>Microsoft 365, your website, everyday IT and reporting handled in one place, so nothing falls between suppliers.</p>
+    <div class="problem-grid">
+      <div class="problem">
+        <h3>Someone has left, but their account is still open</h3>
+        <p>We offboard them properly: sign-in blocked, licence freed, and their mail and files secured for the team.</p>
       </div>
-      <div class="why-card">
-        <h3>Plain English, no jargon</h3>
-        <p>We explain what's wrong and what the options are before anything is agreed.</p>
+      <div class="problem">
+        <h3>An important email never arrived</h3>
+        <p>We trace the message, find out where it went, and release it from quarantine if it was blocked by mistake.</p>
       </div>
-      <div class="why-card">
-        <h3>Local, or remote when it's quicker</h3>
-        <p>On-site around Northampton, Kettering, Milton Keynes and Rugby. Many Microsoft 365 and data analytics jobs are done remotely.</p>
+      <div class="problem">
+        <h3>A file was deleted or overwritten</h3>
+        <p>We recover it from the OneDrive or SharePoint recycle bin, or restore an earlier version.</p>
+      </div>
+      <div class="problem">
+        <h3>A laptop or phone has gone missing</h3>
+        <p>If it's enrolled in Intune, we wipe company data from it remotely. We can also enforce encryption and a PIN so the next one is protected.</p>
       </div>
     </div>
-    <a class="btn-ghost why-more" href="about.html">More about Cevano →</a>
+    <div class="review-offer">
+      <div>
+        <h3>Not sure what state your Microsoft 365 is in?</h3>
+        <p>We'll review your setup for free and tell you what we'd fix first.</p>
+      </div>
+      <a class="btn btn-outline" href="contact.html">Ask for a free review</a>
+    </div>
   </div>
 </section>
 
@@ -210,7 +220,7 @@ body_home_pl = f'''
   <div class="container hero-grid">
     <div>
       <h1>Microsoft 365 skonfigurowany porządnie i tak utrzymany.</h1>
-      <p class="lede">Zarządzamy Microsoft 365 w małych firmach (konta, licencje, bezpieczeństwo i urządzenia) i zajmujemy się wsparciem IT oraz stronami internetowymi wokół niego. Na miejscu w okolicach Northampton, Kettering, Milton Keynes i Rugby, zdalnie w całej Wielkiej Brytanii.</p>
+      <p class="lede">Zarządzamy Microsoft 365 w małych firmach (konta, licencje, bezpieczeństwo i urządzenia) i zajmujemy się wsparciem IT oraz stronami internetowymi wokół niego.</p>
       <div class="hero-ctas">
         <a class="btn btn-primary" href="contact.html">Skontaktuj się</a>
         <a class="btn btn-outline" href="services.html">Nasze usługi</a>
@@ -218,7 +228,7 @@ body_home_pl = f'''
       <p class="hero-email">Wolisz e-mail? Napisz na <a href="mailto:enquiries@cevano.co.uk">enquiries@cevano.co.uk</a></p>
       <p class="trust-badge">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg>
-        Wspieramy małe firmy w całym Northamptonshire
+        Na miejscu w okolicach Northampton, Kettering, Milton Keynes i Rugby. Zdalnie w całej Wielkiej Brytanii.
       </p>
     </div>
     <div class="hero-visual">{hero_visual('pl')}</div>
@@ -244,7 +254,7 @@ body_home_pl = f'''
         <ul class="check-list">
           {check_items([
               "Nowy pracownik ma odpowiedni dostęp od pierwszego dnia",
-              "Osoby odchodzące są prawidłowo wyrejestrowywane, bez otwartych kont",
+              "Konta osób odchodzących są prawidłowo zamykane",
               "Firmowe pliki są uporządkowane i łatwe do znalezienia w SharePoint",
               "Licencje odpowiadają rzeczywistym potrzebom zespołu",
           ])}
@@ -299,27 +309,37 @@ body_home_pl = f'''
   </div>
 </section>
 
-<section class="section" id="why-cevano">
+<section class="section" id="m365-problems">
   <div class="container">
     <div class="section-head">
-      <span class="kicker">Dlaczego Cevano</span>
-      <h2>Dla małych firm bez własnego działu IT</h2>
+      <span class="kicker">Microsoft 365</span>
+      <h2>Typowe problemy z Microsoft 365, które rozwiązujemy</h2>
     </div>
-    <div class="why-grid">
-      <div class="why-card">
-        <h3>Jeden punkt kontaktu</h3>
-        <p>Microsoft 365, strona internetowa, codzienne IT i raporty w jednym miejscu, więc nic nie ginie między dostawcami.</p>
+    <div class="problem-grid">
+      <div class="problem">
+        <h3>Ktoś odszedł, a jego konto wciąż działa</h3>
+        <p>Prawidłowo zamykamy dostęp: blokujemy logowanie, zwalniamy licencję i zabezpieczamy pocztę oraz pliki dla zespołu.</p>
       </div>
-      <div class="why-card">
-        <h3>Prosty język, bez żargonu</h3>
-        <p>Wyjaśniamy, co nie działa i jakie są możliwości, zanim cokolwiek zostanie ustalone.</p>
+      <div class="problem">
+        <h3>Ważny e-mail nie dotarł</h3>
+        <p>Śledzimy wiadomość, sprawdzamy, gdzie trafiła, i uwalniamy ją z kwarantanny, jeśli została zablokowana przez pomyłkę.</p>
       </div>
-      <div class="why-card">
-        <h3>Na miejscu lub zdalnie, gdy tak szybciej</h3>
-        <p>Na miejscu w okolicach Northampton, Kettering, Milton Keynes i Rugby. Wiele zadań z Microsoft 365 i analizy danych wykonujemy zdalnie.</p>
+      <div class="problem">
+        <h3>Plik został usunięty lub nadpisany</h3>
+        <p>Odzyskujemy go z kosza OneDrive lub SharePoint albo przywracamy wcześniejszą wersję.</p>
+      </div>
+      <div class="problem">
+        <h3>Zginął laptop lub telefon</h3>
+        <p>Jeśli urządzenie jest w Intune, zdalnie usuwamy z niego firmowe dane. Możemy też wymusić szyfrowanie i kod PIN, żeby kolejne było chronione.</p>
       </div>
     </div>
-    <a class="btn-ghost why-more" href="about.html">Więcej o Cevano →</a>
+    <div class="review-offer">
+      <div>
+        <h3>Nie wiesz, w jakim stanie jest Twój Microsoft 365?</h3>
+        <p>Bezpłatnie przejrzymy Twoją konfigurację i powiemy, co naprawilibyśmy w pierwszej kolejności.</p>
+      </div>
+      <a class="btn btn-outline" href="contact.html">Poproś o bezpłatny przegląd</a>
+    </div>
   </div>
 </section>
 

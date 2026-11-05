@@ -56,6 +56,12 @@ One provider for everyday IT support, Microsoft 365 administration, and data ana
 
 - Certification: Microsoft Certified: Power BI Data Analyst Associate (PL-300). This is the only certification held. Do not claim MS-900, MS-102, MD-102 or any other Microsoft 365 certification.
 - No client testimonials, case studies, client logos, review scores, or statistics. Future work must not invent any of these.
+- Free Microsoft 365 review offered as a first step for new clients (owner confirmed 2026-11-05). Scope is not defined: describe it only as reviewing the setup and saying what to fix first. No price, no promised deliverables.
+- Microsoft 365 tasks the owner confirms handling (2026-11-05), usable as concrete copy:
+  - Users and access: password resets and account unlocks; MFA setup and Microsoft Authenticator help; onboarding and offboarding (new accounts, securing data of leavers); licence assignment (e.g. Business Premium, E3, E5); security and distribution groups.
+  - Email (Exchange Online): shared mailboxes and permissions; message trace for missing or spam-filtered mail; aliases and automatic (out-of-office) replies; quarantine management and releasing wrongly blocked mail.
+  - Teams, SharePoint, OneDrive: clearing the Teams cache; recovering files from OneDrive/SharePoint recycle bins and restoring earlier versions; fixing OneDrive sync errors; SharePoint site permissions and external sharing control; adding external guests to Teams.
+  - Security and devices (Intune, Entra ID): phishing response and removing malicious mail from mailboxes; Intune device enrolment (laptops, phones); remote wipe of lost or stolen devices; enforcing policies such as BitLocker encryption and PIN requirements.
 - Real content: service lists and example requests on `services.html`, the three-step process on `index.html`, and the service area list on `about.html` and `contact.html`.
 
 ## Product Principles

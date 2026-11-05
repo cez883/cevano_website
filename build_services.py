@@ -7,8 +7,8 @@ from build import *
 body_services_en = f'''
 <section class="page-hero">
   <div class="container">
-    <h1>Properly managed Microsoft 365, and the websites and IT around it</h1>
-    <p>Four core services that work together, plus the everyday extras that keep a small office running.</p>
+    <h1>Services for small businesses without an IT department</h1>
+    <p>Microsoft 365 first, plus websites, everyday IT support and Power BI reporting, and the extras that keep a small office running.</p>
   </div>
 </section>
 
@@ -16,9 +16,9 @@ body_services_en = f'''
   <div class="mini-nav-inner">
     <a href="#microsoft-365">Microsoft 365</a>
     <a href="#websites">Websites</a>
-    <a href="#it-support">IT Support</a>
-    <a href="#data-analytics">Data Analytics</a>
-    <a href="#additional-services">Additional Services</a>
+    <a href="#it-support">IT support</a>
+    <a href="#data-analytics">Data analytics</a>
+    <a href="#additional-services">Additional services</a>
   </div>
 </nav>
 
@@ -85,7 +85,7 @@ body_services_en = f'''
 <section class="detail-service section-alt" id="it-support">
   <div class="container detail-grid">
     <div>{MARK_SUPPORT}
-      <h2 style="margin-top:14px;">IT Support</h2>
+      <h2 style="margin-top:14px;">IT support without the jargon.</h2>
       <p>Reliable IT support without the complexity. We handle the day-to-day technology issues that get in the way of running your business — troubleshooting, setup, and advice you can actually understand.</p>
       <ul class="check-list">
         {check_items([
@@ -212,8 +212,8 @@ write("services.html", page(
 body_services_pl = f'''
 <section class="page-hero">
   <div class="container">
-    <h1>Dobrze zarządzany Microsoft 365 oraz strony i IT wokół niego</h1>
-    <p>Cztery główne usługi, które działają razem, oraz codzienne wsparcie, które utrzymuje małe biuro w sprawnym działaniu.</p>
+    <h1>Usługi dla małych firm bez własnego działu IT</h1>
+    <p>Przede wszystkim Microsoft 365, a do tego strony internetowe, codzienne wsparcie IT i raporty Power BI oraz dodatki, które utrzymują małe biuro w sprawnym działaniu.</p>
   </div>
 </section>
 
@@ -249,7 +249,7 @@ body_services_pl = f'''
       <h3>Jak to wygląda w praktyce</h3>
       <ul>
         <li>Nowy pracownik ma odpowiedni dostęp od pierwszego dnia</li>
-        <li>Osoby odchodzące są prawidłowo wyrejestrowywane, bez otwartych kont</li>
+        <li>Konta osób odchodzących są prawidłowo zamykane</li>
         <li>Firmowe pliki są uporządkowane i łatwe do znalezienia w SharePoint</li>
         <li>Urządzenia są konfigurowane spójnie za pomocą Intune</li>
         <li>Licencje odpowiadają rzeczywistym potrzebom zespołu</li>
@@ -290,7 +290,7 @@ body_services_pl = f'''
 <section class="detail-service section-alt" id="it-support">
   <div class="container detail-grid">
     <div>{MARK_SUPPORT}
-      <h2 style="margin-top:14px;">Wsparcie IT</h2>
+      <h2 style="margin-top:14px;">Wsparcie IT bez żargonu</h2>
       <p>Niezawodne wsparcie IT bez zbędnej złożoności. Zajmujemy się codziennymi problemami technologicznymi, które przeszkadzają w prowadzeniu firmy — rozwiązywaniem problemów, konfiguracją i doradztwem w zrozumiałym języku.</p>
       <ul class="check-list">
         {check_items([

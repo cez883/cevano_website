@@ -255,9 +255,10 @@ Crisp and restrained.
 - **Mini-nav pills:** transparent at rest; active pill gets Filing Grey-Blue fill, hairline border and Deep Working Blue text.
 
 ### Cards / Containers
-- **Service grid (signature):** no card boxes. Cells divided by hairlines, in service-priority order. Microsoft 365 is a full-width lead cell: copy on the left, its four concrete outcomes as a check list on the right (Ink text). Below it, three equal cells: Websites & Landing Pages, IT Support, Data Analytics & Power BI. Ghost links name their target ("Microsoft 365 in detail →"), never a bare "Learn more". On hover a cell gains white surface, a 3px inset Working Blue top bar and a 2px lift. Each cell has a small line icon, Title, Slate copy and a ghost "Learn more →".
-- **Secondary cards:** white surface, hairline border, 8px corners, 26px 24px padding. Hover: Signal Blue border, 2px lift, soft shadow. Lists use small Signal Blue square bullets.
-- **Why grid:** tiles separated by 1px gaps over a Hairline background inside one 8px rounded frame. Hover fills tile with Filing Grey-Blue.
+- **Service grid (signature):** no card boxes. Cells divided by hairlines, in service-priority order. Microsoft 365 is a full-width lead cell: copy on the left, its four concrete outcomes as a check list on the right (Ink text). Below it, three equal cells: Websites & Landing Pages, IT Support, Data Analytics & Power BI. Ghost links name their target ("Microsoft 365 in detail →"), never a bare "Learn more". The ghost link is stretched over its cell, so the whole cell is the click target and the hover lift is honest. On hover a cell gains white surface, a 3px inset Working Blue top bar and a 2px lift. Each cell has a small line icon, Title, Slate copy and a ghost "Learn more →".
+- **Secondary cards:** white surface, hairline border, 8px corners, 26px 24px padding. Static: no hover effect, because they are not links. Lists use small Signal Blue square bullets.
+- **Problem grid (home):** ruled 2×2 grid in the service-grid hairline language, one column at ≤760px. Each cell is a real Microsoft 365 problem as an h3 ("An important email never arrived") and what we do about it in one or two sentences. Only problems from PRODUCT.md's confirmed task list.
+- **Review offer:** Filing Grey-Blue band with hairline border and 8px corners under the problem grid: a question, one line offering the free Microsoft 365 review, and an outline button. Never describe the review's scope beyond "review your setup and say what to fix first".
 - **Panel:** Filing Grey-Blue fill, hairline border, 8px, 28px padding, dashed dividers between items.
 - **CTA banner:** solid Office Navy, 8px, 48px 44px, white headline, a faint (6% white) bar-chart motif bottom right.
 
@@ -309,3 +310,4 @@ Office Navy (dark: `footer-dark`) with four columns: brand blurb plus company nu
 - **Don't** use large corner radii (above 8px) on cards or buttons.
 - **Don't** show team or office-staff imagery, or any personal name or photo; the business is one person and the site stays impersonal (see PRODUCT.md).
 - **Don't** put white text on `dark-blue-mid`; it fails contrast.
+- **Don't** give hover lift, fill or border changes to anything that is not a link or button.
