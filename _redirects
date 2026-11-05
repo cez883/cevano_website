@@ -19,3 +19,26 @@
 # build.py.
 
 https://cevano.co.uk/*  https://www.cevano.co.uk/:splat  301!
+
+# ------------------------------------------------------------
+# Internal project files: keep them off the public site.
+# Cloudflare Pages publishes the whole repo root, so these files
+# would otherwise be readable at www.cevano.co.uk/<file>.
+# _redirects cannot return 404, so they 301 to the home page.
+# ------------------------------------------------------------
+/PRODUCT.md                              /  301
+/DESIGN.md                               /  301
+/.impeccable/*                           /  301
+/.claude/*                               /  301
+/README-deployment.md                    /  301
+/README-deployment.pl.md                 /  301
+/build.py                                /  301
+/build_404.py                            /  301
+/build_about.py                          /  301
+/build_contact.py                        /  301
+/build_home.py                           /  301
+/build_legal.py                          /  301
+/build_services.py                       /  301
+/scripts/*                               /  301
+/.dev.vars.example                       /  301
+/.gitignore                              /  301
