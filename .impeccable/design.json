@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-05T12:00:00Z",
+  "title": "Design System: Cevano IT Solutions",
+  "extensions": {
+    "colorMeta": {
+      "navy": { "role": "secondary", "displayName": "Office Navy", "canonical": "#001C3F", "tonalRamp": ["#000C1C", "#001C3F", "#0B2A50", "#1E3F6B", "#3E5E8C", "#6F8BB0", "#A9BCD4", "#E3EAF3"] },
+      "blue": { "role": "primary", "displayName": "Working Blue", "canonical": "#0072D6", "tonalRamp": ["#00264A", "#003F7A", "#005EBB", "#0072D6", "#0092E6", "#5DB4F0", "#A8D6F7", "#E5F3FD"] },
+      "blue-mid": { "role": "primary", "displayName": "Deep Working Blue", "canonical": "#005EBB" },
+      "blue-light": { "role": "primary", "displayName": "Signal Blue", "canonical": "#0092E6" },
+      "bg": { "role": "neutral", "displayName": "Morning Paper", "canonical": "#F6F8FB" },
+      "bg-alt": { "role": "neutral", "displayName": "Filing Grey-Blue", "canonical": "#EDF1F7" },
+      "surface": { "role": "neutral", "displayName": "Clean Surface", "canonical": "#FFFFFF" },
+      "ink": { "role": "neutral", "displayName": "Ink", "canonical": "#0B1B33" },
+      "slate": { "role": "neutral", "displayName": "Slate", "canonical": "#4A5A75", "tonalRamp": ["#0B1B33", "#24344F", "#4A5A75", "#6B7A93", "#93A3C0", "#B9C6DE", "#DCE3EE", "#F6F8FB"] },
+      "line": { "role": "neutral", "displayName": "Hairline", "canonical": "#DCE3EE" }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Home hero h1 only, capped at 14ch." },
+      "headline": { "displayName": "Headline", "purpose": "Section h2." },
+      "title": { "displayName": "Title", "purpose": "Card and process step h3." },
+      "body": { "displayName": "Body", "purpose": "Paragraphs in Slate, max 62ch." },
+      "label": { "displayName": "Label", "purpose": "Eyebrows, kickers, form labels, buttons. Sentence case." }
+    },
+    "shadows": [
+      { "name": "resting", "value": "0 1px 2px rgba(11,27,51,0.04)", "purpose": "Token default; barely visible." },
+      { "name": "hover-lift", "value": "0 8px 20px rgba(11,27,51,0.06)", "purpose": "Secondary cards on hover with 2px lift." },
+      { "name": "inset-bar", "value": "inset 0 3px 0 var(--blue)", "purpose": "Service grid cell hover marker." },
+      { "name": "floating", "value": "0 8px 30px rgba(0,10,30,0.18)", "purpose": "Cookie banner only." }
+    ],
+    "motion": [
+      { "name": "control", "value": ".15s ease", "purpose": "Button and link colour and border transitions." },
+      { "name": "card", "value": ".18s ease", "purpose": "Card hover background, border, lift." },
+      { "name": "theme", "value": ".25s ease", "purpose": "Body background and colour on theme switch." },
+      { "name": "reveal", "value": ".55s ease, translateY(18px)", "purpose": "Scroll reveal fade-up." }
+    ],
+    "breakpoints": [
+      { "name": "xs", "value": "540px" },
+      { "name": "sm", "value": "600px" },
+      { "name": "md", "value": "860px" },
+      { "name": "nav", "value": "900px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Main action, e.g. Get in touch.",
+      "html": "<button class=\"ds-btn-primary\">Get in touch</button>",
+      "css": ".ds-btn-primary{display:inline-flex;align-items:center;gap:8px;font-family:'Public Sans','Segoe UI',sans-serif;font-weight:700;font-size:15px;padding:12px 22px;border-radius:4px;border:1px solid transparent;background:#0072D6;color:#fff;cursor:pointer;transition:background-color .15s ease,transform .1s ease}.ds-btn-primary:hover{background:#005EBB}.ds-btn-primary:active{transform:translateY(1px)}.ds-btn-primary:focus-visible{outline:2px solid #0092E6;outline-offset:2px}"
+    },
+    {
+      "name": "Outline Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Secondary action next to a primary, e.g. Our services.",
+      "html": "<button class=\"ds-btn-outline\">Our services</button>",
+      "css": ".ds-btn-outline{display:inline-flex;align-items:center;font-family:'Public Sans','Segoe UI',sans-serif;font-weight:700;font-size:15px;padding:12px 22px;border-radius:4px;background:transparent;border:1px solid #DCE3EE;color:#0B1B33;cursor:pointer;transition:border-color .15s ease,color .15s ease}.ds-btn-outline:hover{border-color:#0072D6;color:#0072D6}.ds-btn-outline:focus-visible{outline:2px solid #0092E6;outline-offset:2px}"
+    },
+    {
+      "name": "Ghost Link Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Inline card link with arrow.",
+      "html": "<a href=\"#\" class=\"ds-btn-ghost\">Learn more →</a>",
+      "css": ".ds-btn-ghost{font-family:'Public Sans','Segoe UI',sans-serif;font-weight:700;font-size:15px;padding:12px 4px;color:#005EBB;text-decoration:none;transition:color .15s ease}.ds-btn-ghost:hover{color:#0072D6}.ds-btn-ghost:focus-visible{outline:2px solid #0092E6;outline-offset:2px;border-radius:2px}"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Contact form field with label.",
+      "html": "<label class=\"ds-field\"><span>Email <b>*</b></span><input type=\"email\" placeholder=\"you@company.co.uk\"></label>",
+      "css": ".ds-field{display:block;font-family:'Public Sans','Segoe UI',sans-serif;max-width:320px}.ds-field span{display:block;font-weight:700;font-size:14px;margin-bottom:6px;color:#0B1B33}.ds-field b{color:#005EBB}.ds-field input{width:100%;box-sizing:border-box;padding:12px 14px;font-size:15px;font-family:inherit;border:1px solid #DCE3EE;border-radius:4px;background:#F6F8FB;color:#0B1B33}.ds-field input:focus{outline:2px solid #0092E6;outline-offset:1px;border-color:transparent}"
+    },
+    {
+      "name": "Header Navigation",
+      "kind": "nav",
+      "refersTo": "nav",
+      "description": "Desktop nav links with current-page underline.",
+      "html": "<nav class=\"ds-nav\"><a href=\"#\" aria-current=\"page\">Home</a><a href=\"#\">Services</a><a href=\"#\">About</a><a href=\"#\">Contact</a></nav>",
+      "css": ".ds-nav{display:flex;gap:28px;font-family:'Public Sans','Segoe UI',sans-serif;background:#fff;padding:14px 24px;border-bottom:1px solid #DCE3EE}.ds-nav a{font-size:15px;font-weight:600;color:#4A5A75;text-decoration:none;padding:6px 2px;border-bottom:2px solid transparent}.ds-nav a:hover,.ds-nav a[aria-current=page]{color:#0B1B33;border-bottom-color:#0072D6}.ds-nav a:focus-visible{outline:2px solid #0092E6;outline-offset:2px}"
+    },
+    {
+      "name": "Area Tag",
+      "kind": "chip",
+      "refersTo": "chip-area",
+      "description": "Static location label.",
+      "html": "<div class=\"ds-tags\"><span>Northampton</span><span>Kettering</span><span>Remote UK-wide</span></div>",
+      "css": ".ds-tags{display:flex;flex-wrap:wrap;gap:8px;font-family:'Public Sans','Segoe UI',sans-serif}.ds-tags span{font-size:13px;font-weight:600;color:#4A5A75;border:1px solid #DCE3EE;border-radius:20px;padding:5px 12px}"
+    },
+    {
+      "name": "Service Grid Cell",
+      "kind": "custom",
+      "refersTo": "service-grid",
+      "description": "Signature ruled grid cell for core services; inset blue bar on hover.",
+      "html": "<div class=\"ds-svc\"><h3>Microsoft 365</h3><p>Administration covering user accounts, licensing, security, permissions and device management.</p><a href=\"#\">Learn more →</a></div>",
+      "css": ".ds-svc{max-width:340px;padding:36px 30px;border-top:1px solid #DCE3EE;border-right:1px solid #DCE3EE;border-bottom:1px solid #DCE3EE;display:flex;flex-direction:column;gap:14px;font-family:'Public Sans','Segoe UI',sans-serif;transition:background-color .18s ease,box-shadow .18s ease,transform .18s ease}.ds-svc:hover{background:#fff;box-shadow:inset 0 3px 0 #0072D6;transform:translateY(-2px)}.ds-svc h3{margin:0;font-family:'Space Grotesk','Segoe UI',sans-serif;font-weight:600;font-size:1.25rem;color:#0B1B33;letter-spacing:-.01em}.ds-svc p{margin:0;font-size:15px;line-height:1.6;color:#4A5A75}.ds-svc a{font-weight:700;font-size:15px;color:#005EBB;text-decoration:none}"
+    },
+    {
+      "name": "Secondary Card",
+      "kind": "card",
+      "refersTo": "card-subservice",
+      "description": "Bordered card for secondary services.",
+      "html": "<div class=\"ds-card\"><h3>Networking &amp; AV</h3><p>Business networking, Wi-Fi and meeting room AV.</p></div>",
+      "css": ".ds-card{max-width:320px;background:#fff;border:1px solid #DCE3EE;border-radius:8px;padding:26px 24px;font-family:'Public Sans','Segoe UI',sans-serif;transition:border-color .18s ease,transform .18s ease,box-shadow .18s ease}.ds-card:hover{border-color:#0092E6;transform:translateY(-2px);box-shadow:0 8px 20px rgba(11,27,51,.06)}.ds-card h3{margin:0 0 8px;font-family:'Space Grotesk','Segoe UI',sans-serif;font-weight:600;font-size:1.05rem;color:#0B1B33}.ds-card p{margin:0;font-size:14.5px;line-height:1.6;color:#4A5A75}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Tidy Office",
+    "overview": "Cevano looks the way a well-run small office feels after a good IT provider has been through it: ordered, labelled, calm, nothing left lying around. The system promises \"properly managed\" before a word is read. Pale blue-grey ground, white surfaces, hairline rules and a deep navy anchor do the organising. One bright working blue marks the things you can act on.\n\nDensity is moderate and generous with air. Sections breathe at 84px, content sits in a 1180px container, and paragraphs stop at 62ch. Structure is drawn with lines rather than boxes wherever possible: the core services sit in a ruled grid, not floating cards. Decoration is limited to small, quiet line icons and an abstract chart motif that hints at the data work without becoming illustration.\n\nLight and dark themes are both first-class. Dark mode is a deep night-navy, not grey, and keeps the same ruled structure.",
+    "keyCharacteristics": [
+      "Navy anchor, single working blue for action, cool blue-grey neutrals.",
+      "Space Grotesk headings over Public Sans body.",
+      "Hairline 1px rules carry structure; shadows are almost absent.",
+      "Small, crisp corners (4px controls, 8px containers).",
+      "Calm motion: short colour fades and a 2px lift on hover only."
+    ],
+    "rules": [
+      { "name": "The Blue Means Act Rule", "body": "Working Blue fills only interactive elements. Decorative blue stays at Signal Blue and small sizes (dots, bullets, icons).", "section": "colors" },
+      { "name": "The Navy Bookend Rule", "body": "Navy appears as large fields only at the end of a page (CTA banner, footer) and in small solid marks (step discs). It never fills a hero or mid-page band.", "section": "colors" },
+      { "name": "The Sentence Case Rule", "body": "Labels, eyebrows and buttons stay in sentence case at weight 700. Small uppercase tracked labels are not part of this system.", "section": "typography" },
+      { "name": "The Short Line Rule", "body": "Headlines carry a `ch` cap (14–20ch) and paragraphs stop at 62ch.", "section": "typography" },
+      { "name": "The Flat-At-Rest Rule", "body": "Nothing casts a visible shadow at rest except the cookie banner. Shadows appear only as a hover response.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do draw structure with 1px Hairline rules and tonal bands before reaching for boxes or shadows.",
+      "Do reserve Working Blue (`#0072D6`) for things a visitor can click.",
+      "Do keep corners at 4px for controls and 8px for containers.",
+      "Do keep hover motion to colour fades (0.15–0.18s) and a 2px lift; honour `prefers-reduced-motion`.",
+      "Do design every new element for both light and dark themes using the existing CSS variables.",
+      "Do keep text in sentence case, with headings capped in `ch` and paragraphs at 62ch."
+    ],
+    "donts": [
+      "Don't add shadows at rest; only the cookie banner floats.",
+      "Don't use pure black text or pure grey neutrals; neutrals stay cool blue-grey.",
+      "Don't fill heroes or mid-page bands with navy; navy closes the page.",
+      "Don't add uppercase tracked micro-labels.",
+      "Don't use large corner radii (above 8px) on cards or buttons.",
+      "Don't show team or office-staff imagery; the business is one person (see PRODUCT.md)."
+    ]
+  }
+}
