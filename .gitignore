@@ -34,3 +34,6 @@ node_modules/
 .taste-skill/
 .impeccable/critique/
 .impeccable/live/
+
+# --- Print artwork (business cards etc.), kept out of the repo and the site ---
+print/

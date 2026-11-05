@@ -40,5 +40,6 @@ https://cevano.co.uk/*  https://www.cevano.co.uk/:splat  301!
 /build_legal.py                          /  301
 /build_services.py                       /  301
 /scripts/*                               /  301
+/print/*                                 /  301
 /.dev.vars.example                       /  301
 /.gitignore                              /  301
