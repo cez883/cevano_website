@@ -342,6 +342,7 @@ html[data-theme="dark"] .subservice-card:hover{ box-shadow: 0 8px 20px rgba(0,0,
 html[data-theme="dark"] .why-card:hover{ background: #101F38; }
 .why-card h3{ font-size: 1.05rem; margin-bottom: 8px; }
 .why-card p{ font-size: 14.5px; margin:0; }
+.why-more{ display:inline-block; margin-top: 24px; }
 
 /* ---------- About ---------- */
 .about-layout{ display:grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items:start; }

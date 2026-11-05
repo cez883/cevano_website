@@ -119,34 +119,27 @@ body_home_en = f'''
   <div class="container">
     <div class="section-head">
       <span class="kicker">Why Cevano</span>
-      <h2>Built around small businesses, not enterprise IT departments</h2>
+      <h2>Built for small businesses without an IT department</h2>
     </div>
     <div class="why-grid">
       <div class="why-card">
         <h3>One point of contact</h3>
-        <p>IT support, Microsoft 365 and data analytics from one trusted provider, instead of three different suppliers.</p>
+        <p>Microsoft 365, your website, everyday IT and reporting handled in one place, so nothing falls between suppliers.</p>
       </div>
       <div class="why-card">
-        <h3>Practical approach</h3>
-        <p>Clear explanations and clear solutions, without unnecessary technical complexity.</p>
+        <h3>Plain English, no jargon</h3>
+        <p>We explain what's wrong and what the options are before anything is agreed.</p>
       </div>
       <div class="why-card">
-        <h3>Flexible support</h3>
-        <p>Designed around the needs of small businesses and sole traders, not enterprise-sized organisations.</p>
-      </div>
-      <div class="why-card">
-        <h3>Business-focused</h3>
-        <p>Technology should support the business, not become another problem to manage.</p>
-      </div>
-      <div class="why-card">
-        <h3>Local &amp; remote support</h3>
-        <p>Supporting businesses around Northampton, Kettering, Milton Keynes, Rugby and the surrounding areas, with remote support where it makes sense.</p>
+        <h3>Local, or remote when it's quicker</h3>
+        <p>On-site around Northampton, Kettering, Milton Keynes and Rugby. Many Microsoft 365 and data analytics jobs are done remotely.</p>
       </div>
     </div>
+    <a class="btn-ghost why-more" href="about.html">More about Cevano →</a>
   </div>
 </section>
 
-<section class="section" id="how-it-works">
+<section class="section section-alt" id="how-it-works">
   <div class="container">
     <div class="section-head">
       <span class="kicker">How it works</span>
@@ -172,29 +165,12 @@ body_home_en = f'''
   </div>
 </section>
 
-<section class="section section-alt" id="about-preview">
-  <div class="container about-layout">
-    <div>
-      <span class="kicker">About Cevano</span>
-      <h2>An approachable technology partner for small businesses</h2>
-      <p>Cevano IT Solutions provides practical technology support for individuals, sole traders, startups and small businesses. We bring IT support, Microsoft 365 and data analytics together under one roof, so you have one place to go for the technology decisions that affect your business.</p>
-      <a class="btn-ghost" href="about.html">More about Cevano →</a>
-    </div>
-    <ul class="about-list">
-      <li>Approachable expertise, explained in plain terms</li>
-      <li>Practical solutions over unnecessary complexity</li>
-      <li>Flexible support built around your business</li>
-      <li>IT, Microsoft 365 and data analytics under one roof</li>
-    </ul>
-  </div>
-</section>
-
 <section class="section">
   <div class="container">
     <div class="cta-banner">
       <div>
-        <h2>Ready to make technology easier for your business?</h2>
-        <p>Tell us what you need help with and we'll get back to you.</p>
+        <h2>Not sure where to start?</h2>
+        <p>Describe what's not working in a few lines. We'll reply by email with the options.</p>
       </div>
       <a class="btn btn-primary" href="contact.html">Get in touch</a>
     </div>
@@ -327,34 +303,27 @@ body_home_pl = f'''
   <div class="container">
     <div class="section-head">
       <span class="kicker">Dlaczego Cevano</span>
-      <h2>Stworzone z myślą o małych firmach, nie o działach IT dużych korporacji</h2>
+      <h2>Dla małych firm bez własnego działu IT</h2>
     </div>
     <div class="why-grid">
       <div class="why-card">
         <h3>Jeden punkt kontaktu</h3>
-        <p>Wsparcie IT, Microsoft 365 i analiza danych od jednego zaufanego dostawcy zamiast trzech różnych firm.</p>
+        <p>Microsoft 365, strona internetowa, codzienne IT i raporty w jednym miejscu, więc nic nie ginie między dostawcami.</p>
       </div>
       <div class="why-card">
-        <h3>Praktyczne podejście</h3>
-        <p>Jasne wyjaśnienia i jasne rozwiązania, bez zbędnej technicznej złożoności.</p>
+        <h3>Prosty język, bez żargonu</h3>
+        <p>Wyjaśniamy, co nie działa i jakie są możliwości, zanim cokolwiek zostanie ustalone.</p>
       </div>
       <div class="why-card">
-        <h3>Elastyczne wsparcie</h3>
-        <p>Dopasowane do potrzeb małych firm i jednoosobowych działalności, a nie organizacji wielkości korporacji.</p>
-      </div>
-      <div class="why-card">
-        <h3>Nastawienie na biznes</h3>
-        <p>Technologia ma wspierać firmę, a nie stawać się kolejnym problemem do zarządzania.</p>
-      </div>
-      <div class="why-card">
-        <h3>Wsparcie lokalne i zdalne</h3>
-        <p>Wspieramy firmy w okolicach Northampton, Kettering, Milton Keynes, Rugby i w sąsiednich obszarach, oferując wsparcie zdalne tam, gdzie ma to sens.</p>
+        <h3>Na miejscu lub zdalnie, gdy tak szybciej</h3>
+        <p>Na miejscu w okolicach Northampton, Kettering, Milton Keynes i Rugby. Wiele zadań z Microsoft 365 i analizy danych wykonujemy zdalnie.</p>
       </div>
     </div>
+    <a class="btn-ghost why-more" href="about.html">Więcej o Cevano →</a>
   </div>
 </section>
 
-<section class="section" id="how-it-works">
+<section class="section section-alt" id="how-it-works">
   <div class="container">
     <div class="section-head">
       <span class="kicker">Jak przebiega współpraca</span>
@@ -380,29 +349,12 @@ body_home_pl = f'''
   </div>
 </section>
 
-<section class="section section-alt" id="about-preview">
-  <div class="container about-layout">
-    <div>
-      <span class="kicker">O Cevano</span>
-      <h2>Przystępny partner technologiczny dla małych firm</h2>
-      <p>Cevano IT Solutions zapewnia praktyczne wsparcie technologiczne dla osób prywatnych, jednoosobowych działalności, startupów i małych firm. Łączymy wsparcie IT, Microsoft 365 i analizę danych w jednym miejscu, dzięki czemu masz jeden adres, do którego zwracasz się w sprawach technologicznych dotyczących Twojej firmy.</p>
-      <a class="btn-ghost" href="about.html">Więcej o Cevano →</a>
-    </div>
-    <ul class="about-list">
-      <li>Przystępna wiedza ekspercka, wyjaśniana prostym językiem</li>
-      <li>Praktyczne rozwiązania zamiast zbędnej złożoności</li>
-      <li>Elastyczne wsparcie dopasowane do Twojej firmy</li>
-      <li>IT, Microsoft 365 i analiza danych w jednym miejscu</li>
-    </ul>
-  </div>
-</section>
-
 <section class="section">
   <div class="container">
     <div class="cta-banner">
       <div>
-        <h2>Gotowy, aby technologia stała się prostsza dla Twojej firmy?</h2>
-        <p>Napisz, z czym potrzebujesz pomocy, a odezwiemy się do Ciebie.</p>
+        <h2>Nie wiesz, od czego zacząć?</h2>
+        <p>Opisz w kilku zdaniach, co nie działa. Odpowiemy e-mailem i przedstawimy możliwości.</p>
       </div>
       <a class="btn btn-primary" href="contact.html">Skontaktuj się</a>
     </div>
