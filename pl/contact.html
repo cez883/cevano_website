@@ -23,7 +23,7 @@
 <link rel="manifest" href="../site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="../css/style.css?v=20261105-3">
+<link rel="stylesheet" href="../css/style.css?v=20261105-4">
 <script>(function(){try{var t=localStorage.getItem("cevano-theme");if(t==="dark"||t==="light"){document.documentElement.setAttribute("data-theme",t);}else if(window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches){document.documentElement.setAttribute("data-theme","dark");}}catch(e){}})();</script>
 </head>
 <body>
@@ -57,8 +57,9 @@
         <a class="btn btn-primary btn-sm" href="contact.html">Skontaktuj się</a>
       </div>
     </nav>
+    <a class="btn btn-primary btn-sm header-cta-mobile" href="contact.html">Skontaktuj się</a>
     <button type="button" class="nav-toggle" data-nav-toggle aria-label="Menu" aria-expanded="false">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      <svg class="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
     </button>
   </div>
 </header>
@@ -94,10 +95,6 @@
         <div class="area-tags">
           <span>Northampton</span><span>Kettering</span><span>Milton Keynes</span><span>Rugby</span><span>Zdalnie w całej UK</span>
         </div>
-      </div>
-      <div class="info-block">
-        <h3>Co warto podać</h3>
-        <p>Krótki opis problemu lub projektu, orientacyjną liczbę osób lub urządzeń, których to dotyczy, oraz czy sprawa jest pilna — zwykle to wystarczy, abyśmy mogli wskazać właściwy kierunek.</p>
       </div>
     </div>
 
@@ -152,7 +149,8 @@
 
         <div class="form-row">
           <label for="message_pl">Wiadomość <span class="req">*</span></label>
-          <textarea id="message_pl" name="message" required placeholder="Napisz, z czym potrzebujesz pomocy. Na przykład wsparcie IT, Microsoft 365, organizacja nowego biura, raportowanie Power BI lub inna potrzeba technologiczna."></textarea>
+          <p class="field-hint" id="message_pl_hint">Opisz krótko problem lub projekt, ile osób lub urządzeń to dotyczy i czy sprawa jest pilna.</p>
+          <textarea id="message_pl" name="message" required aria-describedby="message_pl_hint" placeholder="Napisz, z czym potrzebujesz pomocy. Na przykład wsparcie IT, Microsoft 365, organizacja nowego biura, raportowanie Power BI lub inna potrzeba technologiczna."></textarea>
         </div>
 
         <div class="form-row">
@@ -232,7 +230,7 @@
   </div>
 </div>
 
-<script src="../js/main.js?v=20261105-3" defer></script>
+<script src="../js/main.js?v=20261105-4" defer></script>
 
 </body>
 </html>

@@ -29,6 +29,7 @@
   --font-body: 'Public Sans', 'Segoe UI', sans-serif;
 
   --maxw: 1180px;
+  --header-h: 89px; /* sticky header height: logo + padding + border */
   --radius-s: 4px;
   --radius-m: 8px;
 
@@ -170,11 +171,15 @@ html[data-theme="dark"] .theme-toggle .icon-moon{ display:none; }
   align-items:center; justify-content:center; cursor:pointer;
 }
 .nav-toggle svg{ width:20px; height:20px; }
+.nav-toggle .icon-close{ display:none; }
+html[data-nav-open="true"] .nav-toggle .icon-menu{ display:none; }
+html[data-nav-open="true"] .nav-toggle .icon-close{ display:block; }
+.header-cta-mobile{ display:none; }
 
 /* ---------- Mobile nav ---------- */
 @media (max-width: 900px){
   .main-nav{
-    position: fixed; inset: 68px 0 0 0; background: var(--surface);
+    position: fixed; inset: var(--header-h) 0 0 0; background: var(--surface);
     flex-direction:column; align-items:flex-start; gap:0;
     padding: 8px 24px 28px; overflow-y:auto;
     transform: translateY(-8px); opacity:0; pointer-events:none;
@@ -192,8 +197,15 @@ html[data-theme="dark"] .theme-toggle .icon-moon{ display:none; }
     flex-direction:column; align-items:flex-start; width:100%;
     gap: 16px; margin-top: 18px; padding-top:18px; border-top:1px solid var(--line);
   }
-  .header-actions .btn-primary{ width:100%; }
-  .nav-toggle{ display:flex; }
+  .header-actions .btn-primary{ display:none; }
+  .nav-toggle{ display:flex; width:44px; height:44px; }
+  .header-cta-mobile{ display:inline-flex; margin-left:auto; min-height:44px; }
+  :root{ --header-h: 77px; }
+  .header-inner{ gap: 12px; }
+  .brand img{ height: 48px; }
+  /* touch targets: 44px minimum for small header controls */
+  .lang-switch a{ display:inline-flex; align-items:center; justify-content:center; min-width:44px; min-height:44px; }
+  .theme-toggle{ width:44px; height:44px; }
 }
 
 /* ---------- Hero ---------- */
@@ -375,7 +387,7 @@ html[data-theme="dark"] .why-card:hover{ background: #101F38; }
 }
 .form-row .req{ color: var(--blue-mid); }
 .form-row input, .form-row select, .form-row textarea{
-  width:100%; padding: 12px 14px; font-size:15px; font-family:inherit;
+  width:100%; padding: 12px 14px; font-size:16px; font-family:inherit;
   border:1px solid var(--line); border-radius: var(--radius-s);
   background: var(--bg); color: var(--ink);
 }
@@ -383,6 +395,8 @@ html[data-theme="dark"] .why-card:hover{ background: #101F38; }
   outline: 2px solid var(--focus-ring); outline-offset:1px; border-color: transparent;
 }
 .form-row textarea{ resize: vertical; min-height: 120px; }
+.field-hint{ font-size:14px; color: var(--slate); margin: -2px 0 8px; }
+.form-row input[type="checkbox"]{ width:20px; height:20px; flex:none; accent-color: var(--blue); }
 .form-two{ display:grid; grid-template-columns:1fr 1fr; gap:20px; }
 @media (max-width:600px){ .form-two{ grid-template-columns:1fr; } }
 .hp-field{ position:absolute; left:-9999px; }
@@ -396,7 +410,10 @@ html[data-theme="dark"] .why-card:hover{ background: #101F38; }
 html[data-theme="dark"] .form-status.success{ background:#0F2A1B; color:#7FDBA0; border-color:#1E4A2E; }
 html[data-theme="dark"] .form-status.error{ background:#2E1414; color:#F0A0A0; border-color:#4A2020; }
 
-@media (max-width: 900px){ .contact-layout{ grid-template-columns:1fr; } }
+@media (max-width: 900px){
+  .contact-layout{ grid-template-columns:1fr; gap: 40px; }
+  .contact-layout .form-card{ order:-1; }
+}
 
 /* ---------- CTA banner ---------- */
 .cta-banner{
@@ -486,6 +503,15 @@ html[data-theme="dark"] .site-footer{ background:#050C18; }
 .footer-legal-links{ display:flex; gap:18px; flex-wrap:wrap; }
 @media (max-width: 860px){ .footer-grid{ grid-template-columns: 1fr 1fr; } }
 @media (max-width: 540px){ .footer-grid{ grid-template-columns: 1fr; } }
+@media (max-width: 900px){
+  .footer-col ul li{ margin-bottom:0; }
+  .footer-col a, .footer-bottom a{ display:inline-flex; align-items:center; min-height:44px; }
+  .footer-social a{ width:44px; height:44px; }
+  .mini-nav-inner a{ display:inline-flex; align-items:center; min-height:44px; padding: 0 14px; }
+  .cookie-banner{ left:8px; right:8px; bottom:8px; padding: 14px 16px; gap:12px; }
+  .cookie-banner p{ font-size:13.5px; }
+  .cookie-actions .btn{ flex:1; min-height:44px; }
+}
 
 /* ---------- Cookie banner ---------- */
 .cookie-banner{
@@ -512,7 +538,7 @@ html[data-theme="dark"] .placeholder-flag{ background:#332B0E; border-color:#5A4
 
 /* ---------- Services mini-nav ---------- */
 .mini-nav{
-  position: sticky; top: 78px; z-index: 90;
+  position: sticky; top: var(--header-h); z-index: 90;
   background: color-mix(in srgb, var(--bg) 94%, transparent);
   border-bottom: 1px solid var(--line);
 }
@@ -529,7 +555,7 @@ html[data-theme="dark"] .mini-nav{ background: color-mix(in srgb, var(--bg) 94%,
 .mini-nav-inner a.is-active{
   color: var(--blue-mid); background: var(--bg-alt); border-color: var(--line);
 }
-@media (max-width: 640px){ .mini-nav{ top: 68px; } }
+
 
 /* ---------- Trust micro-badge ---------- */
 .trust-badge{

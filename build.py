@@ -13,14 +13,15 @@ SITE_URL = "https://www.cevano.co.uk"
 # Wersja plików CSS/JS — dopisywana do adresu (?v=...), bo Cloudflare trzyma
 # /css/* i /js/* w pamięci podręcznej 30 dni (_headers). ZMIEŃ tę wartość
 # (np. na dzisiejszą datę) przy każdej zmianie css/style.css lub js/main.js.
-ASSET_VERSION = "20261105-3"
+ASSET_VERSION = "20261105-4"
 
 # ------------------------------------------------------------------
 # Icons (inline SVG, currentColor / CSS vars so they theme automatically)
 # ------------------------------------------------------------------
 ICON_SUN = '''<svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>'''
 ICON_MOON = '''<svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>'''
-ICON_MENU = '''<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>'''
+ICON_MENU = '''<svg class="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>'''
+ICON_CLOSE = '''<svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>'''
 ICON_CHECK = '''<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>'''
 # Facebook 'f' and LinkedIn 'in' marks below are traced directly from Meta's
 # and LinkedIn's official logo files (outline of the real glyph, not a
@@ -174,8 +175,9 @@ def header_html(lang, lang_prefix, asset_prefix, active, alt_href):
         <a class="btn btn-primary btn-sm" href="{contact_href}">{t['cta_get_in_touch']}</a>
       </div>
     </nav>
+    <a class="btn btn-primary btn-sm header-cta-mobile" href="{contact_href}">{t['cta_get_in_touch']}</a>
     <button type="button" class="nav-toggle" data-nav-toggle aria-label="{t['menu_label']}" aria-expanded="false">
-      {ICON_MENU}
+      {ICON_MENU}{ICON_CLOSE}
     </button>
   </div>
 </header>

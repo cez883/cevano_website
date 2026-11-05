@@ -23,7 +23,7 @@
 <link rel="manifest" href="site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="css/style.css?v=20261105-3">
+<link rel="stylesheet" href="css/style.css?v=20261105-4">
 <script>(function(){try{var t=localStorage.getItem("cevano-theme");if(t==="dark"||t==="light"){document.documentElement.setAttribute("data-theme",t);}else if(window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches){document.documentElement.setAttribute("data-theme","dark");}}catch(e){}})();</script>
 </head>
 <body>
@@ -57,8 +57,9 @@
         <a class="btn btn-primary btn-sm" href="contact.html">Get in touch</a>
       </div>
     </nav>
+    <a class="btn btn-primary btn-sm header-cta-mobile" href="contact.html">Get in touch</a>
     <button type="button" class="nav-toggle" data-nav-toggle aria-label="Menu" aria-expanded="false">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      <svg class="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
     </button>
   </div>
 </header>
@@ -94,10 +95,6 @@
         <div class="area-tags">
           <span>Northampton</span><span>Kettering</span><span>Milton Keynes</span><span>Rugby</span><span>Remote UK-wide</span>
         </div>
-      </div>
-      <div class="info-block">
-        <h3>What to include</h3>
-        <p>A short description of the problem or project, roughly how many people or devices are involved, and whether it's urgent — that's usually enough for us to point you in the right direction.</p>
       </div>
     </div>
 
@@ -152,7 +149,8 @@
 
         <div class="form-row">
           <label for="message">Message <span class="req">*</span></label>
-          <textarea id="message" name="message" required placeholder="Tell us what you need help with. For example, IT support, Microsoft 365, a new office setup, Power BI reporting or another technology requirement."></textarea>
+          <p class="field-hint" id="message_hint">Briefly describe the problem or project, roughly how many people or devices are involved, and whether it's urgent.</p>
+          <textarea id="message" name="message" required aria-describedby="message_hint" placeholder="Tell us what you need help with. For example, IT support, Microsoft 365, a new office setup, Power BI reporting or another technology requirement."></textarea>
         </div>
 
         <div class="form-row">
@@ -232,7 +230,7 @@
   </div>
 </div>
 
-<script src="js/main.js?v=20261105-3" defer></script>
+<script src="js/main.js?v=20261105-4" defer></script>
 
 </body>
 </html>

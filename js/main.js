@@ -98,6 +98,12 @@
         if (navToggle) navToggle.setAttribute("aria-expanded", "false");
       });
     });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && root.getAttribute("data-nav-open") === "true") {
+        root.setAttribute("data-nav-open", "false");
+        if (navToggle) { navToggle.setAttribute("aria-expanded", "false"); navToggle.focus(); }
+      }
+    });
 
     /* ---------- Cookie consent banner + Google Analytics ---------- */
     // Google Analytics ładuje się WYŁĄCZNIE po kliknięciu "Accept analytics"

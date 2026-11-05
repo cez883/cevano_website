@@ -35,10 +35,6 @@ body_contact_en = '''
           <span>Northampton</span><span>Kettering</span><span>Milton Keynes</span><span>Rugby</span><span>Remote UK-wide</span>
         </div>
       </div>
-      <div class="info-block">
-        <h3>What to include</h3>
-        <p>A short description of the problem or project, roughly how many people or devices are involved, and whether it's urgent — that's usually enough for us to point you in the right direction.</p>
-      </div>
     </div>
 
     <div class="form-card">
@@ -92,7 +88,8 @@ body_contact_en = '''
 
         <div class="form-row">
           <label for="message">Message <span class="req">*</span></label>
-          <textarea id="message" name="message" required placeholder="Tell us what you need help with. For example, IT support, Microsoft 365, a new office setup, Power BI reporting or another technology requirement."></textarea>
+          <p class="field-hint" id="message_hint">Briefly describe the problem or project, roughly how many people or devices are involved, and whether it's urgent.</p>
+          <textarea id="message" name="message" required aria-describedby="message_hint" placeholder="Tell us what you need help with. For example, IT support, Microsoft 365, a new office setup, Power BI reporting or another technology requirement."></textarea>
         </div>
 
         <div class="form-row">
@@ -152,10 +149,6 @@ body_contact_pl = '''
           <span>Northampton</span><span>Kettering</span><span>Milton Keynes</span><span>Rugby</span><span>Zdalnie w całej UK</span>
         </div>
       </div>
-      <div class="info-block">
-        <h3>Co warto podać</h3>
-        <p>Krótki opis problemu lub projektu, orientacyjną liczbę osób lub urządzeń, których to dotyczy, oraz czy sprawa jest pilna — zwykle to wystarczy, abyśmy mogli wskazać właściwy kierunek.</p>
-      </div>
     </div>
 
     <div class="form-card">
@@ -209,7 +202,8 @@ body_contact_pl = '''
 
         <div class="form-row">
           <label for="message_pl">Wiadomość <span class="req">*</span></label>
-          <textarea id="message_pl" name="message" required placeholder="Napisz, z czym potrzebujesz pomocy. Na przykład wsparcie IT, Microsoft 365, organizacja nowego biura, raportowanie Power BI lub inna potrzeba technologiczna."></textarea>
+          <p class="field-hint" id="message_pl_hint">Opisz krótko problem lub projekt, ile osób lub urządzeń to dotyczy i czy sprawa jest pilna.</p>
+          <textarea id="message_pl" name="message" required aria-describedby="message_pl_hint" placeholder="Napisz, z czym potrzebujesz pomocy. Na przykład wsparcie IT, Microsoft 365, organizacja nowego biura, raportowanie Power BI lub inna potrzeba technologiczna."></textarea>
         </div>
 
         <div class="form-row">
