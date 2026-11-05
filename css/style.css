@@ -347,6 +347,18 @@ html[data-theme="dark"] .why-card:hover{ background: #101F38; }
 .contact-info .info-block{ margin-bottom: 26px; }
 .contact-info h3{ font-size:1rem; margin-bottom:6px; }
 .contact-info a.email-link{ color: var(--blue-mid); font-weight:700; font-size:16px; }
+.next-steps{ margin: 0; padding-left: 0; list-style: none; counter-reset: next; }
+.next-steps li{
+  counter-increment: next; position: relative; padding: 4px 0 4px 30px;
+  color: var(--slate); font-size: 15px;
+}
+.next-steps li::before{
+  content: counter(next); position:absolute; left:0; top:6px;
+  width:20px; height:20px; border-radius:50%;
+  border:1px solid var(--line); color: var(--blue-mid);
+  font-family: var(--font-head); font-weight:700; font-size:12px;
+  display:flex; align-items:center; justify-content:center;
+}
 .area-tags{ display:flex; flex-wrap:wrap; gap:8px; margin-top:10px; }
 .area-tags span{
   font-size:13px; font-weight:600; color: var(--slate);
@@ -378,6 +390,7 @@ html[data-theme="dark"] .why-card:hover{ background: #101F38; }
 .form-status{
   margin-top:16px; padding:14px 16px; border-radius: var(--radius-s); font-size:14.5px; display:none;
 }
+.form-status a{ color: inherit; font-weight:700; text-decoration: underline; text-underline-offset: 2px; }
 .form-status.success{ display:block; background: #E7F5EC; color:#1B6E3C; border:1px solid #BEE6CB; }
 .form-status.error{ display:block; background:#FBEAEA; color:#B23A3A; border:1px solid #F3C8C8; }
 html[data-theme="dark"] .form-status.success{ background:#0F2A1B; color:#7FDBA0; border-color:#1E4A2E; }

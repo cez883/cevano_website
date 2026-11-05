@@ -13,7 +13,7 @@ SITE_URL = "https://www.cevano.co.uk"
 # Wersja plików CSS/JS — dopisywana do adresu (?v=...), bo Cloudflare trzyma
 # /css/* i /js/* w pamięci podręcznej 30 dni (_headers). ZMIEŃ tę wartość
 # (np. na dzisiejszą datę) przy każdej zmianie css/style.css lub js/main.js.
-ASSET_VERSION = "20261105-2"
+ASSET_VERSION = "20261105-3"
 
 # ------------------------------------------------------------------
 # Icons (inline SVG, currentColor / CSS vars so they theme automatically)
@@ -314,6 +314,9 @@ MARK_NET = '''<svg class="mark" viewBox="0 0 40 40" fill="none" stroke="var(--bl
 MARK_ASSETS = '''<svg class="mark" viewBox="0 0 40 40" fill="none" stroke="var(--blue)" stroke-width="1.6"><rect x="8" y="6" width="24" height="28" rx="1.5"/><path d="M13 14h14M13 20h14M13 26h9" stroke-linecap="round"/></svg>'''
 MARK_DOMAIN = '''<svg class="mark" viewBox="0 0 40 40" fill="none" stroke="var(--blue)" stroke-width="1.6"><circle cx="20" cy="20" r="14"/><path d="M6 20h28M20 6c3.6 3.8 5.6 8.8 5.6 14S23.6 34.2 20 38M20 6c-3.6 3.8-5.6 8.8-5.6 14S16.4 34.2 20 38" /></svg>'''
 MARK_WEB = '''<svg class="mark" viewBox="0 0 40 40" fill="none" stroke="var(--blue)" stroke-width="1.6"><rect x="5" y="8" width="30" height="24" rx="1.5"/><path d="M5 14h30" /><path d="M10 20h12M10 25h8" stroke-linecap="round"/><rect x="26" y="19" width="5" height="8" rx="0.8"/></svg>'''
+
+# Certificate mark: rosette with ribbon tails, same 2px stroke as other UI icons
+ICON_CERT = '''<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="6"/><path d="M8.5 13.9 7 22l5-3 5 3-1.5-8.1"/></svg>'''
 
 def check_items(items):
     return "\n".join(f'<li>{ICON_CHECK}<span>{i}</span></li>' for i in items)

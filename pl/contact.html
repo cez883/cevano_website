@@ -23,7 +23,7 @@
 <link rel="manifest" href="../site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="../css/style.css?v=20261105-2">
+<link rel="stylesheet" href="../css/style.css?v=20261105-3">
 <script>(function(){try{var t=localStorage.getItem("cevano-theme");if(t==="dark"||t==="light"){document.documentElement.setAttribute("data-theme",t);}else if(window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches){document.documentElement.setAttribute("data-theme","dark");}}catch(e){}})();</script>
 </head>
 <body>
@@ -81,6 +81,14 @@
         <p>Najszybszy sposób, aby się z nami skontaktować — opisz, czego potrzebujesz, a odpowiemy najszybciej jak to możliwe.</p>
       </div>
       <div class="info-block">
+        <h3>Co dalej</h3>
+        <ol class="next-steps">
+          <li>Czytamy wiadomość i odpowiadamy e-mailem.</li>
+          <li>Jeśli potrzebujemy więcej informacji, najpierw zadajemy kilka pytań.</li>
+          <li>Wyjaśniamy możliwości prostym językiem, zanim cokolwiek zostanie ustalone.</li>
+        </ol>
+      </div>
+      <div class="info-block">
         <h3>Gdzie pracujemy</h3>
         <p>Na miejscu w okolicach Northampton, Kettering, Milton Keynes, Rugby i okolic — wsparcie zdalne dostępne również dalej.</p>
         <div class="area-tags">
@@ -95,8 +103,9 @@
 
     <div class="form-card">
       <form data-contact-form action="/api/contact" method="post"
-            data-success-msg="Dziękujemy. Twoje zapytanie zostało wysłane. Odezwiemy się najszybciej jak to możliwe."
-            data-error-msg="Niestety wystąpił problem podczas wysyłania wiadomości. Napisz do nas bezpośrednio na enquiries@cevano.co.uk."
+            data-success-msg="Dziękujemy, Twoje zapytanie zostało wysłane. Odpowiemy e-mailem na podany adres najszybciej, jak to możliwe. Na razie nic więcej nie musisz robić."
+            data-success-email-msg="Dziękujemy, Twoje zapytanie zostało wysłane. Odpowiemy e-mailem na adres {email} najszybciej, jak to możliwe. Na razie nic więcej nie musisz robić."
+            data-error-msg="Niestety nie udało się wysłać zapytania. Spróbuj ponownie za chwilę albo napisz do nas na"
             data-submit-label="Wyślij zapytanie" data-sending="Wysyłanie…">
         <input type="hidden" name="_lang" value="pl">
         <div class="hp-field" aria-hidden="true">
@@ -154,8 +163,8 @@
         </div>
 
         <button type="submit" class="btn btn-primary" data-form-submit style="width:100%;">Wyślij zapytanie</button>
-        <p class="form-note">Twoje dane wykorzystujemy wyłącznie w celu odpowiedzi na zapytanie. Więcej informacji znajdziesz w <a href="legal/privacy-policy.html">Polityce prywatności</a>.</p>
         <div class="form-status" data-form-status aria-live="polite"></div>
+        <p class="form-note">Twoje dane wykorzystujemy wyłącznie w celu odpowiedzi na zapytanie. Więcej informacji znajdziesz w <a href="legal/privacy-policy.html">Polityce prywatności</a>.</p>
       </form>
     </div>
   </div>
@@ -223,7 +232,7 @@
   </div>
 </div>
 
-<script src="../js/main.js?v=20261105-2" defer></script>
+<script src="../js/main.js?v=20261105-3" defer></script>
 
 </body>
 </html>

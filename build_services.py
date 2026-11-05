@@ -117,6 +117,7 @@ body_services_en = f'''
       {MARK_DATA}
       <h2 style="margin-top:14px;">Make better decisions with your data.</h2>
       <p>Cevano helps small businesses turn data from Excel, systems and other sources into clear Power BI dashboards and meaningful business insight — explained in plain terms, not jargon.</p>
+      <p class="trust-badge">{ICON_CERT}Microsoft Certified: Power BI Data Analyst Associate (PL-300)</p>
       <ul class="check-list">
         {check_items([
             "Data analysis and business intelligence",
@@ -321,6 +322,7 @@ body_services_pl = f'''
       {MARK_DATA}
       <h2 style="margin-top:14px;">Podejmuj lepsze decyzje dzięki danym</h2>
       <p>Cevano pomaga małym firmom przekształcać dane z Excela, systemów i innych źródeł w przejrzyste pulpity Power BI oraz konkretne wnioski biznesowe — wyjaśnione prostym językiem, bez żargonu.</p>
+      <p class="trust-badge">{ICON_CERT}Certyfikat Microsoft Certified: Power BI Data Analyst Associate (PL-300)</p>
       <ul class="check-list">
         {check_items([
             "Analiza danych i business intelligence",

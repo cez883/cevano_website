@@ -21,6 +21,14 @@ body_contact_en = '''
         <p>The quickest way to reach us — describe what you need and we'll reply as soon as we can.</p>
       </div>
       <div class="info-block">
+        <h3>What happens next</h3>
+        <ol class="next-steps">
+          <li>We read your message and reply by email.</li>
+          <li>If we need more detail, we ask a few questions first.</li>
+          <li>We explain the options in plain terms before anything is agreed.</li>
+        </ol>
+      </div>
+      <div class="info-block">
         <h3>Where we work</h3>
         <p>On-site around Northampton, Kettering, Milton Keynes, Rugby and the surrounding areas — remote support available further afield.</p>
         <div class="area-tags">
@@ -35,8 +43,9 @@ body_contact_en = '''
 
     <div class="form-card">
       <form data-contact-form action="/api/contact" method="post"
-            data-success-msg="Thank you. Your enquiry has been sent successfully. We'll be in touch as soon as possible."
-            data-error-msg="Sorry, something went wrong sending your message. Please email us directly at enquiries@cevano.co.uk instead."
+            data-success-msg="Thank you, your enquiry has been sent. We'll reply by email to the address you gave, as soon as we can. There's nothing else you need to do for now."
+            data-success-email-msg="Thank you, your enquiry has been sent. We'll reply by email to {email}, as soon as we can. There's nothing else you need to do for now."
+            data-error-msg="Sorry, your enquiry couldn't be sent. Please try again in a moment, or email us at"
             data-submit-label="Send enquiry" data-sending="Sending…">
         <input type="hidden" name="_lang" value="en">
         <div class="hp-field" aria-hidden="true">
@@ -94,8 +103,8 @@ body_contact_en = '''
         </div>
 
         <button type="submit" class="btn btn-primary" data-form-submit style="width:100%;">Send enquiry</button>
-        <p class="form-note">We only use your details to respond to your enquiry. See our <a href="legal/privacy-policy.html">Privacy Policy</a> for more information.</p>
         <div class="form-status" data-form-status aria-live="polite"></div>
+        <p class="form-note">We only use your details to respond to your enquiry. See our <a href="legal/privacy-policy.html">Privacy Policy</a> for more information.</p>
       </form>
     </div>
   </div>
@@ -129,6 +138,14 @@ body_contact_pl = '''
         <p>Najszybszy sposób, aby się z nami skontaktować — opisz, czego potrzebujesz, a odpowiemy najszybciej jak to możliwe.</p>
       </div>
       <div class="info-block">
+        <h3>Co dalej</h3>
+        <ol class="next-steps">
+          <li>Czytamy wiadomość i odpowiadamy e-mailem.</li>
+          <li>Jeśli potrzebujemy więcej informacji, najpierw zadajemy kilka pytań.</li>
+          <li>Wyjaśniamy możliwości prostym językiem, zanim cokolwiek zostanie ustalone.</li>
+        </ol>
+      </div>
+      <div class="info-block">
         <h3>Gdzie pracujemy</h3>
         <p>Na miejscu w okolicach Northampton, Kettering, Milton Keynes, Rugby i okolic — wsparcie zdalne dostępne również dalej.</p>
         <div class="area-tags">
@@ -143,8 +160,9 @@ body_contact_pl = '''
 
     <div class="form-card">
       <form data-contact-form action="/api/contact" method="post"
-            data-success-msg="Dziękujemy. Twoje zapytanie zostało wysłane. Odezwiemy się najszybciej jak to możliwe."
-            data-error-msg="Niestety wystąpił problem podczas wysyłania wiadomości. Napisz do nas bezpośrednio na enquiries@cevano.co.uk."
+            data-success-msg="Dziękujemy, Twoje zapytanie zostało wysłane. Odpowiemy e-mailem na podany adres najszybciej, jak to możliwe. Na razie nic więcej nie musisz robić."
+            data-success-email-msg="Dziękujemy, Twoje zapytanie zostało wysłane. Odpowiemy e-mailem na adres {email} najszybciej, jak to możliwe. Na razie nic więcej nie musisz robić."
+            data-error-msg="Niestety nie udało się wysłać zapytania. Spróbuj ponownie za chwilę albo napisz do nas na"
             data-submit-label="Wyślij zapytanie" data-sending="Wysyłanie…">
         <input type="hidden" name="_lang" value="pl">
         <div class="hp-field" aria-hidden="true">
@@ -202,8 +220,8 @@ body_contact_pl = '''
         </div>
 
         <button type="submit" class="btn btn-primary" data-form-submit style="width:100%;">Wyślij zapytanie</button>
-        <p class="form-note">Twoje dane wykorzystujemy wyłącznie w celu odpowiedzi na zapytanie. Więcej informacji znajdziesz w <a href="legal/privacy-policy.html">Polityce prywatności</a>.</p>
         <div class="form-status" data-form-status aria-live="polite"></div>
+        <p class="form-note">Twoje dane wykorzystujemy wyłącznie w celu odpowiedzi na zapytanie. Więcej informacji znajdziesz w <a href="legal/privacy-policy.html">Polityce prywatności</a>.</p>
       </form>
     </div>
   </div>

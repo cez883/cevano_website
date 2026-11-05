@@ -223,7 +223,8 @@
             headers: { "Accept": "application/json" }
           }).then(function (res) {
             if (res.ok) {
-              showStatus(true);
+              var emailField = form.querySelector('[name="email"]');
+              showStatus(true, emailField ? emailField.value.trim() : "");
               form.reset();
               startTime = Date.now();
             } else {
@@ -241,13 +242,25 @@
         // which the code above picks up on load to show the same message.
       });
 
-      function showStatus(success) {
+      function showStatus(success, email) {
         if (!status) return;
         status.className = "form-status " + (success ? "success" : "error");
-        status.textContent = success
-          ? (form.dataset.successMsg || "Thank you. Your enquiry has been sent successfully. We'll be in touch as soon as possible.")
-          : (form.dataset.errorMsg || "Sorry, something went wrong sending your message. Please email us directly instead.");
-        status.setAttribute("role", "status");
+        status.textContent = "";
+        if (success) {
+          var msg = (email && form.dataset.successEmailMsg)
+            ? form.dataset.successEmailMsg.replace("{email}", email)
+            : (form.dataset.successMsg || "Thank you, your enquiry has been sent.");
+          status.textContent = msg;
+        } else {
+          // Error text ends with a real mailto link so the visitor has a way out.
+          status.appendChild(document.createTextNode((form.dataset.errorMsg || "Sorry, your enquiry couldn't be sent. Please email us at") + " "));
+          var link = document.createElement("a");
+          link.href = "mailto:enquiries@cevano.co.uk";
+          link.textContent = "enquiries@cevano.co.uk";
+          status.appendChild(link);
+          status.appendChild(document.createTextNode("."));
+        }
+        status.setAttribute("role", success ? "status" : "alert");
         status.scrollIntoView({ behavior: "smooth", block: "center" });
       }
     }
