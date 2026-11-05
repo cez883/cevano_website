@@ -22,7 +22,7 @@ body_about_en = f'''
     </div>
     <div>
       <div class="panel">
-        <h4>What guides how we work</h4>
+        <h3>What guides how we work</h3>
         <ul>
           <li>Practical solutions over unnecessary complexity</li>
           <li>Clear explanations, without jargon overload</li>
@@ -91,7 +91,7 @@ body_about_pl = f'''
     </div>
     <div>
       <div class="panel">
-        <h4>Czym się kierujemy w pracy</h4>
+        <h3>Czym się kierujemy w pracy</h3>
         <ul>
           <li>Praktyczne rozwiązania zamiast zbędnej złożoności</li>
           <li>Jasne wyjaśnienia, bez nadmiaru żargonu</li>

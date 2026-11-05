@@ -16,12 +16,12 @@ body_contact_en = '''
   <div class="container contact-layout">
     <div class="contact-info">
       <div class="info-block">
-        <h3>Email</h3>
+        <h2>Email</h2>
         <a class="email-link" href="mailto:enquiries@cevano.co.uk">enquiries@cevano.co.uk</a>
         <p>The quickest way to reach us — describe what you need and we'll reply as soon as we can.</p>
       </div>
       <div class="info-block">
-        <h3>What happens next</h3>
+        <h2>What happens next</h2>
         <ol class="next-steps">
           <li>We read your message and reply by email.</li>
           <li>If we need more detail, we ask a few questions first.</li>
@@ -29,7 +29,7 @@ body_contact_en = '''
         </ol>
       </div>
       <div class="info-block">
-        <h3>Where we work</h3>
+        <h2>Where we work</h2>
         <p>On-site around Northampton, Kettering, Milton Keynes, Rugby and the surrounding areas — remote support available further afield.</p>
         <div class="area-tags">
           <span>Northampton</span><span>Kettering</span><span>Milton Keynes</span><span>Rugby</span><span>Remote UK-wide</span>
@@ -130,12 +130,12 @@ body_contact_pl = '''
   <div class="container contact-layout">
     <div class="contact-info">
       <div class="info-block">
-        <h3>E-mail</h3>
+        <h2>E-mail</h2>
         <a class="email-link" href="mailto:enquiries@cevano.co.uk">enquiries@cevano.co.uk</a>
         <p>Najszybszy sposób, aby się z nami skontaktować — opisz, czego potrzebujesz, a odpowiemy najszybciej jak to możliwe.</p>
       </div>
       <div class="info-block">
-        <h3>Co dalej</h3>
+        <h2>Co dalej</h2>
         <ol class="next-steps">
           <li>Czytamy wiadomość i odpowiadamy e-mailem.</li>
           <li>Jeśli potrzebujemy więcej informacji, najpierw zadajemy kilka pytań.</li>
@@ -143,7 +143,7 @@ body_contact_pl = '''
         </ol>
       </div>
       <div class="info-block">
-        <h3>Gdzie pracujemy</h3>
+        <h2>Gdzie pracujemy</h2>
         <p>Na miejscu w okolicach Northampton, Kettering, Milton Keynes, Rugby i okolic — wsparcie zdalne dostępne również dalej.</p>
         <div class="area-tags">
           <span>Northampton</span><span>Kettering</span><span>Milton Keynes</span><span>Rugby</span><span>Zdalnie w całej UK</span>

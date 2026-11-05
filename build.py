@@ -13,7 +13,7 @@ SITE_URL = "https://www.cevano.co.uk"
 # Wersja plików CSS/JS — dopisywana do adresu (?v=...), bo Cloudflare trzyma
 # /css/* i /js/* w pamięci podręcznej 30 dni (_headers). ZMIEŃ tę wartość
 # (np. na dzisiejszą datę) przy każdej zmianie css/style.css lub js/main.js.
-ASSET_VERSION = "20261105-4"
+ASSET_VERSION = "20261105-5"
 
 # ------------------------------------------------------------------
 # Icons (inline SVG, currentColor / CSS vars so they theme automatically)
@@ -136,11 +136,11 @@ def header_html(lang, lang_prefix, asset_prefix, active, alt_href):
     this_lang_label = t["lang_name"]
     if lang == "en":
         lang_switch = f'''<div class="lang-switch" aria-label="Language switch">
-          <a href="{home_href}" aria-current="true">{this_lang_label}</a><span>|</span><a href="{alt_href}">{other_lang_label}</a>
+          <a href="{home_href}" aria-current="true">{this_lang_label}</a><span aria-hidden="true">|</span><a href="{alt_href}">{other_lang_label}</a>
         </div>'''
     else:
         lang_switch = f'''<div class="lang-switch" aria-label="Language switch">
-          <a href="{alt_href}">{other_lang_label}</a><span>|</span><a href="{home_href}" aria-current="true">{this_lang_label}</a>
+          <a href="{alt_href}">{other_lang_label}</a><span aria-hidden="true">|</span><a href="{home_href}" aria-current="true">{this_lang_label}</a>
         </div>'''
 
     logo_path = asset_prefix + "assets/img/logo-trimmed.png"

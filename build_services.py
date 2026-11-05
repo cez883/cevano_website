@@ -41,7 +41,7 @@ body_services_en = f'''
       </ul>
     </div>
     <div class="panel">
-      <h4>What this looks like in practice</h4>
+      <h3>What this looks like in practice</h3>
       <ul>
         <li>A new employee has the right access from day one</li>
         <li>Leavers are offboarded properly, with nothing left open</li>
@@ -71,7 +71,7 @@ body_services_en = f'''
       </ul>
     </div>
     <div class="panel">
-      <h4>What this looks like in practice</h4>
+      <h3>What this looks like in practice</h3>
       <ul>
         <li>A landing page for a new service or campaign</li>
         <li>A small website that explains what you do and how to get in touch</li>
@@ -99,7 +99,7 @@ body_services_en = f'''
       </ul>
     </div>
     <div class="panel">
-      <h4>Common requests we help with</h4>
+      <h3>Common requests we help with</h3>
       <ul>
         <li>Setting up a new starter's laptop and accounts</li>
         <li>Fixing recurring printer or network issues</li>
@@ -130,7 +130,7 @@ body_services_en = f'''
       </ul>
     </div>
     <div class="panel">
-      <h4>Example uses</h4>
+      <h3>Example uses</h3>
       <ul>
         <li>A single dashboard showing sales performance at a glance</li>
         <li>Reports that refresh automatically, saving hours of manual work each month</li>
@@ -246,7 +246,7 @@ body_services_pl = f'''
       </ul>
     </div>
     <div class="panel">
-      <h4>Jak to wygląda w praktyce</h4>
+      <h3>Jak to wygląda w praktyce</h3>
       <ul>
         <li>Nowy pracownik ma odpowiedni dostęp od pierwszego dnia</li>
         <li>Osoby odchodzące są prawidłowo wyrejestrowywane, bez otwartych kont</li>
@@ -276,7 +276,7 @@ body_services_pl = f'''
       </ul>
     </div>
     <div class="panel">
-      <h4>Jak to wygląda w praktyce</h4>
+      <h3>Jak to wygląda w praktyce</h3>
       <ul>
         <li>Landing page dla nowej usługi lub kampanii</li>
         <li>Mała strona, która mówi, czym się zajmujesz i jak się skontaktować</li>
@@ -304,7 +304,7 @@ body_services_pl = f'''
       </ul>
     </div>
     <div class="panel">
-      <h4>Typowe zgłoszenia, z którymi pomagamy</h4>
+      <h3>Typowe zgłoszenia, z którymi pomagamy</h3>
       <ul>
         <li>Konfiguracja laptopa i kont dla nowego pracownika</li>
         <li>Naprawa powtarzających się problemów z drukarką lub siecią</li>
@@ -335,7 +335,7 @@ body_services_pl = f'''
       </ul>
     </div>
     <div class="panel">
-      <h4>Przykładowe zastosowania</h4>
+      <h3>Przykładowe zastosowania</h3>
       <ul>
         <li>Jeden pulpit pokazujący wyniki sprzedaży na pierwszy rzut oka</li>
         <li>Raporty aktualizujące się automatycznie, oszczędzające godziny pracy każdego miesiąca</li>
