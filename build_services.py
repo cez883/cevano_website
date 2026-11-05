@@ -7,51 +7,23 @@ from build import *
 body_services_en = f'''
 <section class="page-hero">
   <div class="container">
-    <h1>Practical IT, properly managed Microsoft 365, and data you can use</h1>
-    <p>Three core services that work together — plus the everyday extras that keep a small office running.</p>
+    <h1>Properly managed Microsoft 365, and the websites and IT around it</h1>
+    <p>Four core services that work together, plus the everyday extras that keep a small office running.</p>
   </div>
 </section>
 
 <nav class="mini-nav" data-mini-nav aria-label="Services on this page">
   <div class="mini-nav-inner">
-    <a href="#it-support">IT Support</a>
     <a href="#microsoft-365">Microsoft 365</a>
+    <a href="#websites">Websites</a>
+    <a href="#it-support">IT Support</a>
     <a href="#data-analytics">Data Analytics</a>
     <a href="#additional-services">Additional Services</a>
   </div>
 </nav>
 
-<section class="detail-service" id="it-support">
-  <div class="container detail-grid">
-    <div>{MARK_SUPPORT}
-      <h2 style="margin-top:14px;">IT Support</h2>
-      <p>Reliable IT support without the complexity. We handle the day-to-day technology issues that get in the way of running your business — troubleshooting, setup, and advice you can actually understand.</p>
-      <ul class="check-list">
-        {check_items([
-            "General IT support and troubleshooting",
-            "Hardware and software support",
-            "PC and laptop setup and configuration",
-            "Office IT support and remote support",
-            "Office moves and technical relocation setup",
-            "Practical IT advice and consultancy",
-        ])}
-      </ul>
-    </div>
-    <div class="panel">
-      <h4>Common requests we help with</h4>
-      <ul>
-        <li>Setting up a new starter's laptop and accounts</li>
-        <li>Fixing recurring printer or network issues</li>
-        <li>Technical setup for a new or moving office</li>
-        <li>Ad-hoc remote support when something isn't working</li>
-        <li>Plain-English advice before buying new hardware or software</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
 <section class="detail-service section-alt" id="microsoft-365">
-  <div class="container detail-grid reverse">
+  <div class="container detail-grid">
     <div class="detail-copy">
       {MARK_M365}
       <h2 style="margin-top:14px;">Microsoft 365, managed properly.</h2>
@@ -81,9 +53,67 @@ body_services_en = f'''
   </div>
 </section>
 
-<section class="detail-service" id="data-analytics">
+<section class="detail-service" id="websites">
+  <div class="container detail-grid reverse">
+    <div class="detail-copy">
+      {MARK_WEB}
+      <h2 style="margin-top:14px;">Websites and landing pages that explain what you do.</h2>
+      <p>Clear websites and landing pages for small businesses, built to work on phones as well as desktops, with a contact form that sends enquiries straight to your inbox. We also set up the hosting, domain and business email behind them.</p>
+      <ul class="check-list">
+        {check_items([
+            "Single-page landing pages",
+            "Small business websites",
+            "Designed to work on phones, tablets and desktops",
+            "Contact forms that send enquiries by email",
+            "Hosting setup",
+            "Domain, DNS and business email configuration",
+        ])}
+      </ul>
+    </div>
+    <div class="panel">
+      <h4>What this looks like in practice</h4>
+      <ul>
+        <li>A landing page for a new service or campaign</li>
+        <li>A small website that explains what you do and how to get in touch</li>
+        <li>Enquiries arriving by email from a simple contact form</li>
+        <li>Your domain, website and email set up and pointing in the right place</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="detail-service section-alt" id="it-support">
   <div class="container detail-grid">
-    <div>
+    <div>{MARK_SUPPORT}
+      <h2 style="margin-top:14px;">IT Support</h2>
+      <p>Reliable IT support without the complexity. We handle the day-to-day technology issues that get in the way of running your business — troubleshooting, setup, and advice you can actually understand.</p>
+      <ul class="check-list">
+        {check_items([
+            "General IT support and troubleshooting",
+            "Hardware and software support",
+            "PC and laptop setup and configuration",
+            "Office IT support and remote support",
+            "Office moves and technical relocation setup",
+            "Practical IT advice and consultancy",
+        ])}
+      </ul>
+    </div>
+    <div class="panel">
+      <h4>Common requests we help with</h4>
+      <ul>
+        <li>Setting up a new starter's laptop and accounts</li>
+        <li>Fixing recurring printer or network issues</li>
+        <li>Technical setup for a new or moving office</li>
+        <li>Ad-hoc remote support when something isn't working</li>
+        <li>Plain-English advice before buying new hardware or software</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="detail-service" id="data-analytics">
+  <div class="container detail-grid reverse">
+    <div class="detail-copy">
       {MARK_DATA}
       <h2 style="margin-top:14px;">Make better decisions with your data.</h2>
       <p>Cevano helps small businesses turn data from Excel, systems and other sources into clear Power BI dashboards and meaningful business insight — explained in plain terms, not jargon.</p>
@@ -143,13 +173,12 @@ body_services_en = f'''
       </div>
       <div class="subservice-card">
         {MARK_DOMAIN}
-        <h3>Domains &amp; Online Services</h3>
+        <h3>Domains &amp; Email</h3>
         <p>The foundations behind your website and email.</p>
         <ul>
           <li>Domain name services and configuration</li>
           <li>DNS-related support</li>
           <li>Business email and domain setup</li>
-          <li>Web / landing page design</li>
         </ul>
       </div>
     </div>
@@ -171,8 +200,8 @@ body_services_en = f'''
 
 write("services.html", page(
     "en", "", "", "services",
-    "Services | IT Support, Microsoft 365 &amp; Data Analytics — Cevano",
-    "IT support, Microsoft 365 administration and Power BI data analytics for small businesses, explained in plain English.",
+    "Services | Microsoft 365, Websites, IT Support &amp; Data Analytics — Cevano",
+    "Microsoft 365 administration, websites and landing pages, IT support and Power BI data analytics for small businesses, explained in plain English.",
     "services.html", "services.html", body_services_en, alt_href="pl/services.html"
 ))
 
@@ -182,51 +211,23 @@ write("services.html", page(
 body_services_pl = f'''
 <section class="page-hero">
   <div class="container">
-    <h1>Praktyczne IT, dobrze zarządzany Microsoft 365 i dane, z których można korzystać</h1>
-    <p>Trzy główne usługi, które działają razem — oraz codzienne wsparcie, które utrzymuje małe biuro w sprawnym działaniu.</p>
+    <h1>Dobrze zarządzany Microsoft 365 oraz strony i IT wokół niego</h1>
+    <p>Cztery główne usługi, które działają razem, oraz codzienne wsparcie, które utrzymuje małe biuro w sprawnym działaniu.</p>
   </div>
 </section>
 
 <nav class="mini-nav" data-mini-nav aria-label="Usługi na tej stronie">
   <div class="mini-nav-inner">
-    <a href="#it-support">Wsparcie IT</a>
     <a href="#microsoft-365">Microsoft 365</a>
+    <a href="#websites">Strony internetowe</a>
+    <a href="#it-support">Wsparcie IT</a>
     <a href="#data-analytics">Analiza danych</a>
     <a href="#additional-services">Usługi dodatkowe</a>
   </div>
 </nav>
 
-<section class="detail-service" id="it-support">
-  <div class="container detail-grid">
-    <div>{MARK_SUPPORT}
-      <h2 style="margin-top:14px;">Wsparcie IT</h2>
-      <p>Niezawodne wsparcie IT bez zbędnej złożoności. Zajmujemy się codziennymi problemami technologicznymi, które przeszkadzają w prowadzeniu firmy — rozwiązywaniem problemów, konfiguracją i doradztwem w zrozumiałym języku.</p>
-      <ul class="check-list">
-        {check_items([
-            "Ogólne wsparcie IT i rozwiązywanie problemów",
-            "Wsparcie sprzętowe i programowe",
-            "Konfiguracja komputerów i laptopów",
-            "Wsparcie IT w biurze oraz wsparcie zdalne",
-            "Przeprowadzki biura i techniczna organizacja nowego miejsca",
-            "Praktyczne doradztwo IT",
-        ])}
-      </ul>
-    </div>
-    <div class="panel">
-      <h4>Typowe zgłoszenia, z którymi pomagamy</h4>
-      <ul>
-        <li>Konfiguracja laptopa i kont dla nowego pracownika</li>
-        <li>Naprawa powtarzających się problemów z drukarką lub siecią</li>
-        <li>Techniczna organizacja nowego lub przenoszonego biura</li>
-        <li>Doraźne wsparcie zdalne, gdy coś nie działa</li>
-        <li>Rzeczowe porady przed zakupem nowego sprzętu lub oprogramowania</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
 <section class="detail-service section-alt" id="microsoft-365">
-  <div class="container detail-grid reverse">
+  <div class="container detail-grid">
     <div class="detail-copy">
       {MARK_M365}
       <h2 style="margin-top:14px;">Microsoft 365 zarządzane jak należy</h2>
@@ -256,9 +257,67 @@ body_services_pl = f'''
   </div>
 </section>
 
-<section class="detail-service" id="data-analytics">
+<section class="detail-service" id="websites">
+  <div class="container detail-grid reverse">
+    <div class="detail-copy">
+      {MARK_WEB}
+      <h2 style="margin-top:14px;">Strony internetowe, które jasno mówią, czym się zajmujesz</h2>
+      <p>Przejrzyste strony i landing page dla małych firm, przygotowane z myślą o telefonach i komputerach, z formularzem kontaktowym, który wysyła zapytania prosto na Twoją skrzynkę. Konfigurujemy też hosting, domenę i firmową pocztę.</p>
+      <ul class="check-list">
+        {check_items([
+            "Jednostronicowe landing page",
+            "Strony internetowe dla małych firm",
+            "Projekt działający na telefonach, tabletach i komputerach",
+            "Formularze kontaktowe wysyłające zapytania e-mailem",
+            "Konfiguracja hostingu",
+            "Konfiguracja domeny, DNS i poczty firmowej",
+        ])}
+      </ul>
+    </div>
+    <div class="panel">
+      <h4>Jak to wygląda w praktyce</h4>
+      <ul>
+        <li>Landing page dla nowej usługi lub kampanii</li>
+        <li>Mała strona, która mówi, czym się zajmujesz i jak się skontaktować</li>
+        <li>Zapytania z prostego formularza trafiają na Twój e-mail</li>
+        <li>Domena, strona i poczta skonfigurowane i działające razem</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="detail-service section-alt" id="it-support">
   <div class="container detail-grid">
-    <div>
+    <div>{MARK_SUPPORT}
+      <h2 style="margin-top:14px;">Wsparcie IT</h2>
+      <p>Niezawodne wsparcie IT bez zbędnej złożoności. Zajmujemy się codziennymi problemami technologicznymi, które przeszkadzają w prowadzeniu firmy — rozwiązywaniem problemów, konfiguracją i doradztwem w zrozumiałym języku.</p>
+      <ul class="check-list">
+        {check_items([
+            "Ogólne wsparcie IT i rozwiązywanie problemów",
+            "Wsparcie sprzętowe i programowe",
+            "Konfiguracja komputerów i laptopów",
+            "Wsparcie IT w biurze oraz wsparcie zdalne",
+            "Przeprowadzki biura i techniczna organizacja nowego miejsca",
+            "Praktyczne doradztwo IT",
+        ])}
+      </ul>
+    </div>
+    <div class="panel">
+      <h4>Typowe zgłoszenia, z którymi pomagamy</h4>
+      <ul>
+        <li>Konfiguracja laptopa i kont dla nowego pracownika</li>
+        <li>Naprawa powtarzających się problemów z drukarką lub siecią</li>
+        <li>Techniczna organizacja nowego lub przenoszonego biura</li>
+        <li>Doraźne wsparcie zdalne, gdy coś nie działa</li>
+        <li>Rzeczowe porady przed zakupem nowego sprzętu lub oprogramowania</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="detail-service" id="data-analytics">
+  <div class="container detail-grid reverse">
+    <div class="detail-copy">
       {MARK_DATA}
       <h2 style="margin-top:14px;">Podejmuj lepsze decyzje dzięki danym</h2>
       <p>Cevano pomaga małym firmom przekształcać dane z Excela, systemów i innych źródeł w przejrzyste pulpity Power BI oraz konkretne wnioski biznesowe — wyjaśnione prostym językiem, bez żargonu.</p>
@@ -318,13 +377,12 @@ body_services_pl = f'''
       </div>
       <div class="subservice-card">
         {MARK_DOMAIN}
-        <h3>Domeny i usługi online</h3>
+        <h3>Domeny i poczta</h3>
         <p>Podstawy działania Twojej strony internetowej i poczty.</p>
         <ul>
           <li>Usługi domenowe i konfiguracja</li>
           <li>Wsparcie związane z DNS</li>
           <li>Konfiguracja poczty firmowej i domeny</li>
-          <li>Projektowanie stron i landing page'y</li>
         </ul>
       </div>
     </div>
@@ -346,7 +404,7 @@ body_services_pl = f'''
 
 write("pl/services.html", page(
     "pl", "", "../", "services",
-    "Usługi | Wsparcie IT, Microsoft 365 i analiza danych — Cevano",
-    "Wsparcie IT, administracja Microsoft 365 oraz analiza danych Power BI dla małych firm, wyjaśnione prostym językiem.",
+    "Usługi | Microsoft 365, strony internetowe, wsparcie IT i analiza danych — Cevano",
+    "Administracja Microsoft 365, strony internetowe i landing page, wsparcie IT oraz analiza danych Power BI dla małych firm, wyjaśnione prostym językiem.",
     "services.html", "services.html", body_services_pl, alt_href="../services.html"
 ))

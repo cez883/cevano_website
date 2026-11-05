@@ -9,7 +9,7 @@ schema_home_en = '''<script type="application/ld+json">
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   "name": "Cevano IT Solutions",
-  "description": "Practical IT support, Microsoft 365 management and data analytics for small businesses in Northampton, Kettering, Milton Keynes, Rugby and surrounding areas.",
+  "description": "Microsoft 365 management, websites, IT support and data analytics for small businesses in Northampton, Kettering, Milton Keynes, Rugby and surrounding areas.",
   "url": "https://www.cevano.co.uk/",
   "email": "enquiries@cevano.co.uk",
   "areaServed": ["Northampton", "Kettering", "Milton Keynes", "Rugby", "Northamptonshire", "Warwickshire", "Buckinghamshire"],
@@ -25,9 +25,8 @@ body_home_en = f'''
 <section class="hero">
   <div class="container hero-grid">
     <div>
-      <span class="eyebrow">IT support across Northamptonshire &amp; beyond</span>
-      <h1>Technology should make your business easier, not harder.</h1>
-      <p class="lede">Cevano IT Solutions provides practical IT support, Microsoft 365 management and data analytics for small businesses, sole traders and startups — around Northampton, Kettering, Milton Keynes and Rugby, with remote support wherever you're based.</p>
+      <h1>Microsoft 365, set up properly and kept that way.</h1>
+      <p class="lede">We manage Microsoft 365 for small businesses (accounts, licences, security and devices) and take care of the IT support and websites around it. On-site around Northampton, Kettering, Milton Keynes and Rugby, remote across the UK.</p>
       <div class="hero-ctas">
         <a class="btn btn-primary" href="contact.html">Get in touch</a>
         <a class="btn btn-outline" href="services.html">Our services</a>
@@ -38,7 +37,7 @@ body_home_en = f'''
         Supporting small businesses across Northamptonshire
       </p>
     </div>
-    <div class="hero-visual">{HERO_VISUAL}</div>
+    <div class="hero-visual">{hero_visual('en')}</div>
   </div>
 </section>
 
@@ -46,34 +45,44 @@ body_home_en = f'''
   <div class="container">
     <div class="section-head">
       <span class="kicker">What we do</span>
-      <h2>Three services, one trusted provider</h2>
-      <p>Everyday IT support, a properly managed Microsoft 365 environment, and data you can actually use — without juggling three different suppliers.</p>
-    </div>
-
-    <div class="flow-row" aria-hidden="true">
-      <span>IT Support</span><span class="line"></span><span class="dot"></span><span class="line"></span>
-      <span>Microsoft 365</span><span class="line"></span><span class="dot"></span><span class="line"></span>
-      <span>Data Analytics</span>
+      <h2>Four services, one point of contact</h2>
+      <p>A properly managed Microsoft 365 environment, a website that explains what you do, everyday IT support and data you can actually use, without juggling different suppliers.</p>
     </div>
 
     <div class="service-grid">
+      <div class="service-card is-lead">
+        <div class="lead-copy">
+          {MARK_M365}
+          <h3>Microsoft 365</h3>
+          <p>Microsoft 365 managed for you: user accounts, licensing, security, permissions and devices, without employing a full-time administrator.</p>
+          <a class="btn-ghost" href="services.html#microsoft-365">Microsoft 365 in detail →</a>
+        </div>
+        <ul class="check-list">
+          {check_items([
+              "A new employee has the right access from day one",
+              "Leavers are offboarded properly, with nothing left open",
+              "Company files are organised and easy to find in SharePoint",
+              "Licensing matches what your team actually needs",
+          ])}
+        </ul>
+      </div>
+      <div class="service-card">
+        {MARK_WEB}
+        <h3>Websites &amp; Landing Pages</h3>
+        <p>Websites and landing pages for small businesses that explain clearly what you do, with the domain, DNS and business email set up behind them.</p>
+        <a class="btn-ghost" href="services.html#websites">Websites in detail →</a>
+      </div>
       <div class="service-card">
         {MARK_SUPPORT}
         <h3>IT Support</h3>
         <p>Practical technology support for small businesses, offices and professionals — from everyday troubleshooting to setting up a new office.</p>
-        <a class="btn-ghost" href="services.html#it-support">Learn more →</a>
-      </div>
-      <div class="service-card">
-        {MARK_M365}
-        <h3>Microsoft 365</h3>
-        <p>Microsoft 365 administration covering user accounts, licensing, security, permissions and device management.</p>
-        <a class="btn-ghost" href="services.html#microsoft-365">Learn more →</a>
+        <a class="btn-ghost" href="services.html#it-support">IT support in detail →</a>
       </div>
       <div class="service-card">
         {MARK_DATA}
         <h3>Data Analytics &amp; Power BI</h3>
         <p>Turning business data into clear Power BI dashboards, reports and insight you can act on.</p>
-        <a class="btn-ghost" href="services.html#data-analytics">Learn more →</a>
+        <a class="btn-ghost" href="services.html#data-analytics">Data analytics in detail →</a>
       </div>
     </div>
   </div>
@@ -99,8 +108,8 @@ body_home_en = f'''
       </div>
       <div class="subservice-card">
         {MARK_DOMAIN}
-        <h3>Domains &amp; Online Services</h3>
-        <p>Domain name and DNS support, business email/domain setup, and web or landing page design.</p>
+        <h3>Domains &amp; Email</h3>
+        <p>Domain name and DNS support, plus business email and domain setup.</p>
       </div>
     </div>
   </div>
@@ -195,8 +204,8 @@ body_home_en = f'''
 
 write("index.html", page(
     "en", "", "", "home",
-    "Cevano IT Solutions | IT Support, Microsoft 365 &amp; Data Analytics",
-    "Practical IT support, Microsoft 365 management and data analytics for small businesses in Northampton, Kettering, Milton Keynes, Rugby and surrounding areas.",
+    "Microsoft 365, IT Support &amp; Websites for Small Businesses | Cevano",
+    "Microsoft 365 management, websites, IT support and data analytics for small businesses in Northampton, Kettering, Milton Keynes, Rugby and surrounding areas.",
     "", "", body_home_en, alt_href="pl/index.html", schema=schema_home_en
 ))
 
@@ -208,7 +217,7 @@ schema_home_pl = '''<script type="application/ld+json">
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   "name": "Cevano IT Solutions",
-  "description": "Praktyczne wsparcie IT, zarządzanie Microsoft 365 i analiza danych dla małych firm w Northampton, Kettering, Milton Keynes, Rugby i okolicach.",
+  "description": "Zarządzanie Microsoft 365, strony internetowe, wsparcie IT i analiza danych dla małych firm w Northampton, Kettering, Milton Keynes, Rugby i okolicach.",
   "url": "https://www.cevano.co.uk/pl/",
   "email": "enquiries@cevano.co.uk",
   "areaServed": ["Northampton", "Kettering", "Milton Keynes", "Rugby", "Northamptonshire", "Warwickshire", "Buckinghamshire"],
@@ -224,9 +233,8 @@ body_home_pl = f'''
 <section class="hero">
   <div class="container hero-grid">
     <div>
-      <span class="eyebrow">Wsparcie IT w Northamptonshire i okolicach</span>
-      <h1>Technologia ma ułatwiać prowadzenie firmy, a nie je utrudniać.</h1>
-      <p class="lede">Cevano IT Solutions zapewnia praktyczne wsparcie IT, zarządzanie Microsoft 365 oraz analizę danych dla małych firm, jednoosobowych działalności i startupów — w okolicach Northampton, Kettering, Milton Keynes i Rugby, a zdalnie tam, gdzie akurat jesteś.</p>
+      <h1>Microsoft 365 skonfigurowany porządnie i tak utrzymany.</h1>
+      <p class="lede">Zarządzamy Microsoft 365 w małych firmach (konta, licencje, bezpieczeństwo i urządzenia) i zajmujemy się wsparciem IT oraz stronami internetowymi wokół niego. Na miejscu w okolicach Northampton, Kettering, Milton Keynes i Rugby, zdalnie w całej Wielkiej Brytanii.</p>
       <div class="hero-ctas">
         <a class="btn btn-primary" href="contact.html">Skontaktuj się</a>
         <a class="btn btn-outline" href="services.html">Nasze usługi</a>
@@ -237,7 +245,7 @@ body_home_pl = f'''
         Wspieramy małe firmy w całym Northamptonshire
       </p>
     </div>
-    <div class="hero-visual">{HERO_VISUAL}</div>
+    <div class="hero-visual">{hero_visual('pl')}</div>
   </div>
 </section>
 
@@ -245,34 +253,44 @@ body_home_pl = f'''
   <div class="container">
     <div class="section-head">
       <span class="kicker">Czym się zajmujemy</span>
-      <h2>Trzy usługi, jeden zaufany dostawca</h2>
-      <p>Codzienne wsparcie IT, dobrze zarządzane środowisko Microsoft 365 i dane, z których faktycznie da się korzystać — bez konieczności współpracy z trzema różnymi dostawcami.</p>
-    </div>
-
-    <div class="flow-row" aria-hidden="true">
-      <span>Wsparcie IT</span><span class="line"></span><span class="dot"></span><span class="line"></span>
-      <span>Microsoft 365</span><span class="line"></span><span class="dot"></span><span class="line"></span>
-      <span>Analiza danych</span>
+      <h2>Cztery usługi, jeden punkt kontaktu</h2>
+      <p>Dobrze zarządzane środowisko Microsoft 365, strona internetowa, która jasno mówi, czym się zajmujesz, codzienne wsparcie IT i dane, z których da się korzystać, bez żonglowania dostawcami.</p>
     </div>
 
     <div class="service-grid">
+      <div class="service-card is-lead">
+        <div class="lead-copy">
+          {MARK_M365}
+          <h3>Microsoft 365</h3>
+          <p>Zarządzamy Twoim Microsoft 365: konta użytkowników, licencje, bezpieczeństwo, uprawnienia i urządzenia, bez zatrudniania administratora na pełen etat.</p>
+          <a class="btn-ghost" href="services.html#microsoft-365">Microsoft 365 szczegółowo →</a>
+        </div>
+        <ul class="check-list">
+          {check_items([
+              "Nowy pracownik ma odpowiedni dostęp od pierwszego dnia",
+              "Osoby odchodzące są prawidłowo wyrejestrowywane, bez otwartych kont",
+              "Firmowe pliki są uporządkowane i łatwe do znalezienia w SharePoint",
+              "Licencje odpowiadają rzeczywistym potrzebom zespołu",
+          ])}
+        </ul>
+      </div>
+      <div class="service-card">
+        {MARK_WEB}
+        <h3>Strony internetowe</h3>
+        <p>Strony i landing page dla małych firm, które jasno mówią, czym się zajmujesz, wraz z domeną, DNS i firmową pocztą.</p>
+        <a class="btn-ghost" href="services.html#websites">Strony internetowe szczegółowo →</a>
+      </div>
       <div class="service-card">
         {MARK_SUPPORT}
         <h3>Wsparcie IT</h3>
         <p>Praktyczne wsparcie technologiczne dla małych firm, biur i specjalistów — od codziennych problemów po organizację nowego biura.</p>
-        <a class="btn-ghost" href="services.html#it-support">Dowiedz się więcej →</a>
-      </div>
-      <div class="service-card">
-        {MARK_M365}
-        <h3>Microsoft 365</h3>
-        <p>Administracja Microsoft 365 obejmująca konta użytkowników, licencje, bezpieczeństwo, uprawnienia i zarządzanie urządzeniami.</p>
-        <a class="btn-ghost" href="services.html#microsoft-365">Dowiedz się więcej →</a>
+        <a class="btn-ghost" href="services.html#it-support">Wsparcie IT szczegółowo →</a>
       </div>
       <div class="service-card">
         {MARK_DATA}
         <h3>Analiza danych i Power BI</h3>
         <p>Przekształcanie danych biznesowych w przejrzyste pulpity Power BI, raporty i wnioski, na których można polegać.</p>
-        <a class="btn-ghost" href="services.html#data-analytics">Dowiedz się więcej →</a>
+        <a class="btn-ghost" href="services.html#data-analytics">Analiza danych szczegółowo →</a>
       </div>
     </div>
   </div>
@@ -298,8 +316,8 @@ body_home_pl = f'''
       </div>
       <div class="subservice-card">
         {MARK_DOMAIN}
-        <h3>Domeny i usługi online</h3>
-        <p>Wsparcie w zakresie domen i DNS, konfiguracja poczty firmowej i domeny oraz projektowanie stron i landing page'y.</p>
+        <h3>Domeny i poczta</h3>
+        <p>Wsparcie w zakresie domen i DNS oraz konfiguracja poczty firmowej i domeny.</p>
       </div>
     </div>
   </div>
@@ -394,7 +412,7 @@ body_home_pl = f'''
 
 write("pl/index.html", page(
     "pl", "", "../", "home",
-    "Cevano IT Solutions | Wsparcie IT, Microsoft 365 i analiza danych",
-    "Praktyczne wsparcie IT, zarządzanie Microsoft 365 i analiza danych dla małych firm w Northampton, Kettering, Milton Keynes, Rugby i okolicach.",
+    "Microsoft 365, wsparcie IT i strony internetowe dla małych firm | Cevano",
+    "Zarządzanie Microsoft 365, strony internetowe, wsparcie IT i analiza danych dla małych firm w Northampton, Kettering, Milton Keynes, Rugby i okolicach.",
     "", "", body_home_pl, alt_href="../index.html", schema=schema_home_pl
 ))

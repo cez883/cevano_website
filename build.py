@@ -13,7 +13,7 @@ SITE_URL = "https://www.cevano.co.uk"
 # Wersja plików CSS/JS — dopisywana do adresu (?v=...), bo Cloudflare trzyma
 # /css/* i /js/* w pamięci podręcznej 30 dni (_headers). ZMIEŃ tę wartość
 # (np. na dzisiejszą datę) przy każdej zmianie css/style.css lub js/main.js.
-ASSET_VERSION = "20261105"
+ASSET_VERSION = "20261105-2"
 
 # ------------------------------------------------------------------
 # Icons (inline SVG, currentColor / CSS vars so they theme automatically)
@@ -47,7 +47,7 @@ T = {
         "nav_home": "Home", "nav_services": "Services", "nav_about": "About", "nav_contact": "Contact",
         "cta_get_in_touch": "Get in touch", "cta_our_services": "Our services", "cta_email_us": "Email us",
         "skip": "Skip to main content",
-        "footer_tagline": "Practical IT support, Microsoft 365 management and data analytics for small businesses across Northamptonshire and beyond.",
+        "footer_tagline": "Microsoft 365 management, websites, IT support and data analytics for small businesses across Northamptonshire and beyond.",
         "footer_company": "Company", "footer_services": "Services", "footer_legal": "Legal",
         "footer_privacy": "Privacy Policy", "footer_terms": "Terms & Conditions",
         "footer_rights": "All rights reserved.",
@@ -63,7 +63,7 @@ T = {
         "nav_home": "Strona główna", "nav_services": "Usługi", "nav_about": "O nas", "nav_contact": "Kontakt",
         "cta_get_in_touch": "Skontaktuj się", "cta_our_services": "Nasze usługi", "cta_email_us": "Napisz do nas",
         "skip": "Przejdź do treści głównej",
-        "footer_tagline": "Praktyczne wsparcie IT, zarządzanie Microsoft 365 i analiza danych dla małych firm w Northamptonshire i okolicach.",
+        "footer_tagline": "Zarządzanie Microsoft 365, strony internetowe, wsparcie IT i analiza danych dla małych firm w Northamptonshire i okolicach.",
         "footer_company": "Firma", "footer_services": "Usługi", "footer_legal": "Informacje prawne",
         "footer_privacy": "Polityka prywatności", "footer_terms": "Regulamin",
         "footer_rights": "Wszelkie prawa zastrzeżone.",
@@ -195,14 +195,16 @@ def footer_html(lang, lang_prefix, asset_prefix):
     company_no_label = "Company No." if lang == "en" else "Numer firmy"
     if lang == "en":
         services_items = [
-            (services_href + "#it-support", "IT Support"),
             (services_href + "#microsoft-365", "Microsoft 365"),
+            (services_href + "#websites", "Websites &amp; Landing Pages"),
+            (services_href + "#it-support", "IT Support"),
             (services_href + "#data-analytics", "Data Analytics &amp; Power BI"),
         ]
     else:
         services_items = [
-            (services_href + "#it-support", "Wsparcie IT"),
             (services_href + "#microsoft-365", "Microsoft 365"),
+            (services_href + "#websites", "Strony internetowe"),
+            (services_href + "#it-support", "Wsparcie IT"),
             (services_href + "#data-analytics", "Analiza danych i Power BI"),
         ]
     services_li = "\n".join(f'<li><a href="{h}">{lbl}</a></li>' for h, lbl in services_items)
@@ -311,34 +313,71 @@ MARK_DATA = '''<svg class="mark" viewBox="0 0 40 40" fill="none" stroke="var(--b
 MARK_NET = '''<svg class="mark" viewBox="0 0 40 40" fill="none" stroke="var(--blue)" stroke-width="1.6"><circle cx="20" cy="10" r="2.4"/><circle cx="9" cy="30" r="2.4"/><circle cx="31" cy="30" r="2.4"/><path d="M20 12.4V20M20 20 9 27.6M20 20l11 7.6" stroke-linecap="round"/></svg>'''
 MARK_ASSETS = '''<svg class="mark" viewBox="0 0 40 40" fill="none" stroke="var(--blue)" stroke-width="1.6"><rect x="8" y="6" width="24" height="28" rx="1.5"/><path d="M13 14h14M13 20h14M13 26h9" stroke-linecap="round"/></svg>'''
 MARK_DOMAIN = '''<svg class="mark" viewBox="0 0 40 40" fill="none" stroke="var(--blue)" stroke-width="1.6"><circle cx="20" cy="20" r="14"/><path d="M6 20h28M20 6c3.6 3.8 5.6 8.8 5.6 14S23.6 34.2 20 38M20 6c-3.6 3.8-5.6 8.8-5.6 14S16.4 34.2 20 38" /></svg>'''
+MARK_WEB = '''<svg class="mark" viewBox="0 0 40 40" fill="none" stroke="var(--blue)" stroke-width="1.6"><rect x="5" y="8" width="30" height="24" rx="1.5"/><path d="M5 14h30" /><path d="M10 20h12M10 25h8" stroke-linecap="round"/><rect x="26" y="19" width="5" height="8" rx="0.8"/></svg>'''
 
 def check_items(items):
     return "\n".join(f'<li>{ICON_CHECK}<span>{i}</span></li>' for i in items)
 
 # ==================================================================
-# Hero abstract visual (ties to the logo's rising-bars/dots motif,
-# built as clean geometric SVG rather than a literal chart)
+# Hero visual: a simplified Microsoft 365 user list, drawn in the site's
+# hairline style. Placeholder bars stand in for names (no invented people);
+# status pills show the outcome of a tidy tenant: licensed, MFA on, and a
+# leaver properly offboarded. Decorative, so hidden from assistive tech.
 # ==================================================================
-HERO_VISUAL = '''<svg viewBox="0 0 420 380" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="">
-  <defs>
-    <linearGradient id="barGrad" x1="0" y1="1" x2="0" y2="0">
-      <stop offset="0" stop-color="var(--navy)"/>
-      <stop offset="1" stop-color="var(--blue-light)"/>
-    </linearGradient>
-  </defs>
-  <circle cx="150" cy="150" r="108" stroke="var(--line)" stroke-width="1.5" fill="none"/>
-  <path d="M150 42a108 108 0 0 1 76 184" stroke="url(#barGrad)" stroke-width="16" fill="none" stroke-linecap="round"/>
-  <g>
-    <rect x="120" y="230" width="34" height="90" rx="3" fill="url(#barGrad)"/>
-    <rect x="164" y="205" width="34" height="115" rx="3" fill="url(#barGrad)" opacity="0.92"/>
-    <rect x="208" y="175" width="34" height="145" rx="3" fill="var(--blue-light)" opacity="0.85"/>
-  </g>
-  <g fill="var(--blue-light)">
-    <rect x="252" y="150" width="16" height="16" rx="3" opacity="0.9"/>
-    <rect x="278" y="118" width="14" height="14" rx="3" opacity="0.75"/>
-    <rect x="300" y="90" width="12" height="12" rx="3" opacity="0.6"/>
-  </g>
-</svg>'''
+HERO_LABELS = {
+    "en": {"title": "Microsoft 365", "sub": "Users", "lic": "Licensed", "mfa": "MFA on", "off": "Offboarded"},
+    "pl": {"title": "Microsoft 365", "sub": "Użytkownicy", "lic": "Licencja", "mfa": "MFA włączone", "off": "Konto wyłączone"},
+}
+
+def _pill(right, y, label, kind):
+    w = round(len(label) * 6.7 + 34)
+    x = right - w
+    if kind == "off":
+        icon = (f'<rect x="{x+12}" y="{y+10}" width="9" height="7" rx="1.2" fill="none" stroke="var(--slate)" stroke-width="1.3"/>'
+                f'<path d="M{x+14} {y+10}v-2a2.5 2.5 0 0 1 5 0v2" fill="none" stroke="var(--slate)" stroke-width="1.3"/>')
+        fill, color = "var(--bg)", "var(--slate)"
+    else:
+        icon = f'<path d="M{x+11} {y+12}l3 3 5.5-6" fill="none" stroke="var(--blue-mid)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>'
+        fill, color = "var(--bg-alt)", "var(--ink)"
+    return (f'<rect x="{x}" y="{y}" width="{w}" height="24" rx="12" fill="{fill}" stroke="var(--line)"/>{icon}'
+            f'<text x="{x+26}" y="{y+16}" font-size="12" font-weight="600" fill="{color}">{label}</text>'), x
+
+def hero_visual(lang):
+    t = HERO_LABELS[lang]
+    rows = []
+    top, h, right = 56, 70, 398
+    widths = [(118, 74), (96, 88), (132, 64), (104, 80)]
+    for i, (w1, w2) in enumerate(widths):
+        y = top + i * h
+        cy = y + h // 2
+        last = i == len(widths) - 1
+        dash = ' stroke-dasharray="3 3"' if last else ""
+        op = ' opacity="0.55"' if last else ""
+        row = [f'<g{op}>',
+               f'<circle cx="44" cy="{cy}" r="16" fill="var(--bg-alt)" stroke="var(--line)"{dash}/>',
+               f'<rect x="74" y="{cy-10}" width="{w1}" height="8" rx="4" fill="var(--line)"/>',
+               f'<rect x="74" y="{cy+5}" width="{w2}" height="6" rx="3" fill="var(--line)" opacity="0.6"/>',
+               '</g>']
+        if last:
+            p, _ = _pill(right, cy - 12, t["off"], "off")
+            row.append(p)
+        else:
+            p2, x2 = _pill(right, cy - 12, t["mfa"], "ok")
+            p1, _ = _pill(x2 - 8, cy - 12, t["lic"], "ok")
+            row += [p1, p2]
+            row.append(f'<path d="M20 {y+h}h380" stroke="var(--line)"/>')
+        rows.append("".join(row))
+    body = "\n  ".join(rows)
+    return (
+        '<svg viewBox="0 0 420 360" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" style="font-family:var(--font-body)">\n'
+        '  <rect x="1" y="1" width="418" height="358" rx="8" fill="var(--surface)" stroke="var(--line)"/>\n'
+        '  <path d="M1 52h418" stroke="var(--line)"/>\n'
+        '  <g fill="none" stroke="var(--blue)" stroke-width="1.4"><rect x="22" y="18" width="7" height="7" rx="0.8"/><rect x="31" y="18" width="7" height="7" rx="0.8"/><rect x="22" y="27" width="7" height="7" rx="0.8"/><rect x="31" y="27" width="7" height="7" rx="0.8"/></g>\n'
+        f'  <text x="50" y="31" font-size="14" font-weight="700" fill="var(--ink)" style="font-family:var(--font-head)">{t["title"]}</text>\n'
+        f'  <text x="398" y="31" font-size="12" font-weight="600" fill="var(--slate)" text-anchor="end">{t["sub"]}</text>\n'
+        f'  {body}\n'
+        '</svg>'
+    )
 
 # ==================================================================
 # About-page location graphic — abstract radiating-node cluster

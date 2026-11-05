@@ -69,12 +69,13 @@ body_contact_en = '''
             <label for="service">Service / area of support</label>
             <select id="service" name="service">
               <option value="">Not sure / general enquiry</option>
-              <option value="IT Support">IT Support</option>
               <option value="Microsoft 365">Microsoft 365</option>
+              <option value="Website / landing page">Website / landing page</option>
+              <option value="IT Support">IT Support</option>
               <option value="Data Analytics / Power BI">Data Analytics / Power BI</option>
               <option value="Networking & AV">Networking &amp; AV</option>
               <option value="IT Assets & Documentation">IT Assets &amp; Documentation</option>
-              <option value="Domains & Online Services">Domains &amp; Online Services</option>
+              <option value="Domains & Email">Domains &amp; Email</option>
               <option value="Other">Other</option>
             </select>
           </div>
@@ -176,12 +177,13 @@ body_contact_pl = '''
             <label for="service_pl">Usługa / obszar wsparcia</label>
             <select id="service_pl" name="service">
               <option value="">Nie jestem pewien / zapytanie ogólne</option>
-              <option value="IT Support">Wsparcie IT</option>
               <option value="Microsoft 365">Microsoft 365</option>
+              <option value="Website / landing page">Strona internetowa / landing page</option>
+              <option value="IT Support">Wsparcie IT</option>
               <option value="Data Analytics / Power BI">Analiza danych / Power BI</option>
               <option value="Networking & AV">Sieci i AV</option>
               <option value="IT Assets & Documentation">Zasoby IT i dokumentacja</option>
-              <option value="Domains & Online Services">Domeny i usługi online</option>
+              <option value="Domains & Email">Domeny i poczta</option>
               <option value="Other">Inne</option>
             </select>
           </div>

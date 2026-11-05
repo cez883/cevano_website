@@ -47,6 +47,7 @@ One provider for everyday IT support, Microsoft 365 administration, and data ana
 
 - Name: Cevano IT Solutions. Existing logo assets are in `assets/img/` (`logo-trimmed`, `logo-white`, favicons, `og-image.jpg`).
 - The business is run by one person. Copy keeps the company voice ("we"). Never state or imply a team size, staff, or departments.
+- The site stays impersonal (owner's decision, 2026-11-05): no founder name, photo, or "who you'll deal with" block. Trust comes from specifics (real M365 problems, process, PL-300, reply expectations) instead.
 - Voice: approachable, practical, plain English, no jargon overload, never salesy hype.
 - Legal facts: Company No. 17428300. Registered address: Lytchett House, 13 Freeland Park, Wareham Road, Poole, Dorset, BH16 6FA. The registered address is a virtual office. Do not present it as a place clients visit.
 - Social links: Facebook and LinkedIn (icons in `assets/img/`).
