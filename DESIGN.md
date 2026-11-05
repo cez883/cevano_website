@@ -267,6 +267,8 @@ Crisp and restrained.
 - **Focus:** border goes transparent, 2px Signal Blue outline at 1px offset.
 - **Hint:** 14px Slate line between label and field, linked with `aria-describedby`. Guidance lives next to the field it is about.
 - **Checkbox:** 20px, `accent-color` Working Blue.
+- **Confirmation panel:** on success the form is replaced (not cleared under a status box) by a panel: an "Enquiry sent" h2 that takes focus, the visitor's email, a copy of their message in a Morning Paper box (text only, never HTML), and two actions: an outline "Send another enquiry" button and a ghost link back to services. Also used for the no-JS `?sent=1` return.
+- **Service preselect:** links to `contact.html?service=m365|website|it-support|data` pre-select the matching option; unknown values are ignored. Each core service section on services.html ends with an outline "Ask about …" button using this.
 - **Status:** full-width message block directly under the submit button, 4px corners, tinted green or red with matching border. Success uses `role=status`; error uses `role=alert` and ends with a real mailto link.
 
 ### Navigation

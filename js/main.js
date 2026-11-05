@@ -195,13 +195,31 @@
       var submitBtn = form.querySelector("[data-form-submit]");
       var startTime = Date.now();
 
-      // Handle the no-JS-navigation fallback: contact-handler.php redirects
+      var done = document.querySelector("[data-form-done]");
+
+      // Handle the no-JS-navigation fallback: functions/api/contact.js redirects
       // back here with ?sent=1 or ?error=1 when a full page POST happened.
       var params = new URLSearchParams(window.location.search);
       if (params.has("sent")) {
-        showStatus(true);
+        showDone("", "");
       } else if (params.has("error")) {
         showStatus(false);
+      }
+
+      // Pre-select the service when arriving from a service page (?service=m365).
+      // Only known keys map to an option; anything else is ignored.
+      var SERVICE_KEYS = {
+        "m365": "Microsoft 365",
+        "website": "Website / landing page",
+        "it-support": "IT Support",
+        "data": "Data Analytics / Power BI"
+      };
+      var serviceSelect = form.querySelector('[name="service"]');
+      var wanted = SERVICE_KEYS[params.get("service")];
+      if (serviceSelect && wanted) {
+        for (var i = 0; i < serviceSelect.options.length; i++) {
+          if (serviceSelect.options[i].value === wanted) { serviceSelect.selectedIndex = i; break; }
+        }
       }
 
       form.addEventListener("submit", function (e) {
@@ -209,8 +227,15 @@
         var honeypot = form.querySelector('[name="company_website"]');
         var tooFast = Date.now() - startTime < 2500;
 
-        if ((honeypot && honeypot.value) || tooFast) {
+        if (honeypot && honeypot.value) {
           e.preventDefault();
+          return;
+        }
+        if (tooFast) {
+          // Real people who autofill and submit instantly get told what to do
+          // instead of a button that silently does nothing.
+          e.preventDefault();
+          showNotice(form.dataset.tooFast || "Please wait a moment, then press Send again.");
           return;
         }
 
@@ -230,7 +255,8 @@
           }).then(function (res) {
             if (res.ok) {
               var emailField = form.querySelector('[name="email"]');
-              showStatus(true, emailField ? emailField.value.trim() : "");
+              var messageField = form.querySelector('[name="message"]');
+              showDone(emailField ? emailField.value.trim() : "", messageField ? messageField.value.trim() : "");
               form.reset();
               startTime = Date.now();
             } else {
@@ -247,6 +273,59 @@
         // and responds with a redirect back to this page (?sent=1 / ?error=1),
         // which the code above picks up on load to show the same message.
       });
+
+      function showNotice(text) {
+        if (!status) return;
+        status.className = "form-status error";
+        status.textContent = text;
+        status.setAttribute("role", "alert");
+      }
+
+      // Success: swap the form for a confirmation panel that repeats the
+      // visitor's email and message, so nothing they wrote disappears.
+      function showDone(email, message) {
+        if (!done) { showStatus(true, email); return; }
+        var withEmail = done.querySelector("[data-done-with-email]");
+        var noEmail = done.querySelector("[data-done-no-email]");
+        var emailSlot = done.querySelector("[data-done-email]");
+        var copyWrap = done.querySelector("[data-done-copy-wrap]");
+        var copy = done.querySelector("[data-done-copy]");
+        if (email && emailSlot) {
+          emailSlot.textContent = email;
+          withEmail.hidden = false; noEmail.hidden = true;
+        } else if (withEmail) {
+          withEmail.hidden = true; noEmail.hidden = false;
+        }
+        if (message && copy) {
+          copy.textContent = message;
+          copyWrap.hidden = false;
+        } else if (copyWrap) {
+          copyWrap.hidden = true;
+        }
+        if (status) { status.className = "form-status"; status.textContent = ""; }
+        form.hidden = true;
+        done.hidden = false;
+        var heading = done.querySelector("[data-done-heading]");
+        if (heading) heading.focus();
+        done.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+
+      if (done) {
+        var again = done.querySelector("[data-done-again]");
+        if (again) again.addEventListener("click", function () {
+          done.hidden = true;
+          form.hidden = false;
+          // Drop ?sent=1 so a reload shows the empty form, not the old confirmation.
+          if (window.history && history.replaceState && params.has("sent")) {
+            params.delete("sent");
+            var q = params.toString();
+            history.replaceState(null, "", window.location.pathname + (q ? "?" + q : "") + window.location.hash);
+          }
+          startTime = Date.now();
+          var first = form.querySelector('[name="name"]');
+          if (first) first.focus();
+        });
+      }
 
       function showStatus(success, email) {
         if (!status) return;

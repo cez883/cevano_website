@@ -23,7 +23,7 @@
 <link rel="manifest" href="../site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="../css/style.css?v=20261105-8">
+<link rel="stylesheet" href="../css/style.css?v=20261105-9">
 <script>(function(){try{var t=localStorage.getItem("cevano-theme");if(t==="dark"||t==="light"){document.documentElement.setAttribute("data-theme",t);}else if(window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches){document.documentElement.setAttribute("data-theme","dark");}}catch(e){}})();</script>
 </head>
 <body>
@@ -103,7 +103,7 @@
             data-success-msg="Dziękujemy, Twoje zapytanie zostało wysłane. Odpowiemy e-mailem na podany adres najszybciej, jak to możliwe. Na razie nic więcej nie musisz robić."
             data-success-email-msg="Dziękujemy, Twoje zapytanie zostało wysłane. Odpowiemy e-mailem na adres {email} najszybciej, jak to możliwe. Na razie nic więcej nie musisz robić."
             data-error-msg="Niestety nie udało się wysłać zapytania. Spróbuj ponownie za chwilę albo napisz do nas na"
-            data-submit-label="Wyślij zapytanie" data-sending="Wysyłanie…">
+            data-submit-label="Wyślij zapytanie" data-too-fast="Poczekaj chwilę i naciśnij „Wyślij” ponownie." data-sending="Wysyłanie…">
         <input type="hidden" name="_lang" value="pl">
         <div class="hp-field" aria-hidden="true">
           <label for="company_website_pl">Pozostaw to pole puste</label>
@@ -112,24 +112,24 @@
 
         <div class="form-row">
           <label for="name_pl">Imię i nazwisko <span class="req">*</span></label>
-          <input type="text" id="name_pl" name="name" required autocomplete="name">
+          <input type="text" id="name_pl" name="name" maxlength="120" required autocomplete="name">
         </div>
 
         <div class="form-two">
           <div class="form-row">
             <label for="company_pl">Nazwa firmy</label>
-            <input type="text" id="company_pl" name="company" autocomplete="organization">
+            <input type="text" id="company_pl" name="company" maxlength="120" autocomplete="organization">
           </div>
           <div class="form-row">
             <label for="phone_pl">Telefon</label>
-            <input type="tel" id="phone_pl" name="phone" autocomplete="tel">
+            <input type="tel" id="phone_pl" name="phone" maxlength="40" autocomplete="tel">
           </div>
         </div>
 
         <div class="form-two">
           <div class="form-row">
             <label for="email_pl">E-mail <span class="req">*</span></label>
-            <input type="email" id="email_pl" name="email" required autocomplete="email">
+            <input type="email" id="email_pl" name="email" maxlength="254" required autocomplete="email">
           </div>
           <div class="form-row">
             <label for="service_pl">Usługa / obszar wsparcia</label>
@@ -150,7 +150,7 @@
         <div class="form-row">
           <label for="message_pl">Wiadomość <span class="req">*</span></label>
           <p class="field-hint" id="message_pl_hint">Opisz krótko problem lub projekt, ile osób lub urządzeń to dotyczy i czy sprawa jest pilna.</p>
-          <textarea id="message_pl" name="message" required aria-describedby="message_pl_hint" placeholder="Na przykład: były pracownik wciąż ma dostęp, zaginął e-mail, potrzebujemy nowego landing page albo trzeba skonfigurować laptopa."></textarea>
+          <textarea id="message_pl" name="message" maxlength="5000" required aria-describedby="message_pl_hint" placeholder="Na przykład: były pracownik wciąż ma dostęp, zaginął e-mail, potrzebujemy nowego landing page albo trzeba skonfigurować laptopa."></textarea>
         </div>
 
         <div class="form-row">
@@ -164,6 +164,19 @@
         <div class="form-status" data-form-status aria-live="polite"></div>
         <p class="form-note">Twoje dane wykorzystujemy wyłącznie w celu odpowiedzi na zapytanie. Więcej informacji znajdziesz w <a href="legal/privacy-policy.html">Polityce prywatności</a>.</p>
       </form>
+      <div class="form-done" data-form-done hidden>
+        <h2 tabindex="-1" data-done-heading>Zapytanie wysłane</h2>
+        <p data-done-with-email hidden>Odpowiemy e-mailem na adres <strong data-done-email></strong> najszybciej, jak to możliwe.</p>
+        <p data-done-no-email>Odpowiemy e-mailem na podany adres najszybciej, jak to możliwe.</p>
+        <div class="form-done-copy" data-done-copy-wrap hidden>
+          <h3>Twoja wiadomość</h3>
+          <p data-done-copy></p>
+        </div>
+        <div class="form-done-actions">
+          <button type="button" class="btn btn-outline" data-done-again>Wyślij kolejne zapytanie</button>
+          <a class="btn-ghost" href="services.html">Wróć do usług →</a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -230,7 +243,7 @@
   </div>
 </div>
 
-<script src="../js/main.js?v=20261105-8" defer></script>
+<script src="../js/main.js?v=20261105-9" defer></script>
 
 </body>
 </html>

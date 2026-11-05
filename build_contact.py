@@ -42,7 +42,7 @@ body_contact_en = '''
             data-success-msg="Thank you, your enquiry has been sent. We'll reply by email to the address you gave, as soon as we can. There's nothing else you need to do for now."
             data-success-email-msg="Thank you, your enquiry has been sent. We'll reply by email to {email}, as soon as we can. There's nothing else you need to do for now."
             data-error-msg="Sorry, your enquiry couldn't be sent. Please try again in a moment, or email us at"
-            data-submit-label="Send enquiry" data-sending="Sending…">
+            data-submit-label="Send enquiry" data-too-fast="Please wait a moment, then press Send again." data-sending="Sending…">
         <input type="hidden" name="_lang" value="en">
         <div class="hp-field" aria-hidden="true">
           <label for="company_website">Leave this field empty</label>
@@ -51,24 +51,24 @@ body_contact_en = '''
 
         <div class="form-row">
           <label for="name">Name <span class="req">*</span></label>
-          <input type="text" id="name" name="name" required autocomplete="name">
+          <input type="text" id="name" name="name" maxlength="120" required autocomplete="name">
         </div>
 
         <div class="form-two">
           <div class="form-row">
             <label for="company">Company name</label>
-            <input type="text" id="company" name="company" autocomplete="organization">
+            <input type="text" id="company" name="company" maxlength="120" autocomplete="organization">
           </div>
           <div class="form-row">
             <label for="phone">Phone</label>
-            <input type="tel" id="phone" name="phone" autocomplete="tel">
+            <input type="tel" id="phone" name="phone" maxlength="40" autocomplete="tel">
           </div>
         </div>
 
         <div class="form-two">
           <div class="form-row">
             <label for="email">Email <span class="req">*</span></label>
-            <input type="email" id="email" name="email" required autocomplete="email">
+            <input type="email" id="email" name="email" maxlength="254" required autocomplete="email">
           </div>
           <div class="form-row">
             <label for="service">Service / area of support</label>
@@ -89,7 +89,7 @@ body_contact_en = '''
         <div class="form-row">
           <label for="message">Message <span class="req">*</span></label>
           <p class="field-hint" id="message_hint">Briefly describe the problem or project, roughly how many people or devices are involved, and whether it's urgent.</p>
-          <textarea id="message" name="message" required aria-describedby="message_hint" placeholder="For example: a leaver still has access, an email went missing, we need a new landing page, or a laptop needs setting up."></textarea>
+          <textarea id="message" name="message" maxlength="5000" required aria-describedby="message_hint" placeholder="For example: a leaver still has access, an email went missing, we need a new landing page, or a laptop needs setting up."></textarea>
         </div>
 
         <div class="form-row">
@@ -103,6 +103,19 @@ body_contact_en = '''
         <div class="form-status" data-form-status aria-live="polite"></div>
         <p class="form-note">We only use your details to respond to your enquiry. See our <a href="legal/privacy-policy.html">Privacy Policy</a> for more information.</p>
       </form>
+      <div class="form-done" data-form-done hidden>
+        <h2 tabindex="-1" data-done-heading>Enquiry sent</h2>
+        <p data-done-with-email hidden>We'll reply by email to <strong data-done-email></strong>, as soon as we can.</p>
+        <p data-done-no-email>We'll reply by email to the address you gave, as soon as we can.</p>
+        <div class="form-done-copy" data-done-copy-wrap hidden>
+          <h3>What you sent</h3>
+          <p data-done-copy></p>
+        </div>
+        <div class="form-done-actions">
+          <button type="button" class="btn btn-outline" data-done-again>Send another enquiry</button>
+          <a class="btn-ghost" href="services.html">Back to services →</a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -156,7 +169,7 @@ body_contact_pl = '''
             data-success-msg="Dziękujemy, Twoje zapytanie zostało wysłane. Odpowiemy e-mailem na podany adres najszybciej, jak to możliwe. Na razie nic więcej nie musisz robić."
             data-success-email-msg="Dziękujemy, Twoje zapytanie zostało wysłane. Odpowiemy e-mailem na adres {email} najszybciej, jak to możliwe. Na razie nic więcej nie musisz robić."
             data-error-msg="Niestety nie udało się wysłać zapytania. Spróbuj ponownie za chwilę albo napisz do nas na"
-            data-submit-label="Wyślij zapytanie" data-sending="Wysyłanie…">
+            data-submit-label="Wyślij zapytanie" data-too-fast="Poczekaj chwilę i naciśnij „Wyślij” ponownie." data-sending="Wysyłanie…">
         <input type="hidden" name="_lang" value="pl">
         <div class="hp-field" aria-hidden="true">
           <label for="company_website_pl">Pozostaw to pole puste</label>
@@ -165,24 +178,24 @@ body_contact_pl = '''
 
         <div class="form-row">
           <label for="name_pl">Imię i nazwisko <span class="req">*</span></label>
-          <input type="text" id="name_pl" name="name" required autocomplete="name">
+          <input type="text" id="name_pl" name="name" maxlength="120" required autocomplete="name">
         </div>
 
         <div class="form-two">
           <div class="form-row">
             <label for="company_pl">Nazwa firmy</label>
-            <input type="text" id="company_pl" name="company" autocomplete="organization">
+            <input type="text" id="company_pl" name="company" maxlength="120" autocomplete="organization">
           </div>
           <div class="form-row">
             <label for="phone_pl">Telefon</label>
-            <input type="tel" id="phone_pl" name="phone" autocomplete="tel">
+            <input type="tel" id="phone_pl" name="phone" maxlength="40" autocomplete="tel">
           </div>
         </div>
 
         <div class="form-two">
           <div class="form-row">
             <label for="email_pl">E-mail <span class="req">*</span></label>
-            <input type="email" id="email_pl" name="email" required autocomplete="email">
+            <input type="email" id="email_pl" name="email" maxlength="254" required autocomplete="email">
           </div>
           <div class="form-row">
             <label for="service_pl">Usługa / obszar wsparcia</label>
@@ -203,7 +216,7 @@ body_contact_pl = '''
         <div class="form-row">
           <label for="message_pl">Wiadomość <span class="req">*</span></label>
           <p class="field-hint" id="message_pl_hint">Opisz krótko problem lub projekt, ile osób lub urządzeń to dotyczy i czy sprawa jest pilna.</p>
-          <textarea id="message_pl" name="message" required aria-describedby="message_pl_hint" placeholder="Na przykład: były pracownik wciąż ma dostęp, zaginął e-mail, potrzebujemy nowego landing page albo trzeba skonfigurować laptopa."></textarea>
+          <textarea id="message_pl" name="message" maxlength="5000" required aria-describedby="message_pl_hint" placeholder="Na przykład: były pracownik wciąż ma dostęp, zaginął e-mail, potrzebujemy nowego landing page albo trzeba skonfigurować laptopa."></textarea>
         </div>
 
         <div class="form-row">
@@ -217,6 +230,19 @@ body_contact_pl = '''
         <div class="form-status" data-form-status aria-live="polite"></div>
         <p class="form-note">Twoje dane wykorzystujemy wyłącznie w celu odpowiedzi na zapytanie. Więcej informacji znajdziesz w <a href="legal/privacy-policy.html">Polityce prywatności</a>.</p>
       </form>
+      <div class="form-done" data-form-done hidden>
+        <h2 tabindex="-1" data-done-heading>Zapytanie wysłane</h2>
+        <p data-done-with-email hidden>Odpowiemy e-mailem na adres <strong data-done-email></strong> najszybciej, jak to możliwe.</p>
+        <p data-done-no-email>Odpowiemy e-mailem na podany adres najszybciej, jak to możliwe.</p>
+        <div class="form-done-copy" data-done-copy-wrap hidden>
+          <h3>Twoja wiadomość</h3>
+          <p data-done-copy></p>
+        </div>
+        <div class="form-done-actions">
+          <button type="button" class="btn btn-outline" data-done-again>Wyślij kolejne zapytanie</button>
+          <a class="btn-ghost" href="services.html">Wróć do usług →</a>
+        </div>
+      </div>
     </div>
   </div>
 </section>

@@ -39,6 +39,7 @@ body_services_en = f'''
             "Microsoft 365 migrations where appropriate",
         ])}
       </ul>
+      <a class="btn btn-outline service-ask" href="contact.html?service=m365">Ask about Microsoft 365</a>
     </div>
     <div class="panel">
       <h3>What this looks like in practice</h3>
@@ -69,6 +70,7 @@ body_services_en = f'''
             "Domain, DNS and business email configuration",
         ])}
       </ul>
+      <a class="btn btn-outline service-ask" href="contact.html?service=website">Ask about a website</a>
     </div>
     <div class="panel">
       <h3>What this looks like in practice</h3>
@@ -97,6 +99,7 @@ body_services_en = f'''
             "Practical IT advice and consultancy",
         ])}
       </ul>
+      <a class="btn btn-outline service-ask" href="contact.html?service=it-support">Ask about IT support</a>
     </div>
     <div class="panel">
       <h3>Common requests we help with</h3>
@@ -128,6 +131,7 @@ body_services_en = f'''
             "Building presentations for meetings and reports",
         ])}
       </ul>
+      <a class="btn btn-outline service-ask" href="contact.html?service=data">Ask about Power BI</a>
     </div>
     <div class="panel">
       <h3>Example uses</h3>
@@ -244,6 +248,7 @@ body_services_pl = f'''
             "Migracje Microsoft 365 w uzasadnionych przypadkach",
         ])}
       </ul>
+      <a class="btn btn-outline service-ask" href="contact.html?service=m365">Zapytaj o Microsoft 365</a>
     </div>
     <div class="panel">
       <h3>Jak to wygląda w praktyce</h3>
@@ -274,6 +279,7 @@ body_services_pl = f'''
             "Konfiguracja domeny, DNS i poczty firmowej",
         ])}
       </ul>
+      <a class="btn btn-outline service-ask" href="contact.html?service=website">Zapytaj o stronę internetową</a>
     </div>
     <div class="panel">
       <h3>Jak to wygląda w praktyce</h3>
@@ -302,6 +308,7 @@ body_services_pl = f'''
             "Praktyczne doradztwo IT",
         ])}
       </ul>
+      <a class="btn btn-outline service-ask" href="contact.html?service=it-support">Zapytaj o wsparcie IT</a>
     </div>
     <div class="panel">
       <h3>Typowe zgłoszenia, z którymi pomagamy</h3>
@@ -333,6 +340,7 @@ body_services_pl = f'''
             "Budowanie prezentacji na spotkania i raporty",
         ])}
       </ul>
+      <a class="btn btn-outline service-ask" href="contact.html?service=data">Zapytaj o Power BI</a>
     </div>
     <div class="panel">
       <h3>Przykładowe zastosowania</h3>

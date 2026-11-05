@@ -215,6 +215,8 @@ html[data-nav-open="true"] .nav-toggle .icon-close{ display:block; }
   /* touch targets: 44px minimum for small header controls */
   .lang-switch a{ display:inline-flex; align-items:center; justify-content:center; min-width:44px; min-height:44px; }
   .theme-toggle{ width:44px; height:44px; }
+  .btn{ min-height:44px; }
+  .contact-info a.email-link{ display:inline-flex; align-items:center; min-height:44px; }
 }
 
 /* ---------- Hero ---------- */
@@ -410,6 +412,18 @@ html[data-theme="dark"] .service-card:hover{ background: var(--bg-alt); }
   outline: 2px solid var(--focus-ring); outline-offset:1px; border-color: transparent;
 }
 .form-row textarea{ resize: vertical; min-height: 120px; }
+.form-done h2{ font-size: 1.4rem; margin-bottom: 8px; }
+.form-done h2:focus{ outline: none; }
+.form-done strong{ color: var(--ink); overflow-wrap: anywhere; }
+.form-done-copy{
+  margin: 18px 0 24px; padding: 14px 16px;
+  background: var(--bg); border: 1px solid var(--line); border-radius: var(--radius-s);
+}
+.form-done-copy h3{ font-size: 13px; font-family: var(--font-body); font-weight: 700; color: var(--slate); margin-bottom: 6px; }
+.form-done-copy p{ margin: 0; color: var(--ink); font-size: 15px; white-space: pre-wrap; overflow-wrap: anywhere; max-height: 12em; overflow:auto; }
+.form-done > p{ margin-bottom: 0; }
+.form-done-actions{ margin-top: 24px; display:flex; align-items:center; gap: 16px; flex-wrap: wrap; }
+.service-ask{ margin-top: 22px; }
 .field-hint{ font-size:14px; color: var(--slate); margin: -2px 0 8px; }
 .form-row input[type="checkbox"]{ width:20px; height:20px; flex:none; accent-color: var(--blue); }
 .form-two{ display:grid; grid-template-columns:1fr 1fr; gap:20px; }

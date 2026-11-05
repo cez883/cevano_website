@@ -144,7 +144,7 @@ body_home_en = f'''
         <h3>Not sure what state your Microsoft 365 is in?</h3>
         <p>We'll review your setup for free and tell you what we'd fix first.</p>
       </div>
-      <a class="btn btn-outline" href="contact.html">Ask for a free review</a>
+      <a class="btn btn-outline" href="contact.html?service=m365">Ask for a free review</a>
     </div>
   </div>
 </section>
@@ -338,7 +338,7 @@ body_home_pl = f'''
         <h3>Nie wiesz, w jakim stanie jest Twój Microsoft 365?</h3>
         <p>Bezpłatnie przejrzymy Twoją konfigurację i powiemy, co naprawilibyśmy w pierwszej kolejności.</p>
       </div>
-      <a class="btn btn-outline" href="contact.html">Poproś o bezpłatny przegląd</a>
+      <a class="btn btn-outline" href="contact.html?service=m365">Poproś o bezpłatny przegląd</a>
     </div>
   </div>
 </section>

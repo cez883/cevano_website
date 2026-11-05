@@ -23,7 +23,7 @@
 <link rel="manifest" href="site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="css/style.css?v=20261105-8">
+<link rel="stylesheet" href="css/style.css?v=20261105-9">
 <script>(function(){try{var t=localStorage.getItem("cevano-theme");if(t==="dark"||t==="light"){document.documentElement.setAttribute("data-theme",t);}else if(window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches){document.documentElement.setAttribute("data-theme","dark");}}catch(e){}})();</script>
 </head>
 <body>
@@ -103,7 +103,7 @@
             data-success-msg="Thank you, your enquiry has been sent. We'll reply by email to the address you gave, as soon as we can. There's nothing else you need to do for now."
             data-success-email-msg="Thank you, your enquiry has been sent. We'll reply by email to {email}, as soon as we can. There's nothing else you need to do for now."
             data-error-msg="Sorry, your enquiry couldn't be sent. Please try again in a moment, or email us at"
-            data-submit-label="Send enquiry" data-sending="Sending…">
+            data-submit-label="Send enquiry" data-too-fast="Please wait a moment, then press Send again." data-sending="Sending…">
         <input type="hidden" name="_lang" value="en">
         <div class="hp-field" aria-hidden="true">
           <label for="company_website">Leave this field empty</label>
@@ -112,24 +112,24 @@
 
         <div class="form-row">
           <label for="name">Name <span class="req">*</span></label>
-          <input type="text" id="name" name="name" required autocomplete="name">
+          <input type="text" id="name" name="name" maxlength="120" required autocomplete="name">
         </div>
 
         <div class="form-two">
           <div class="form-row">
             <label for="company">Company name</label>
-            <input type="text" id="company" name="company" autocomplete="organization">
+            <input type="text" id="company" name="company" maxlength="120" autocomplete="organization">
           </div>
           <div class="form-row">
             <label for="phone">Phone</label>
-            <input type="tel" id="phone" name="phone" autocomplete="tel">
+            <input type="tel" id="phone" name="phone" maxlength="40" autocomplete="tel">
           </div>
         </div>
 
         <div class="form-two">
           <div class="form-row">
             <label for="email">Email <span class="req">*</span></label>
-            <input type="email" id="email" name="email" required autocomplete="email">
+            <input type="email" id="email" name="email" maxlength="254" required autocomplete="email">
           </div>
           <div class="form-row">
             <label for="service">Service / area of support</label>
@@ -150,7 +150,7 @@
         <div class="form-row">
           <label for="message">Message <span class="req">*</span></label>
           <p class="field-hint" id="message_hint">Briefly describe the problem or project, roughly how many people or devices are involved, and whether it's urgent.</p>
-          <textarea id="message" name="message" required aria-describedby="message_hint" placeholder="For example: a leaver still has access, an email went missing, we need a new landing page, or a laptop needs setting up."></textarea>
+          <textarea id="message" name="message" maxlength="5000" required aria-describedby="message_hint" placeholder="For example: a leaver still has access, an email went missing, we need a new landing page, or a laptop needs setting up."></textarea>
         </div>
 
         <div class="form-row">
@@ -164,6 +164,19 @@
         <div class="form-status" data-form-status aria-live="polite"></div>
         <p class="form-note">We only use your details to respond to your enquiry. See our <a href="legal/privacy-policy.html">Privacy Policy</a> for more information.</p>
       </form>
+      <div class="form-done" data-form-done hidden>
+        <h2 tabindex="-1" data-done-heading>Enquiry sent</h2>
+        <p data-done-with-email hidden>We'll reply by email to <strong data-done-email></strong>, as soon as we can.</p>
+        <p data-done-no-email>We'll reply by email to the address you gave, as soon as we can.</p>
+        <div class="form-done-copy" data-done-copy-wrap hidden>
+          <h3>What you sent</h3>
+          <p data-done-copy></p>
+        </div>
+        <div class="form-done-actions">
+          <button type="button" class="btn btn-outline" data-done-again>Send another enquiry</button>
+          <a class="btn-ghost" href="services.html">Back to services →</a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -230,7 +243,7 @@
   </div>
 </div>
 
-<script src="js/main.js?v=20261105-8" defer></script>
+<script src="js/main.js?v=20261105-9" defer></script>
 
 </body>
 </html>
