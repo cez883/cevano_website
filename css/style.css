@@ -260,6 +260,12 @@ html[data-nav-open="true"] .nav-toggle .icon-close{ display:block; }
   max-width: 15ch; margin-bottom: .45em;
 }
 .h1-tail{ display:block; color: #7CC0FF; }
+/* Polish H1 is longer ("IT Support. Strony WWW. Analiza danych."): on wide
+   screens a slightly smaller size lets it settle into the same three-part
+   rhythm as the English heading instead of five short lines. */
+@media (min-width: 1101px){
+  html[lang="pl"] .hero--dark h1{ font-size: clamp(2.3rem, 3.4vw, 2.7rem); max-width: none; }
+}
 .nw{ white-space: nowrap; }
 .hero-subtitle{
   font-family: var(--font-head); font-weight: 500; font-size: clamp(1.15rem, 1.7vw, 1.4rem);

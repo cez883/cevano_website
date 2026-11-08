@@ -221,9 +221,9 @@ body_home_pl = f'''
   {hero_bg("../")}
   <div class="container hero-grid">
     <div class="hero-copy">
-      <h1><span class="nw">IT.</span> <span class="nw">Strony internetowe.</span> <span class="nw">Dane.</span> <span class="h1-tail">Wszystko w jednym miejscu.</span></h1>
+      <h1><span class="nw">IT Support.</span> <span class="nw">Strony WWW.</span> <span class="nw">Analiza danych.</span> <span class="h1-tail">Wszystko w jednym miejscu.</span></h1>
       <p class="hero-subtitle">Technologia, która pomaga Twojej firmie iść do przodu.</p>
-      <p class="lede">Dostarczamy dopasowane rozwiązania IT, nowoczesne strony internetowe i analizę danych, które pomagają małym firmom i startupom pracować mądrzej, działać bezpiecznie i rozwijać się z pewnością siebie.</p>
+      <p class="lede">Pomagamy małym firmom i startupom działać sprawniej i bezpieczniej dzięki rozwiązaniom IT, nowoczesnym stronom internetowym i analizie danych.</p>
       <div class="hero-ctas">
         <a class="btn btn-primary" href="contact.html">Skontaktuj się</a>
         <a class="btn btn-outline" href="services.html">Poznaj nasze usługi</a>
