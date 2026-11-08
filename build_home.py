@@ -230,7 +230,7 @@ body_home_pl = f'''
       </div>
       <ul class="hero-meta">
         <li>{I_ENVELOPE}<a href="mailto:enquiries@cevano.co.uk">enquiries@cevano.co.uk</a></li>
-        <li>{I_PIN}<span>Na miejscu w okolicach Northampton, Kettering, Milton Keynes i Rugby. Zdalnie w całej Wielkiej Brytanii.</span></li>
+        <li>{I_PIN}<span>Działamy lokalnie w okolicach Northampton, Kettering, Milton Keynes i Rugby, a zdalnie na terenie całej Wielkiej Brytanii.</span></li>
       </ul>
     </div>
     {hero_bento("pl", "services.html")}
