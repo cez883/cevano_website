@@ -174,7 +174,10 @@
         .filter(Boolean);
 
       function setActiveMiniLink() {
-        var scrollPos = window.scrollY + 140;
+        // Same offset the CSS scroll-margin uses: sticky header + this sub-nav.
+        var header = document.querySelector(".site-header");
+        var offset = (header ? header.offsetHeight : 0) + miniNav.offsetHeight + 24;
+        var scrollPos = window.scrollY + offset;
         var current = targets[0];
         targets.forEach(function (t) {
           if (t.offsetTop <= scrollPos) current = t;

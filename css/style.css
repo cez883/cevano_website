@@ -735,6 +735,13 @@ html[data-theme="dark"] .site-footer{ background:#050C18; }
 html[data-theme="dark"] .placeholder-flag{ background:#332B0E; border-color:#5A4A15; color:#F0DE9E; }
 
 /* ---------- Services mini-nav ---------- */
+/* Anchor targets land below the sticky header (and, on services.html,
+   below the sticky sub-nav) instead of underneath them. */
+:root{ --mini-nav-h: 64px; }
+section[id]{ scroll-margin-top: var(--header-h); }
+.mini-nav ~ section[id]{ scroll-margin-top: calc(var(--header-h) + var(--mini-nav-h)); }
+@media (max-width: 900px){ :root{ --mini-nav-h: 70px; } }
+@media (max-width: 640px){ :root{ --mini-nav-h: 85px; } }
 .mini-nav{
   position: sticky; top: var(--header-h); z-index: 90;
   background: color-mix(in srgb, var(--bg) 94%, transparent);
