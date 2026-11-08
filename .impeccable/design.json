@@ -250,7 +250,7 @@
       "refersTo": "service-grid",
       "description": "Signature ruled grid cell for core services; inset blue bar on hover.",
       "html": "<div class=\"ds-svc\"><h3>Microsoft 365</h3><p>Administration covering user accounts, licensing, security, permissions and device management.</p><a href=\"#\">Microsoft 365 in detail →</a></div>",
-      "css": ".ds-svc{max-width:340px;padding:36px 30px;border-top:1px solid #DCE3EE;border-right:1px solid #DCE3EE;border-bottom:1px solid #DCE3EE;display:flex;flex-direction:column;gap:14px;font-family:'Public Sans','Segoe UI',sans-serif;transition:background-color .18s ease,box-shadow .18s ease,transform .18s ease}.ds-svc:hover{background:#fff;box-shadow:inset 0 3px 0 #0072D6;transform:translateY(-2px)}.ds-svc h3{margin:0;font-family:'Space Grotesk','Segoe UI',sans-serif;font-weight:600;font-size:1.25rem;color:#0B1B33;letter-spacing:-.01em}.ds-svc p{margin:0;font-size:15px;line-height:1.6;color:#4A5A75}.ds-svc a{font-weight:700;font-size:15px;color:#005EBB;text-decoration:none}"
+      "css": ".ds-svc{max-width:340px;padding:36px 30px;border-top:1px solid #DCE3EE;border-right:1px solid #DCE3EE;border-bottom:1px solid #DCE3EE;display:flex;flex-direction:column;gap:14px;font-family:'Public Sans','Segoe UI',sans-serif;transition:background-color .18s ease,box-shadow .18s ease,transform .18s ease}.ds-svc:hover{background:#fff;box-shadow:inset 0 3px 0 #0072D6;transform:translateY(-2px)}.ds-svc h3{margin:0;font-family:'Sora','Segoe UI',sans-serif;font-weight:600;font-size:1.25rem;color:#0B1B33;letter-spacing:-.01em}.ds-svc p{margin:0;font-size:15px;line-height:1.6;color:#4A5A75}.ds-svc a{font-weight:700;font-size:15px;color:#005EBB;text-decoration:none}"
     },
     {
       "name": "Secondary Card",
@@ -258,7 +258,7 @@
       "refersTo": "card-subservice",
       "description": "Bordered card for secondary services.",
       "html": "<div class=\"ds-card\"><h3>Networking &amp; AV</h3><p>Business networking, Wi-Fi and meeting room AV.</p></div>",
-      "css": ".ds-card{max-width:320px;background:#fff;border:1px solid #DCE3EE;border-radius:8px;padding:26px 24px;font-family:'Public Sans','Segoe UI',sans-serif;transition:border-color .18s ease,transform .18s ease,box-shadow .18s ease}.ds-card:hover{border-color:#0092E6;transform:translateY(-2px);box-shadow:0 8px 20px rgba(11,27,51,.06)}.ds-card h3{margin:0 0 8px;font-family:'Space Grotesk','Segoe UI',sans-serif;font-weight:600;font-size:1.05rem;color:#0B1B33}.ds-card p{margin:0;font-size:14.5px;line-height:1.6;color:#4A5A75}"
+      "css": ".ds-card{max-width:320px;background:#fff;border:1px solid #DCE3EE;border-radius:8px;padding:26px 24px;font-family:'Public Sans','Segoe UI',sans-serif;transition:border-color .18s ease,transform .18s ease,box-shadow .18s ease}.ds-card:hover{border-color:#0092E6;transform:translateY(-2px);box-shadow:0 8px 20px rgba(11,27,51,.06)}.ds-card h3{margin:0 0 8px;font-family:'Sora','Segoe UI',sans-serif;font-weight:600;font-size:1.05rem;color:#0B1B33}.ds-card p{margin:0;font-size:14.5px;line-height:1.6;color:#4A5A75}"
     },
     {
       "name": "Next Steps",
@@ -266,7 +266,7 @@
       "refersTo": "next-steps-marker",
       "description": "Numbered reassurance list on the contact page.",
       "html": "<ol class=\"ds-next\"><li>We read your message and reply by email.</li><li>If we need more detail, we ask a few questions first.</li><li>We explain the options in plain terms before anything is agreed.</li></ol>",
-      "css": ".ds-next{margin:0;padding:0;list-style:none;counter-reset:n;font-family:'Public Sans','Segoe UI',sans-serif;max-width:360px}.ds-next li{counter-increment:n;position:relative;padding:4px 0 4px 30px;color:#4A5A75;font-size:15px;line-height:1.6}.ds-next li::before{content:counter(n);position:absolute;left:0;top:6px;width:20px;height:20px;border-radius:50%;border:1px solid #DCE3EE;color:#005EBB;font-family:'Space Grotesk','Segoe UI',sans-serif;font-weight:700;font-size:12px;display:flex;align-items:center;justify-content:center}"
+      "css": ".ds-next{margin:0;padding:0;list-style:none;counter-reset:n;font-family:'Public Sans','Segoe UI',sans-serif;max-width:360px}.ds-next li{counter-increment:n;position:relative;padding:4px 0 4px 30px;color:#4A5A75;font-size:15px;line-height:1.6}.ds-next li::before{content:counter(n);position:absolute;left:0;top:6px;width:20px;height:20px;border-radius:50%;border:1px solid #DCE3EE;color:#005EBB;font-family:'Sora','Segoe UI',sans-serif;font-weight:700;font-size:12px;display:flex;align-items:center;justify-content:center}"
     }
   ],
   "narrative": {
@@ -276,7 +276,7 @@
       "Dark glass hero on a navy-washed office photograph, light content sections below.",
       "A bento of four service mock-ups drawn in HTML/SVG, no product logos, no figures.",
       "White cards (14px corners) with a hairline border and a soft two-layer shadow.",
-      "Space Grotesk headings over Public Sans body; one h2 size, one h3 size.",
+      "Sora headings over Public Sans body; one h2 size, one h3 size.",
       "Calm motion: 3px lift on linked cards, a short rise on entry, reduced-motion respected."
     ],
     "rules": [

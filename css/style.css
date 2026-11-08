@@ -2,7 +2,7 @@
    Cevano IT Solutions — stylesheet
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Public+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Public+Sans:wght@400;500;600;700&display=swap');
 
 /* ---------- Design tokens ---------- */
 :root{
@@ -26,7 +26,7 @@
 
   --shadow: 0 1px 2px rgba(11,27,51,0.04);
 
-  --font-head: 'Space Grotesk', 'Segoe UI', sans-serif;
+  --font-head: 'Sora', 'Segoe UI', sans-serif;
   --font-body: 'Public Sans', 'Segoe UI', sans-serif;
 
   --maxw: 1180px;
@@ -264,7 +264,8 @@ html[data-nav-open="true"] .nav-toggle .icon-close{ display:block; }
    screens a slightly smaller size lets it settle into the same three-part
    rhythm as the English heading instead of five short lines. */
 @media (min-width: 1101px){
-  html[lang="pl"] .hero--dark h1{ font-size: clamp(2.3rem, 3.4vw, 2.7rem); max-width: none; }
+  html[lang="pl"] .hero-grid{ grid-template-columns: minmax(0,1.12fr) minmax(0,.9fr); }
+  html[lang="pl"] .hero--dark h1{ font-size: clamp(2.2rem, 3.1vw, 2.55rem); max-width: none; }
 }
 .nw{ white-space: nowrap; }
 .hero-subtitle{
@@ -388,7 +389,7 @@ html[data-nav-open="true"] .nav-toggle .icon-close{ display:block; }
 @media (max-width: 600px){
   .hero{ padding: 48px 0 56px; }
   /* long Polish phrases may wrap on phones rather than run off the screen */
-  .hero--dark .nw{ white-space: normal; }
+  html[lang="pl"] .hero--dark .nw{ white-space: normal; }
   .hero--dark h1{ font-size: clamp(2rem, 9vw, 2.3rem); }
   .hero-ctas .btn{ flex: 1 1 100%; }
   .bento{ grid-template-columns: minmax(0,1fr) minmax(0,1fr); grid-template-areas: "m365 m365" "it web" "data data"; gap: 10px; }

@@ -40,19 +40,19 @@ colors:
   error-ink: "#B23A3A"
 typography:
   display:
-    fontFamily: "Space Grotesk, Segoe UI, sans-serif"
+    fontFamily: "Sora, Segoe UI, sans-serif"
     fontSize: "clamp(2.1rem, 4vw, 3.2rem)"
     fontWeight: 600
     lineHeight: 1.15
     letterSpacing: "-0.01em"
   headline:
-    fontFamily: "Space Grotesk, Segoe UI, sans-serif"
+    fontFamily: "Sora, Segoe UI, sans-serif"
     fontSize: "clamp(1.65rem, 3vw, 2.2rem)"
     fontWeight: 600
     lineHeight: 1.15
     letterSpacing: "-0.01em"
   title:
-    fontFamily: "Space Grotesk, Segoe UI, sans-serif"
+    fontFamily: "Sora, Segoe UI, sans-serif"
     fontSize: "1.25rem"
     fontWeight: 600
     lineHeight: 1.15
@@ -158,7 +158,7 @@ Both themes are first-class. The hero and the closing banner are dark in both; t
 - Dark glass hero on a navy-washed office photograph, light content sections below.
 - A bento of four service mock-ups drawn in HTML/SVG, no product logos, no figures.
 - White cards (14px corners) with a hairline border and a soft two-layer shadow.
-- Space Grotesk headings over Public Sans body; one h2 size, one h3 size.
+- Sora headings over Public Sans body; one h2 size, one h3 size.
 - Calm motion: 3px lift on linked cards, a short rise on entry, reduced-motion respected.
 
 ## Colors
@@ -200,10 +200,10 @@ Form feedback only: `success-bg`/`success-ink` and `error-bg`/`error-ink`, each 
 
 ## Typography
 
-**Display Font:** Space Grotesk (with Segoe UI, sans-serif)
+**Display Font:** Sora (with Segoe UI, sans-serif)
 **Body Font:** Public Sans (with Segoe UI, sans-serif)
 
-**Character:** Space Grotesk gives headings a technical, slightly engineered edge. Public Sans keeps reading plain, neutral and government-form clear. Together: competent but not cold.
+**Character:** Sora gives headings a wide, geometric shape that echoes the extended CEVANO wordmark: modern and technical without the quirks of a display face. Public Sans keeps reading plain, neutral and easy. On the home hero the Polish H1 is set smaller than the English one on wide screens so both read as three parts.
 
 ### Hierarchy
 - **Display** (600, clamp(2.1rem, 4vw, 3.2rem), 1.15): home hero h1 only, capped at 14ch so it breaks into short lines. Inner page h1 uses clamp(1.9rem, 3.4vw, 2.6rem), capped at 20ch.
@@ -284,16 +284,16 @@ Crisp and restrained.
 - **Mobile (≤900px):** logo drops to 48px; a small primary "Get in touch" stays in the header next to a 44px menu button. The menu button swaps to a close icon when open; Esc closes the menu and returns focus. The panel fades and slides in 8px; links become full-width rows with hairline dividers.
 
 ### Process Steps
-Three columns, each with a 40px navy disc (dark: `dark-blue`) holding a Space Grotesk number, joined by hairline connectors on desktop.
+Three columns, each with a 40px navy disc (dark: `dark-blue`) holding a Sora number, joined by hairline connectors on desktop.
 
 ### Hero Bento (signature)
-Four linked glass cards on the dark hero, four shapes: Microsoft 365 & Security tall on the left, IT Support and Web Design stacked on the right, Data Analytics & Power BI across the bottom. Each card has a 20px icon in `hero-accent`, a Space Grotesk 15px title, an arrow that slides 3px on hover, and a small mock-up built from HTML/SVG: user rows with "MFA on / Licensed / Offboarded" pills; a support list with status dots; a browser window with a phone over its corner; KPI tiles with a bar chart and trend line. Mock-ups use placeholder bars, never names, numbers or third-party logos, and are `aria-hidden`. Each card links to its section on services.html. At 600px and below the grid becomes M365 full width, IT and web side by side, data full width, and each mock-up drops its least important row.
+Four linked glass cards on the dark hero, four shapes: Microsoft 365 & Security tall on the left, IT Support and Web Design stacked on the right, Data Analytics & Power BI across the bottom. Each card has a 20px icon in `hero-accent`, a Sora 15px title, an arrow that slides 3px on hover, and a small mock-up built from HTML/SVG: user rows with "MFA on / Licensed / Offboarded" pills; a support list with status dots; a browser window with a phone over its corner; KPI tiles with a bar chart and trend line. Mock-ups use placeholder bars, never names, numbers or third-party logos, and are `aria-hidden`. Each card links to its section on services.html. At 600px and below the grid becomes M365 full width, IT and web side by side, data full width, and each mock-up drops its least important row.
 
 ### Hero Photograph
 Pexels photo 6794970, "Open space office with tables" by Max Vakhtbovych (Pexels licence, free for commercial use). Stored as `assets/img/hero/office-{768,1280,1920}.webp` with a 1280px JPG fallback, `fetchpriority="high"`, covered by a navy wash so all hero text reads at 7:1 or better.
 
 ### Next Steps
-Small numbered list on the contact page: 20px hairline circles with Deep Working Blue Space Grotesk numerals, 15px Slate text.
+Small numbered list on the contact page: 20px hairline circles with Deep Working Blue Sora numerals, 15px Slate text.
 
 ### Credential Badge
 Inline 13.5px 600 Slate line with a 16px Deep Working Blue rosette icon. Used once, for "Microsoft Certified: Power BI Data Analyst Associate (PL-300)" in the Data Analytics section. Name of the credential only: no link, no holder name.
