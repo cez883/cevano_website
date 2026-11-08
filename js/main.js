@@ -138,6 +138,30 @@
       });
     }
 
+    /* ---------- Gentle entrance for blocks below the fold ----------
+       Content is never hidden: .js-enter only marks a block, and .in-view
+       plays a short rise as it scrolls into view. If the observer never
+       fires, the block simply stays as it is, fully visible. */
+    var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (window.IntersectionObserver && !reduceMotion) {
+      var enterTargets = Array.prototype.filter.call(
+        document.querySelectorAll(".section-head, .service-card, .subservice-card, .problem-grid, .review-offer, .process-step, .cta-banner"),
+        function (el) { return el.getBoundingClientRect().top > window.innerHeight; }
+      );
+      var enterObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("in-view");
+            enterObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15 });
+      enterTargets.forEach(function (el) {
+        el.classList.add("js-enter");
+        enterObserver.observe(el);
+      });
+    }
+
     /* ---------- Services mini-nav: active section on scroll ---------- */
     var miniNav = document.querySelector("[data-mini-nav]");
     if (miniNav) {

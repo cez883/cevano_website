@@ -22,23 +22,23 @@ schema_home_en = '''<script type="application/ld+json">
 </script>'''
 
 body_home_en = f'''
-<section class="hero">
+<section class="hero hero--dark">
+  {hero_bg("")}
   <div class="container hero-grid">
-    <div>
-      <h1>IT. Web design. Data. All in one place.</h1>
+    <div class="hero-copy">
+      <h1><span class="nw">IT.</span> <span class="nw">Web design.</span> <span class="nw">Data.</span> <span class="h1-tail">All in one place.</span></h1>
       <p class="hero-subtitle">Technology that helps your business move forward.</p>
       <p class="lede">We provide tailored IT solutions, modern websites and data analytics to help small businesses and startups work smarter, stay secure and grow with confidence.</p>
       <div class="hero-ctas">
         <a class="btn btn-primary" href="contact.html">Get in touch</a>
         <a class="btn btn-outline" href="services.html">Explore our services</a>
       </div>
-      <p class="hero-email">Prefer email? Write to <a href="mailto:enquiries@cevano.co.uk">enquiries@cevano.co.uk</a></p>
-      <p class="trust-badge">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg>
-        On-site around Northampton, Kettering, Milton Keynes and Rugby. Remote across the UK.
-      </p>
+      <ul class="hero-meta">
+        <li>{I_ENVELOPE}<a href="mailto:enquiries@cevano.co.uk">enquiries@cevano.co.uk</a></li>
+        <li>{I_PIN}<span>On-site around Northampton, Kettering, Milton Keynes and Rugby. Remote across the UK.</span></li>
+      </ul>
     </div>
-    <div class="hero-visual">{hero_visual('en')}</div>
+    {hero_bento("en", "services.html")}
   </div>
 </section>
 
@@ -53,7 +53,7 @@ body_home_en = f'''
     <div class="service-grid">
       <div class="service-card is-lead">
         <div class="lead-copy">
-          {MARK_M365}
+          <span class="mark-tile">{MARK_M365}</span>
           <h3>Microsoft 365</h3>
           <p>Microsoft 365 managed for you: user accounts, licensing, security, permissions and devices, without employing a full-time administrator.</p>
           <a class="btn-ghost" href="services.html#microsoft-365">Microsoft 365 in detail →</a>
@@ -68,19 +68,19 @@ body_home_en = f'''
         </ul>
       </div>
       <div class="service-card">
-        {MARK_WEB}
-        <h3>Websites &amp; Landing Pages</h3>
-        <p>Websites and landing pages for small businesses that explain clearly what you do, with the domain, DNS and business email set up behind them.</p>
-        <a class="btn-ghost" href="services.html#websites">Websites in detail →</a>
-      </div>
-      <div class="service-card">
-        {MARK_SUPPORT}
+        <span class="mark-tile">{MARK_SUPPORT}</span>
         <h3>IT Support</h3>
         <p>Practical technology support for small businesses, offices and professionals — from everyday troubleshooting to setting up a new office.</p>
         <a class="btn-ghost" href="services.html#it-support">IT support in detail →</a>
       </div>
       <div class="service-card">
-        {MARK_DATA}
+        <span class="mark-tile">{MARK_WEB}</span>
+        <h3>Websites &amp; Landing Pages</h3>
+        <p>Websites and landing pages for small businesses that explain clearly what you do, with the domain, DNS and business email set up behind them.</p>
+        <a class="btn-ghost" href="services.html#websites">Websites in detail →</a>
+      </div>
+      <div class="service-card">
+        <span class="mark-tile">{MARK_DATA}</span>
         <h3>Data Analytics &amp; Power BI</h3>
         <p>Turning business data into clear Power BI dashboards, reports and insight you can act on.</p>
         <a class="btn-ghost" href="services.html#data-analytics">Data analytics in detail →</a>
@@ -217,23 +217,23 @@ schema_home_pl = '''<script type="application/ld+json">
 </script>'''
 
 body_home_pl = f'''
-<section class="hero">
+<section class="hero hero--dark">
+  {hero_bg("../")}
   <div class="container hero-grid">
-    <div>
-      <h1>IT. Strony internetowe. Dane. Wszystko w jednym miejscu.</h1>
+    <div class="hero-copy">
+      <h1><span class="nw">IT.</span> <span class="nw">Strony internetowe.</span> <span class="nw">Dane.</span> <span class="h1-tail">Wszystko w jednym miejscu.</span></h1>
       <p class="hero-subtitle">Technologia, która pomaga Twojej firmie iść do przodu.</p>
       <p class="lede">Dostarczamy dopasowane rozwiązania IT, nowoczesne strony internetowe i analizę danych, które pomagają małym firmom i startupom pracować mądrzej, działać bezpiecznie i rozwijać się z pewnością siebie.</p>
       <div class="hero-ctas">
         <a class="btn btn-primary" href="contact.html">Skontaktuj się</a>
         <a class="btn btn-outline" href="services.html">Poznaj nasze usługi</a>
       </div>
-      <p class="hero-email">Wolisz e-mail? Napisz na <a href="mailto:enquiries@cevano.co.uk">enquiries@cevano.co.uk</a></p>
-      <p class="trust-badge">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg>
-        Na miejscu w okolicach Northampton, Kettering, Milton Keynes i Rugby. Zdalnie w całej Wielkiej Brytanii.
-      </p>
+      <ul class="hero-meta">
+        <li>{I_ENVELOPE}<a href="mailto:enquiries@cevano.co.uk">enquiries@cevano.co.uk</a></li>
+        <li>{I_PIN}<span>Na miejscu w okolicach Northampton, Kettering, Milton Keynes i Rugby. Zdalnie w całej Wielkiej Brytanii.</span></li>
+      </ul>
     </div>
-    <div class="hero-visual">{hero_visual('pl')}</div>
+    {hero_bento("pl", "services.html")}
   </div>
 </section>
 
@@ -248,7 +248,7 @@ body_home_pl = f'''
     <div class="service-grid">
       <div class="service-card is-lead">
         <div class="lead-copy">
-          {MARK_M365}
+          <span class="mark-tile">{MARK_M365}</span>
           <h3>Microsoft 365</h3>
           <p>Zarządzamy Twoim Microsoft 365: konta użytkowników, licencje, bezpieczeństwo, uprawnienia i urządzenia, bez zatrudniania administratora na pełen etat.</p>
           <a class="btn-ghost" href="services.html#microsoft-365">Microsoft 365 szczegółowo →</a>
@@ -263,19 +263,19 @@ body_home_pl = f'''
         </ul>
       </div>
       <div class="service-card">
-        {MARK_WEB}
-        <h3>Strony internetowe</h3>
-        <p>Strony i landing page dla małych firm, które jasno mówią, czym się zajmujesz, wraz z domeną, DNS i firmową pocztą.</p>
-        <a class="btn-ghost" href="services.html#websites">Strony internetowe szczegółowo →</a>
-      </div>
-      <div class="service-card">
-        {MARK_SUPPORT}
+        <span class="mark-tile">{MARK_SUPPORT}</span>
         <h3>Wsparcie IT</h3>
         <p>Praktyczne wsparcie technologiczne dla małych firm, biur i specjalistów — od codziennych problemów po organizację nowego biura.</p>
         <a class="btn-ghost" href="services.html#it-support">Wsparcie IT szczegółowo →</a>
       </div>
       <div class="service-card">
-        {MARK_DATA}
+        <span class="mark-tile">{MARK_WEB}</span>
+        <h3>Strony internetowe</h3>
+        <p>Strony i landing page dla małych firm, które jasno mówią, czym się zajmujesz, wraz z domeną, DNS i firmową pocztą.</p>
+        <a class="btn-ghost" href="services.html#websites">Strony internetowe szczegółowo →</a>
+      </div>
+      <div class="service-card">
+        <span class="mark-tile">{MARK_DATA}</span>
         <h3>Analiza danych i Power BI</h3>
         <p>Przekształcanie danych biznesowych w przejrzyste pulpity Power BI, raporty i wnioski, na których można polegać.</p>
         <a class="btn-ghost" href="services.html#data-analytics">Analiza danych szczegółowo →</a>

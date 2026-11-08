@@ -13,7 +13,7 @@ SITE_URL = "https://www.cevano.co.uk"
 # Wersja plików CSS/JS — dopisywana do adresu (?v=...), bo Cloudflare trzyma
 # /css/* i /js/* w pamięci podręcznej 30 dni (_headers). ZMIEŃ tę wartość
 # (np. na dzisiejszą datę) przy każdej zmianie css/style.css lub js/main.js.
-ASSET_VERSION = "20261108-1"
+ASSET_VERSION = "20261108-3"
 
 # ------------------------------------------------------------------
 # Icons (inline SVG, currentColor / CSS vars so they theme automatically)
@@ -316,65 +316,97 @@ def check_items(items):
     return "\n".join(f'<li>{ICON_CHECK}<span>{i}</span></li>' for i in items)
 
 # ==================================================================
-# Hero visual: a simplified Microsoft 365 user list, drawn in the site's
-# hairline style. Placeholder bars stand in for names (no invented people);
-# status pills show the outcome of a tidy tenant: licensed, MFA on, and a
-# leaver properly offboarded. Decorative, so hidden from assistive tech.
+# Home hero: dark photo ground + bento grid of four service cards.
+# The card visuals are small, illustrative HTML/SVG mock-ups (no real
+# customer data, no figures, no third-party logos). Every card links to
+# its service on services.html, so the hover lift is honest.
 # ==================================================================
-HERO_LABELS = {
-    "en": {"title": "Microsoft 365", "sub": "Users", "lic": "Licensed", "mfa": "MFA on", "off": "Offboarded"},
-    "pl": {"title": "Microsoft 365", "sub": "Użytkownicy", "lic": "Licencja", "mfa": "MFA włączone", "off": "Konto wyłączone"},
+def _i(paths, cls="ico"):
+    return (f'<svg class="{cls}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" '
+            f'stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{paths}</svg>')
+
+I_CLOUD_SHIELD = _i('<path d="M17.5 19H7a5 5 0 1 1 1.4-9.8A6 6 0 0 1 20 11a4 4 0 0 1-2.5 8Z"/><path d="M12 11.5l2.5 1v2c0 1.4-1.1 2.4-2.5 3-1.4-.6-2.5-1.6-2.5-3v-2Z"/>')
+I_HEADSET      = _i('<path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="3" y="14" width="4" height="6" rx="1.5"/><rect x="17" y="14" width="4" height="6" rx="1.5"/><path d="M19 20c0 1.1-1.3 2-3 2h-2"/>')
+I_LAYOUT       = _i('<rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 9v11"/>')
+I_CHART        = _i('<path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/>')
+I_MAIL         = _i('<rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/>', "ico ico-sm")
+I_FOLDER       = _i('<path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/>', "ico ico-sm")
+I_CHAT         = _i('<path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.4A8 8 0 1 1 21 12Z"/>', "ico ico-sm")
+I_CAL          = _i('<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/>', "ico ico-sm")
+I_LOCK         = _i('<rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/>', "ico ico-xs")
+I_CHECK        = _i('<path d="M20 6 9 17l-5-5"/>', "ico ico-xs")
+I_PIN          = _i('<path d="M12 21s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12Z"/><circle cx="12" cy="9" r="2.5"/>', "ico ico-sm")
+I_ENVELOPE     = _i('<rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/>', "ico ico-sm")
+I_ARROW        = _i('<path d="M5 12h14M13 6l6 6-6 6"/>', "ico ico-xs bento-arrow")
+
+HERO_TEXT = {
+    "en": {
+        "m365": "Microsoft 365 &amp; Security", "it": "IT Support", "web": "Web Design", "data": "Data Analytics &amp; Power BI",
+        "mfa": "MFA on", "lic": "Licensed", "off": "Offboarded",
+        "policy": "Security policies applied",
+        "it_rows": [("Laptop setup", "Ready", "ok"), ("Office printer", "Fixed", "ok"), ("Backup", "Running", "run")],
+        "kpi": ["Sales", "Orders", "Margin"],
+        "aria": "Our four services",
+    },
+    "pl": {
+        "m365": "Microsoft 365 i bezpieczeństwo", "it": "Wsparcie IT", "web": "Strony internetowe", "data": "Analiza danych i Power BI",
+        "mfa": "MFA włączone", "lic": "Licencja", "off": "Konto wyłączone",
+        "policy": "Zasady bezpieczeństwa wdrożone",
+        "it_rows": [("Konfiguracja laptopa", "Gotowe", "ok"), ("Drukarka w biurze", "Naprawiona", "ok"), ("Kopia zapasowa", "W toku", "run")],
+        "kpi": ["Sprzedaż", "Zamówienia", "Marża"],
+        "aria": "Nasze cztery usługi",
+    },
 }
 
-def _pill(right, y, label, kind):
-    w = round(len(label) * 6.7 + 34)
-    x = right - w
-    if kind == "off":
-        icon = (f'<rect x="{x+12}" y="{y+10}" width="9" height="7" rx="1.2" fill="none" stroke="var(--slate)" stroke-width="1.3"/>'
-                f'<path d="M{x+14} {y+10}v-2a2.5 2.5 0 0 1 5 0v2" fill="none" stroke="var(--slate)" stroke-width="1.3"/>')
-        fill, color = "var(--bg)", "var(--slate)"
-    else:
-        icon = f'<path d="M{x+11} {y+12}l3 3 5.5-6" fill="none" stroke="var(--blue-mid)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>'
-        fill, color = "var(--bg-alt)", "var(--ink)"
-    return (f'<rect x="{x}" y="{y}" width="{w}" height="24" rx="12" fill="{fill}" stroke="var(--line)"/>{icon}'
-            f'<text x="{x+26}" y="{y+16}" font-size="12" font-weight="600" fill="{color}">{label}</text>'), x
+def hero_bento(lang, services_href):
+    t = HERO_TEXT[lang]
+    def head(icon, title):
+        return f'<div class="bento-head">{icon}<span class="bento-title">{title}</span>{I_ARROW}</div>'
+    users = "".join(
+        f'<li class="mock-user{" is-off" if k == "off" else ""}"><span class="mock-avatar"></span>'
+        f'<span class="mock-bars"><i style="width:{w1}%"></i><i style="width:{w2}%"></i></span>'
+        f'<span class="mock-pill">{I_LOCK if k == "off" else I_CHECK}{t[k]}</span></li>'
+        for k, w1, w2 in (("mfa", 70, 46), ("lic", 58, 62), ("off", 64, 40)))
+    it_rows = "".join(
+        f'<li><span class="dot dot-{s}"></span><span class="it-name">{n}</span><span class="it-state">{st}</span></li>'
+        for n, st, s in t["it_rows"])
+    kpis = "".join(f'<div class="kpi"><span>{k}</span><i style="width:{w}%"></i></div>'
+                   for k, w in zip(t["kpi"], (72, 54, 63)))
+    bars = "".join(f'<rect x="{8 + i * 26}" y="{88 - h}" width="16" height="{h}" rx="3"/>'
+                   for i, h in enumerate((34, 48, 40, 62, 56, 74, 68)))
+    return f'''<div class="bento" aria-label="{t["aria"]}">
+      <a class="bento-card bento-m365" href="{services_href}#microsoft-365">
+        {head(I_CLOUD_SHIELD, t["m365"])}
+        <div class="mock-apps" aria-hidden="true"><span>{I_MAIL}</span><span>{I_FOLDER}</span><span>{I_CHAT}</span><span>{I_CAL}</span></div>
+        <ul class="mock-users" aria-hidden="true">{users}</ul>
+        <p class="mock-policy" aria-hidden="true"><span class="dot dot-ok"></span>{t["policy"]}</p>
+      </a>
+      <a class="bento-card bento-it" href="{services_href}#it-support">
+        {head(I_HEADSET, t["it"])}
+        <ul class="mock-it" aria-hidden="true">{it_rows}</ul>
+      </a>
+      <a class="bento-card bento-web" href="{services_href}#websites">
+        {head(I_LAYOUT, t["web"])}
+        <div class="mock-browser" aria-hidden="true">
+          <div class="mb-bar"><i></i><i></i><i></i><span></span></div>
+          <div class="mb-page"><span class="mb-h"></span><span class="mb-l"></span><span class="mb-l short"></span><span class="mb-btn"></span><span class="mb-img"></span></div>
+          <div class="mock-phone"><span class="mb-h"></span><span class="mb-l"></span><span class="mb-btn"></span></div>
+        </div>
+      </a>
+      <a class="bento-card bento-data" href="{services_href}#data-analytics">
+        {head(I_CHART, t["data"])}
+        <div class="mock-dash" aria-hidden="true">
+          <div class="kpis">{kpis}</div>
+          <svg class="mock-chart" viewBox="0 0 190 92" preserveAspectRatio="none"><g class="bars">{bars}</g><path class="trend" d="M10 66 L36 58 L62 62 L88 40 L114 46 L140 24 L166 28 L186 14"/></svg>
+        </div>
+      </a>
+    </div>'''
 
-def hero_visual(lang):
-    t = HERO_LABELS[lang]
-    rows = []
-    top, h, right = 56, 70, 398
-    widths = [(118, 74), (96, 88), (132, 64), (104, 80)]
-    for i, (w1, w2) in enumerate(widths):
-        y = top + i * h
-        cy = y + h // 2
-        last = i == len(widths) - 1
-        dash = ' stroke-dasharray="3 3"' if last else ""
-        op = ' opacity="0.55"' if last else ""
-        row = [f'<g{op}>',
-               f'<circle cx="44" cy="{cy}" r="16" fill="var(--bg-alt)" stroke="var(--line)"{dash}/>',
-               f'<rect x="74" y="{cy-10}" width="{w1}" height="8" rx="4" fill="var(--line)"/>',
-               f'<rect x="74" y="{cy+5}" width="{w2}" height="6" rx="3" fill="var(--line)" opacity="0.6"/>',
-               '</g>']
-        if last:
-            p, _ = _pill(right, cy - 12, t["off"], "off")
-            row.append(p)
-        else:
-            p2, x2 = _pill(right, cy - 12, t["mfa"], "ok")
-            p1, _ = _pill(x2 - 8, cy - 12, t["lic"], "ok")
-            row += [p1, p2]
-            row.append(f'<path d="M20 {y+h}h380" stroke="var(--line)"/>')
-        rows.append("".join(row))
-    body = "\n  ".join(rows)
-    return (
-        '<svg viewBox="0 0 420 360" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" style="font-family:var(--font-body)">\n'
-        '  <rect x="1" y="1" width="418" height="358" rx="8" fill="var(--surface)" stroke="var(--line)"/>\n'
-        '  <path d="M1 52h418" stroke="var(--line)"/>\n'
-        '  <g fill="none" stroke="var(--blue)" stroke-width="1.4"><rect x="22" y="18" width="7" height="7" rx="0.8"/><rect x="31" y="18" width="7" height="7" rx="0.8"/><rect x="22" y="27" width="7" height="7" rx="0.8"/><rect x="31" y="27" width="7" height="7" rx="0.8"/></g>\n'
-        f'  <text x="50" y="31" font-size="14" font-weight="700" fill="var(--ink)" style="font-family:var(--font-head)">{t["title"]}</text>\n'
-        f'  <text x="398" y="31" font-size="12" font-weight="600" fill="var(--slate)" text-anchor="end">{t["sub"]}</text>\n'
-        f'  {body}\n'
-        '</svg>'
-    )
+def hero_bg(asset_prefix):
+    p = asset_prefix + "assets/img/hero/"
+    return (f'<picture class="hero-bg" aria-hidden="true">'
+            f'<source type="image/webp" srcset="{p}office-768.webp 768w, {p}office-1280.webp 1280w, {p}office-1920.webp 1920w" sizes="100vw">'
+            f'<img src="{p}office-1280.jpg" alt="" width="1280" height="862" fetchpriority="high" decoding="async"></picture>')
 
 # ==================================================================
 # About-page location graphic — abstract radiating-node cluster

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-05T15:00:00Z",
+  "generatedAt": "2026-11-08T12:00:00Z",
   "title": "Design System: Cevano IT Solutions",
   "extensions": {
     "colorMeta": {
@@ -139,19 +139,19 @@
     },
     "shadows": [
       {
-        "name": "resting",
-        "value": "0 1px 2px rgba(11,27,51,0.04)",
-        "purpose": "Token default; barely visible."
+        "name": "card",
+        "value": "0 1px 2px rgba(15,23,42,.04), 0 8px 24px rgba(15,23,42,.06)",
+        "purpose": "Light-section cards at rest."
       },
       {
-        "name": "hover-lift",
-        "value": "0 8px 20px rgba(11,27,51,0.06)",
-        "purpose": "Secondary cards on hover with 2px lift."
+        "name": "lift",
+        "value": "0 2px 4px rgba(15,23,42,.05), 0 16px 32px rgba(15,23,42,.10)",
+        "purpose": "Linked light cards on hover."
       },
       {
-        "name": "inset-bar",
-        "value": "inset 0 3px 0 var(--blue)",
-        "purpose": "Service grid cell hover marker."
+        "name": "glass",
+        "value": "0 18px 40px rgba(2,8,23,.35), inset 0 1px 0 rgba(255,255,255,.08)",
+        "purpose": "Hero bento cards."
       },
       {
         "name": "floating",
@@ -163,17 +163,17 @@
       {
         "name": "control",
         "value": ".15s ease",
-        "purpose": "Button and link colour and border transitions."
+        "purpose": "Button and link colour transitions."
       },
       {
         "name": "card",
-        "value": ".18s ease",
-        "purpose": "Card hover background, border, lift."
+        "value": ".2s ease, translateY(-3px)",
+        "purpose": "Linked card hover lift."
       },
       {
-        "name": "theme",
-        "value": ".25s ease",
-        "purpose": "Body background and colour on theme switch."
+        "name": "enter",
+        "value": ".6s cubic-bezier(.2,.7,.2,1), translateY(14px)",
+        "purpose": "Blocks entering below the fold; script-marked only, off under reduced motion."
       }
     ],
     "breakpoints": [
@@ -270,14 +270,14 @@
     }
   ],
   "narrative": {
-    "northStar": "The Tidy Office",
-    "overview": "Cevano looks the way a well-run small office feels after a good IT provider has been through it: ordered, labelled, calm, nothing left lying around. The system promises \"properly managed\" before a word is read. Pale blue-grey ground, white surfaces, hairline rules and a deep navy anchor do the organising. One bright working blue marks the things you can act on.\n\nDensity is moderate and generous with air. Sections breathe at 84px, content sits in a 1180px container, and paragraphs stop at 62ch. Structure is drawn with lines rather than boxes wherever possible: the core services sit in a ruled grid, not floating cards. Decoration is limited to small, quiet line icons and an abstract chart motif that hints at the data work without becoming illustration.\n\nLight and dark themes are both first-class. Dark mode is a deep night-navy, not grey, and keeps the same ruled structure.",
+    "northStar": "The Glass Office",
+    "overview": "Cevano opens on a dark, glassy first screen and then settles into a calm, light office. The hero is deep navy over a darkened photograph of a real open-plan office, with a soft blue light from the top right. On it sit four frosted glass cards that show the four services as small, honest interface sketches: a Microsoft 365 user list, an IT support queue, a website in a browser and a phone, a Power BI style dashboard. Below the hero the page turns light: white cards with hairline borders and soft shadows on a pale blue-grey ground, one layout per section, never a second bento.\n\nThe look is premium through restraint. Glass appears only in the hero. Gradients are only the hero wash, the CTA banner and faint blue tints behind icons. Motion is a 3px lift on linked cards and a short rise as blocks below the fold arrive; nothing is ever hidden at rest.\n\nBoth themes are first-class. The hero and the closing banner are dark in both; the light sections swap to night-navy surfaces in dark mode with the same structure.",
     "keyCharacteristics": [
-      "Navy anchor, single working blue for action, cool blue-grey neutrals.",
-      "Space Grotesk headings over Public Sans body.",
-      "Hairline 1px rules carry structure; shadows are almost absent.",
-      "Small, crisp corners (4px controls, 8px containers).",
-      "Calm motion: short colour fades and a 2px lift on hover only. Nothing animates on scroll; content is visible at rest."
+      "Dark glass hero on a navy-washed office photograph, light content sections below.",
+      "A bento of four service mock-ups drawn in HTML/SVG, no product logos, no figures.",
+      "White cards (14px corners) with a hairline border and a soft two-layer shadow.",
+      "Space Grotesk headings over Public Sans body; one h2 size, one h3 size.",
+      "Calm motion: 3px lift on linked cards, a short rise on entry, reduced-motion respected."
     ],
     "rules": [
       {
@@ -286,8 +286,8 @@
         "section": "colors"
       },
       {
-        "name": "The Navy Bookend Rule",
-        "body": "Navy appears as large fields only at the end of a page (CTA banner, footer) and in small solid marks (step discs). It never fills a hero or mid-page band.",
+        "name": "The Dark Bookends Rule",
+        "body": "Deep navy (`deep`) fills exactly two places on the home page: the hero at the top and the CTA banner before the footer. Every section between them is light. Text on deep navy uses `on-deep` (headings, body) and `on-deep-2` (secondary), and the hero accent `hero-accent` for the h1 tail and icons.",
         "section": "colors"
       },
       {
@@ -301,32 +301,32 @@
         "section": "typography"
       },
       {
-        "name": "The Flat-At-Rest Rule",
-        "body": "Nothing casts a visible shadow at rest except the cookie banner. Shadows appear only as a hover response.",
+        "name": "The Two Depths Rule",
+        "body": "Light-section cards sit on `--shadow-card` (a 1px contact shadow plus a soft 24px blur) and rise to `--shadow-lift` on hover. Hero cards are glass: a translucent white gradient, a 14% white border, a 14px backdrop blur and a deep shadow. Glass is never used outside the hero; under `prefers-reduced-transparency` the blur is replaced by an opaque navy fill.",
         "section": "elevation"
       }
     ],
     "dos": [
-      "Do draw structure with 1px Hairline rules and tonal bands before reaching for boxes or shadows.",
+      "Do use the shared light card (white surface, hairline border, `--shadow-card`, 14px corners) for cards in light sections, and give each section its own layout.",
       "Do reserve Working Blue (`#0072D6`) for things a visitor can click.",
-      "Do keep corners at 4px for controls and 8px for containers.",
-      "Do keep hover motion to colour fades (0.15–0.18s) and a 2px lift; honour `prefers-reduced-motion`.",
+      "Do keep corners at 8px for controls, 14px for cards and 20px for large panels and hero cards.",
+      "Do keep motion to a 3px lift on linked cards (0.2s), a short rise (0.6s) for blocks entering below the fold, and nothing under `prefers-reduced-motion`.",
+      "Do let the home hero fill the first screen under the header (capped at 900px), so the next section's heading is never cut by the fold.",
       "Do design every new element for both light and dark themes using the existing CSS variables.",
       "Do keep text in sentence case, with headings capped in `ch` and paragraphs at 62ch.",
       "Do give every control at least a 44px touch target at ≤900px, even when the visible mark is smaller.",
-      "Do list services in priority order everywhere: Microsoft 365, Websites & Landing Pages, IT Support, Data Analytics & Power BI.",
-      "Do let the home hero fill the first screen under the header (capped at 900px), so the next section's heading is never cut by the fold."
+      "Do list the four services as Microsoft 365, IT Support, Web Design, Data Analytics & Power BI on the home page (hero bento and services section)."
     ],
     "donts": [
-      "Don't add shadows at rest; only the cookie banner floats.",
+      "Don't use glass, blur or glow outside the hero.",
       "Don't use pure black text or pure grey neutrals; neutrals stay cool blue-grey.",
-      "Don't fill heroes or mid-page bands with navy; navy closes the page.",
-      "Don't add uppercase tracked micro-labels.",
-      "Don't use large corner radii (above 8px) on cards or buttons.",
+      "Don't add dark bands between the hero and the closing banner; middle sections stay light.",
+      "Don't add uppercase tracked micro-labels, real product logos in the mock-ups, or figures that look like customer data.",
+      "Don't round anything beyond 20px, and never make buttons pill-shaped.",
       "Don't show team or office-staff imagery, or any personal name or photo; the business is one person and the site stays impersonal (see PRODUCT.md).",
       "Don't put white text on `dark-blue-mid`; it fails contrast.",
       "Don't give hover lift, fill or border changes to anything that is not a link or button.",
-      "Don't fade or slide content in on scroll; it hides content when the script or observer fails."
+      "Don't hide content in CSS while waiting for a script; the entrance animation only plays on blocks a script has marked, so content is visible if the script never runs."
     ]
   }
 }

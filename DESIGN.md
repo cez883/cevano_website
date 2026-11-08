@@ -7,8 +7,13 @@ colors:
   blue: "#0072D6"
   blue-mid: "#005EBB"
   blue-light: "#0092E6"
-  bg: "#F6F8FB"
-  bg-alt: "#EDF1F7"
+  bg: "#F5F8FC"
+  bg-alt: "#EBF1F8"
+  deep: "#0F172A"
+  deep-2: "#172D4A"
+  on-deep: "#E8EEF8"
+  on-deep-2: "#AFC0DA"
+  hero-accent: "#7CC0FF"
   surface: "#FFFFFF"
   ink: "#0B1B33"
   slate: "#4A5A75"
@@ -63,8 +68,9 @@ typography:
     fontWeight: 700
     lineHeight: 1.4
 rounded:
-  s: "4px"
-  m: "8px"
+  s: "8px"
+  m: "14px"
+  l: "20px"
   pill: "20px"
   full: "50%"
 spacing:
@@ -140,20 +146,20 @@ components:
 
 ## Overview
 
-**Creative North Star: "The Tidy Office"**
+**Creative North Star: "The Glass Office"**
 
-Cevano looks the way a well-run small office feels after a good IT provider has been through it: ordered, labelled, calm, nothing left lying around. The system promises "properly managed" before a word is read. Pale blue-grey ground, white surfaces, hairline rules and a deep navy anchor do the organising. One bright working blue marks the things you can act on.
+Cevano opens on a dark, glassy first screen and then settles into a calm, light office. The hero is deep navy over a darkened photograph of a real open-plan office, with a soft blue light from the top right. On it sit four frosted glass cards that show the four services as small, honest interface sketches: a Microsoft 365 user list, an IT support queue, a website in a browser and a phone, a Power BI style dashboard. Below the hero the page turns light: white cards with hairline borders and soft shadows on a pale blue-grey ground, one layout per section, never a second bento.
 
-Density is moderate and generous with air. Sections breathe at 84px, content sits in a 1180px container, and paragraphs stop at 62ch. Structure is drawn with lines rather than boxes wherever possible: the core services sit in a ruled grid, not floating cards. Decoration is limited to small, quiet line icons and an abstract chart motif that hints at the data work without becoming illustration.
+The look is premium through restraint. Glass appears only in the hero. Gradients are only the hero wash, the CTA banner and faint blue tints behind icons. Motion is a 3px lift on linked cards and a short rise as blocks below the fold arrive; nothing is ever hidden at rest.
 
-Light and dark themes are both first-class. Dark mode is a deep night-navy, not grey, and keeps the same ruled structure.
+Both themes are first-class. The hero and the closing banner are dark in both; the light sections swap to night-navy surfaces in dark mode with the same structure.
 
 **Key Characteristics:**
-- Navy anchor, single working blue for action, cool blue-grey neutrals.
-- Space Grotesk headings over Public Sans body.
-- Hairline 1px rules carry structure; shadows are almost absent.
-- Small, crisp corners (4px controls, 8px containers).
-- Calm motion: short colour fades and a 2px lift on hover only. Nothing animates on scroll; content is visible at rest.
+- Dark glass hero on a navy-washed office photograph, light content sections below.
+- A bento of four service mock-ups drawn in HTML/SVG, no product logos, no figures.
+- White cards (14px corners) with a hairline border and a soft two-layer shadow.
+- Space Grotesk headings over Public Sans body; one h2 size, one h3 size.
+- Calm motion: 3px lift on linked cards, a short rise on entry, reduced-motion respected.
 
 ## Colors
 
@@ -190,7 +196,7 @@ Form feedback only: `success-bg`/`success-ink` and `error-bg`/`error-ink`, each 
 ### Named Rules
 **The Blue Means Act Rule.** Working Blue fills only interactive elements. Decorative blue stays at Signal Blue and small sizes (dots, bullets, icons).
 
-**The Navy Bookend Rule.** Navy appears as large fields only at the end of a page (CTA banner, footer) and in small solid marks (step discs). It never fills a hero or mid-page band.
+**The Dark Bookends Rule.** Deep navy (`deep`) fills exactly two places on the home page: the hero at the top and the CTA banner before the footer. Every section between them is light. Text on deep navy uses `on-deep` (headings, body) and `on-deep-2` (secondary), and the hero accent `hero-accent` for the h1 tail and icons.
 
 ## Typography
 
@@ -232,11 +238,11 @@ Flat by default. Depth comes from tonal layering (Morning Paper ground, white su
 - **Floating** (`box-shadow: 0 8px 30px rgba(0,10,30,0.18)`): cookie banner only, the one element that floats over content.
 
 ### Named Rules
-**The Flat-At-Rest Rule.** Nothing casts a visible shadow at rest except the cookie banner. Shadows appear only as a hover response.
+**The Two Depths Rule.** Light-section cards sit on `--shadow-card` (a 1px contact shadow plus a soft 24px blur) and rise to `--shadow-lift` on hover. Hero cards are glass: a translucent white gradient, a 14% white border, a 14px backdrop blur and a deep shadow. Glass is never used outside the hero; under `prefers-reduced-transparency` the blur is replaced by an opaque navy fill.
 
 ## Shapes
 
-Crisp, small corners. Controls (buttons, inputs, status messages) use 4px. Containers (cards, form card, panels, CTA banner, cookie banner) use 8px. Pills (20px) are used only for area tags and the services mini-nav. Circles are used for the theme toggle, social icons and process step discs. Bullets are tiny 6px squares with 1px corners. Borders are always 1px hairlines; panels use a dashed hairline between list items.
+Softly rounded, never pill-shaped except small status pills. Controls (buttons, inputs) use 8px (`rounded.s`). Cards and panels use 14px (`rounded.m`). Hero glass cards, the problem panel and the CTA banner use 20px (`rounded.l`). Icon tiles are 12px squares. Borders stay 1px hairlines.
 
 ## Components
 
@@ -280,8 +286,11 @@ Crisp and restrained.
 ### Process Steps
 Three columns, each with a 40px navy disc (dark: `dark-blue`) holding a Space Grotesk number, joined by hairline connectors on desktop.
 
-### Hero User-List Panel (signature)
-The home hero shows a simplified Microsoft 365 user list instead of illustration: an 8px hairline frame on Clean Surface, a header with the four-square M365 mark, four rows of placeholder bars (never invented names) and status pills ("Licensed", "MFA on", and one dimmed, dashed "Offboarded" row with a lock). Pills are 24px tall, fully rounded, Filing Grey-Blue with a Deep Working Blue check. Labels are translated per language. Decorative: `aria-hidden`.
+### Hero Bento (signature)
+Four linked glass cards on the dark hero, four shapes: Microsoft 365 & Security tall on the left, IT Support and Web Design stacked on the right, Data Analytics & Power BI across the bottom. Each card has a 20px icon in `hero-accent`, a Space Grotesk 15px title, an arrow that slides 3px on hover, and a small mock-up built from HTML/SVG: user rows with "MFA on / Licensed / Offboarded" pills; a support list with status dots; a browser window with a phone over its corner; KPI tiles with a bar chart and trend line. Mock-ups use placeholder bars, never names, numbers or third-party logos, and are `aria-hidden`. Each card links to its section on services.html. At 600px and below the grid becomes M365 full width, IT and web side by side, data full width, and each mock-up drops its least important row.
+
+### Hero Photograph
+Pexels photo 6794970, "Open space office with tables" by Max Vakhtbovych (Pexels licence, free for commercial use). Stored as `assets/img/hero/office-{768,1280,1920}.webp` with a 1280px JPG fallback, `fetchpriority="high"`, covered by a navy wash so all hero text reads at 7:1 or better.
 
 ### Next Steps
 Small numbered list on the contact page: 20px hairline circles with Deep Working Blue Space Grotesk numerals, 15px Slate text.
@@ -295,23 +304,23 @@ Office Navy (dark: `footer-dark`) with four columns: brand blurb plus company nu
 ## Do's and Don'ts
 
 ### Do:
-- **Do** draw structure with 1px Hairline rules and tonal bands before reaching for boxes or shadows.
+- **Do** use the shared light card (white surface, hairline border, `--shadow-card`, 14px corners) for cards in light sections, and give each section its own layout.
 - **Do** reserve Working Blue (`#0072D6`) for things a visitor can click.
-- **Do** keep corners at 4px for controls and 8px for containers.
-- **Do** keep hover motion to colour fades (0.15–0.18s) and a 2px lift; honour `prefers-reduced-motion`.
+- **Do** keep corners at 8px for controls, 14px for cards and 20px for large panels and hero cards.
+- **Do** keep motion to a 3px lift on linked cards (0.2s), a short rise (0.6s) for blocks entering below the fold, and nothing under `prefers-reduced-motion`.
 - **Do** let the home hero fill the first screen under the header (capped at 900px), so the next section's heading is never cut by the fold.
 - **Do** design every new element for both light and dark themes using the existing CSS variables.
 - **Do** keep text in sentence case, with headings capped in `ch` and paragraphs at 62ch.
 - **Do** give every control at least a 44px touch target at ≤900px, even when the visible mark is smaller.
-- **Do** list services in priority order everywhere: Microsoft 365, Websites & Landing Pages, IT Support, Data Analytics & Power BI.
+- **Do** list the four services as Microsoft 365, IT Support, Web Design, Data Analytics & Power BI on the home page (hero bento and services section).
 
 ### Don't:
-- **Don't** add shadows at rest; only the cookie banner floats.
+- **Don't** use glass, blur or glow outside the hero.
 - **Don't** use pure black text or pure grey neutrals; neutrals stay cool blue-grey.
-- **Don't** fill heroes or mid-page bands with navy; navy closes the page.
-- **Don't** add uppercase tracked micro-labels.
-- **Don't** use large corner radii (above 8px) on cards or buttons.
+- **Don't** add dark bands between the hero and the closing banner; middle sections stay light.
+- **Don't** add uppercase tracked micro-labels, real product logos in the mock-ups, or figures that look like customer data.
+- **Don't** round anything beyond 20px, and never make buttons pill-shaped.
 - **Don't** show team or office-staff imagery, or any personal name or photo; the business is one person and the site stays impersonal (see PRODUCT.md).
 - **Don't** put white text on `dark-blue-mid`; it fails contrast.
 - **Don't** give hover lift, fill or border changes to anything that is not a link or button.
-- **Don't** fade or slide content in on scroll; it hides content when the script or observer fails.
+- **Don't** hide content in CSS while waiting for a script; the entrance animation only plays on blocks a script has marked, so content is visible if the script never runs.

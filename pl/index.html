@@ -23,7 +23,7 @@
 <link rel="manifest" href="../site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="../css/style.css?v=20261108-1">
+<link rel="stylesheet" href="../css/style.css?v=20261108-3">
 <script>(function(){try{var t=localStorage.getItem("cevano-theme");if(t==="dark"||t==="light"){document.documentElement.setAttribute("data-theme",t);}else if(window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches){document.documentElement.setAttribute("data-theme","dark");}}catch(e){}})();</script>
 </head>
 <body>
@@ -64,33 +64,49 @@
 
 <main id="main">
 
-<section class="hero">
+<section class="hero hero--dark">
+  <picture class="hero-bg" aria-hidden="true"><source type="image/webp" srcset="../assets/img/hero/office-768.webp 768w, ../assets/img/hero/office-1280.webp 1280w, ../assets/img/hero/office-1920.webp 1920w" sizes="100vw"><img src="../assets/img/hero/office-1280.jpg" alt="" width="1280" height="862" fetchpriority="high" decoding="async"></picture>
   <div class="container hero-grid">
-    <div>
-      <h1>IT. Strony internetowe. Dane. Wszystko w jednym miejscu.</h1>
+    <div class="hero-copy">
+      <h1><span class="nw">IT.</span> <span class="nw">Strony internetowe.</span> <span class="nw">Dane.</span> <span class="h1-tail">Wszystko w jednym miejscu.</span></h1>
       <p class="hero-subtitle">Technologia, która pomaga Twojej firmie iść do przodu.</p>
       <p class="lede">Dostarczamy dopasowane rozwiązania IT, nowoczesne strony internetowe i analizę danych, które pomagają małym firmom i startupom pracować mądrzej, działać bezpiecznie i rozwijać się z pewnością siebie.</p>
       <div class="hero-ctas">
         <a class="btn btn-primary" href="contact.html">Skontaktuj się</a>
         <a class="btn btn-outline" href="services.html">Poznaj nasze usługi</a>
       </div>
-      <p class="hero-email">Wolisz e-mail? Napisz na <a href="mailto:enquiries@cevano.co.uk">enquiries@cevano.co.uk</a></p>
-      <p class="trust-badge">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg>
-        Na miejscu w okolicach Northampton, Kettering, Milton Keynes i Rugby. Zdalnie w całej Wielkiej Brytanii.
-      </p>
+      <ul class="hero-meta">
+        <li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:enquiries@cevano.co.uk">enquiries@cevano.co.uk</a></li>
+        <li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg><span>Na miejscu w okolicach Northampton, Kettering, Milton Keynes i Rugby. Zdalnie w całej Wielkiej Brytanii.</span></li>
+      </ul>
     </div>
-    <div class="hero-visual"><svg viewBox="0 0 420 360" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" style="font-family:var(--font-body)">
-  <rect x="1" y="1" width="418" height="358" rx="8" fill="var(--surface)" stroke="var(--line)"/>
-  <path d="M1 52h418" stroke="var(--line)"/>
-  <g fill="none" stroke="var(--blue)" stroke-width="1.4"><rect x="22" y="18" width="7" height="7" rx="0.8"/><rect x="31" y="18" width="7" height="7" rx="0.8"/><rect x="22" y="27" width="7" height="7" rx="0.8"/><rect x="31" y="27" width="7" height="7" rx="0.8"/></g>
-  <text x="50" y="31" font-size="14" font-weight="700" fill="var(--ink)" style="font-family:var(--font-head)">Microsoft 365</text>
-  <text x="398" y="31" font-size="12" font-weight="600" fill="var(--slate)" text-anchor="end">Użytkownicy</text>
-  <g><circle cx="44" cy="91" r="16" fill="var(--bg-alt)" stroke="var(--line)"/><rect x="74" y="81" width="118" height="8" rx="4" fill="var(--line)"/><rect x="74" y="96" width="74" height="6" rx="3" fill="var(--line)" opacity="0.6"/></g><rect x="188" y="79" width="88" height="24" rx="12" fill="var(--bg-alt)" stroke="var(--line)"/><path d="M199 91l3 3 5.5-6" fill="none" stroke="var(--blue-mid)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><text x="214" y="95" font-size="12" font-weight="600" fill="var(--ink)">Licencja</text><rect x="284" y="79" width="114" height="24" rx="12" fill="var(--bg-alt)" stroke="var(--line)"/><path d="M295 91l3 3 5.5-6" fill="none" stroke="var(--blue-mid)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><text x="310" y="95" font-size="12" font-weight="600" fill="var(--ink)">MFA włączone</text><path d="M20 126h380" stroke="var(--line)"/>
-  <g><circle cx="44" cy="161" r="16" fill="var(--bg-alt)" stroke="var(--line)"/><rect x="74" y="151" width="96" height="8" rx="4" fill="var(--line)"/><rect x="74" y="166" width="88" height="6" rx="3" fill="var(--line)" opacity="0.6"/></g><rect x="188" y="149" width="88" height="24" rx="12" fill="var(--bg-alt)" stroke="var(--line)"/><path d="M199 161l3 3 5.5-6" fill="none" stroke="var(--blue-mid)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><text x="214" y="165" font-size="12" font-weight="600" fill="var(--ink)">Licencja</text><rect x="284" y="149" width="114" height="24" rx="12" fill="var(--bg-alt)" stroke="var(--line)"/><path d="M295 161l3 3 5.5-6" fill="none" stroke="var(--blue-mid)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><text x="310" y="165" font-size="12" font-weight="600" fill="var(--ink)">MFA włączone</text><path d="M20 196h380" stroke="var(--line)"/>
-  <g><circle cx="44" cy="231" r="16" fill="var(--bg-alt)" stroke="var(--line)"/><rect x="74" y="221" width="132" height="8" rx="4" fill="var(--line)"/><rect x="74" y="236" width="64" height="6" rx="3" fill="var(--line)" opacity="0.6"/></g><rect x="188" y="219" width="88" height="24" rx="12" fill="var(--bg-alt)" stroke="var(--line)"/><path d="M199 231l3 3 5.5-6" fill="none" stroke="var(--blue-mid)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><text x="214" y="235" font-size="12" font-weight="600" fill="var(--ink)">Licencja</text><rect x="284" y="219" width="114" height="24" rx="12" fill="var(--bg-alt)" stroke="var(--line)"/><path d="M295 231l3 3 5.5-6" fill="none" stroke="var(--blue-mid)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><text x="310" y="235" font-size="12" font-weight="600" fill="var(--ink)">MFA włączone</text><path d="M20 266h380" stroke="var(--line)"/>
-  <g opacity="0.55"><circle cx="44" cy="301" r="16" fill="var(--bg-alt)" stroke="var(--line)" stroke-dasharray="3 3"/><rect x="74" y="291" width="104" height="8" rx="4" fill="var(--line)"/><rect x="74" y="306" width="80" height="6" rx="3" fill="var(--line)" opacity="0.6"/></g><rect x="264" y="289" width="134" height="24" rx="12" fill="var(--bg)" stroke="var(--line)"/><rect x="276" y="299" width="9" height="7" rx="1.2" fill="none" stroke="var(--slate)" stroke-width="1.3"/><path d="M278 299v-2a2.5 2.5 0 0 1 5 0v2" fill="none" stroke="var(--slate)" stroke-width="1.3"/><text x="290" y="305" font-size="12" font-weight="600" fill="var(--slate)">Konto wyłączone</text>
-</svg></div>
+    <div class="bento" aria-label="Nasze cztery usługi">
+      <a class="bento-card bento-m365" href="services.html#microsoft-365">
+        <div class="bento-head"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.5 19H7a5 5 0 1 1 1.4-9.8A6 6 0 0 1 20 11a4 4 0 0 1-2.5 8Z"/><path d="M12 11.5l2.5 1v2c0 1.4-1.1 2.4-2.5 3-1.4-.6-2.5-1.6-2.5-3v-2Z"/></svg><span class="bento-title">Microsoft 365 i bezpieczeństwo</span><svg class="ico ico-xs bento-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+        <div class="mock-apps" aria-hidden="true"><span><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span><span><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/></svg></span><span><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.4A8 8 0 1 1 21 12Z"/></svg></span><span><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span></div>
+        <ul class="mock-users" aria-hidden="true"><li class="mock-user"><span class="mock-avatar"></span><span class="mock-bars"><i style="width:70%"></i><i style="width:46%"></i></span><span class="mock-pill"><svg class="ico ico-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>MFA włączone</span></li><li class="mock-user"><span class="mock-avatar"></span><span class="mock-bars"><i style="width:58%"></i><i style="width:62%"></i></span><span class="mock-pill"><svg class="ico ico-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Licencja</span></li><li class="mock-user is-off"><span class="mock-avatar"></span><span class="mock-bars"><i style="width:64%"></i><i style="width:40%"></i></span><span class="mock-pill"><svg class="ico ico-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Konto wyłączone</span></li></ul>
+        <p class="mock-policy" aria-hidden="true"><span class="dot dot-ok"></span>Zasady bezpieczeństwa wdrożone</p>
+      </a>
+      <a class="bento-card bento-it" href="services.html#it-support">
+        <div class="bento-head"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="3" y="14" width="4" height="6" rx="1.5"/><rect x="17" y="14" width="4" height="6" rx="1.5"/><path d="M19 20c0 1.1-1.3 2-3 2h-2"/></svg><span class="bento-title">Wsparcie IT</span><svg class="ico ico-xs bento-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+        <ul class="mock-it" aria-hidden="true"><li><span class="dot dot-ok"></span><span class="it-name">Konfiguracja laptopa</span><span class="it-state">Gotowe</span></li><li><span class="dot dot-ok"></span><span class="it-name">Drukarka w biurze</span><span class="it-state">Naprawiona</span></li><li><span class="dot dot-run"></span><span class="it-name">Kopia zapasowa</span><span class="it-state">W toku</span></li></ul>
+      </a>
+      <a class="bento-card bento-web" href="services.html#websites">
+        <div class="bento-head"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 9v11"/></svg><span class="bento-title">Strony internetowe</span><svg class="ico ico-xs bento-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+        <div class="mock-browser" aria-hidden="true">
+          <div class="mb-bar"><i></i><i></i><i></i><span></span></div>
+          <div class="mb-page"><span class="mb-h"></span><span class="mb-l"></span><span class="mb-l short"></span><span class="mb-btn"></span><span class="mb-img"></span></div>
+          <div class="mock-phone"><span class="mb-h"></span><span class="mb-l"></span><span class="mb-btn"></span></div>
+        </div>
+      </a>
+      <a class="bento-card bento-data" href="services.html#data-analytics">
+        <div class="bento-head"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg><span class="bento-title">Analiza danych i Power BI</span><svg class="ico ico-xs bento-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+        <div class="mock-dash" aria-hidden="true">
+          <div class="kpis"><div class="kpi"><span>Sprzedaż</span><i style="width:72%"></i></div><div class="kpi"><span>Zamówienia</span><i style="width:54%"></i></div><div class="kpi"><span>Marża</span><i style="width:63%"></i></div></div>
+          <svg class="mock-chart" viewBox="0 0 190 92" preserveAspectRatio="none"><g class="bars"><rect x="8" y="54" width="16" height="34" rx="3"/><rect x="34" y="40" width="16" height="48" rx="3"/><rect x="60" y="48" width="16" height="40" rx="3"/><rect x="86" y="26" width="16" height="62" rx="3"/><rect x="112" y="32" width="16" height="56" rx="3"/><rect x="138" y="14" width="16" height="74" rx="3"/><rect x="164" y="20" width="16" height="68" rx="3"/></g><path class="trend" d="M10 66 L36 58 L62 62 L88 40 L114 46 L140 24 L166 28 L186 14"/></svg>
+        </div>
+      </a>
+    </div>
   </div>
 </section>
 
@@ -105,7 +121,7 @@
     <div class="service-grid">
       <div class="service-card is-lead">
         <div class="lead-copy">
-          <svg class="mark" viewBox="0 0 40 40" fill="none" stroke="var(--blue)" stroke-width="1.6"><rect x="6" y="7" width="12" height="12" rx="1.2"/><rect x="22" y="7" width="12" height="12" rx="1.2"/><rect x="6" y="21" width="12" height="12" rx="1.2"/><rect x="22" y="21" width="12" height="12" rx="1.2"/></svg>
+          <span class="mark-tile"><svg class="mark" viewBox="0 0 40 40" fill="none" stroke="var(--blue)" stroke-width="1.6"><rect x="6" y="7" width="12" height="12" rx="1.2"/><rect x="22" y="7" width="12" height="12" rx="1.2"/><rect x="6" y="21" width="12" height="12" rx="1.2"/><rect x="22" y="21" width="12" height="12" rx="1.2"/></svg></span>
           <h3>Microsoft 365</h3>
           <p>Zarządzamy Twoim Microsoft 365: konta użytkowników, licencje, bezpieczeństwo, uprawnienia i urządzenia, bez zatrudniania administratora na pełen etat.</p>
           <a class="btn-ghost" href="services.html#microsoft-365">Microsoft 365 szczegółowo →</a>
@@ -118,19 +134,19 @@
         </ul>
       </div>
       <div class="service-card">
-        <svg class="mark" viewBox="0 0 40 40" fill="none" stroke="var(--blue)" stroke-width="1.6"><rect x="5" y="8" width="30" height="24" rx="1.5"/><path d="M5 14h30" /><path d="M10 20h12M10 25h8" stroke-linecap="round"/><rect x="26" y="19" width="5" height="8" rx="0.8"/></svg>
-        <h3>Strony internetowe</h3>
-        <p>Strony i landing page dla małych firm, które jasno mówią, czym się zajmujesz, wraz z domeną, DNS i firmową pocztą.</p>
-        <a class="btn-ghost" href="services.html#websites">Strony internetowe szczegółowo →</a>
-      </div>
-      <div class="service-card">
-        <svg class="mark" viewBox="0 0 40 40" fill="none" stroke="var(--blue)" stroke-width="1.6"><rect x="6" y="9" width="28" height="18" rx="1.5"/><path d="M14 32h12M20 27v5" stroke-linecap="round"/><path d="M13 17l3 3 3-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="mark-tile"><svg class="mark" viewBox="0 0 40 40" fill="none" stroke="var(--blue)" stroke-width="1.6"><rect x="6" y="9" width="28" height="18" rx="1.5"/><path d="M14 32h12M20 27v5" stroke-linecap="round"/><path d="M13 17l3 3 3-4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         <h3>Wsparcie IT</h3>
         <p>Praktyczne wsparcie technologiczne dla małych firm, biur i specjalistów — od codziennych problemów po organizację nowego biura.</p>
         <a class="btn-ghost" href="services.html#it-support">Wsparcie IT szczegółowo →</a>
       </div>
       <div class="service-card">
-        <svg class="mark" viewBox="0 0 40 40" fill="none" stroke="var(--blue)" stroke-width="1.6"><path d="M8 32V18M18 32V9M28 32v-9" stroke-linecap="round"/><path d="M6 32h28" stroke-linecap="round"/></svg>
+        <span class="mark-tile"><svg class="mark" viewBox="0 0 40 40" fill="none" stroke="var(--blue)" stroke-width="1.6"><rect x="5" y="8" width="30" height="24" rx="1.5"/><path d="M5 14h30" /><path d="M10 20h12M10 25h8" stroke-linecap="round"/><rect x="26" y="19" width="5" height="8" rx="0.8"/></svg></span>
+        <h3>Strony internetowe</h3>
+        <p>Strony i landing page dla małych firm, które jasno mówią, czym się zajmujesz, wraz z domeną, DNS i firmową pocztą.</p>
+        <a class="btn-ghost" href="services.html#websites">Strony internetowe szczegółowo →</a>
+      </div>
+      <div class="service-card">
+        <span class="mark-tile"><svg class="mark" viewBox="0 0 40 40" fill="none" stroke="var(--blue)" stroke-width="1.6"><path d="M8 32V18M18 32V9M28 32v-9" stroke-linecap="round"/><path d="M6 32h28" stroke-linecap="round"/></svg></span>
         <h3>Analiza danych i Power BI</h3>
         <p>Przekształcanie danych biznesowych w przejrzyste pulpity Power BI, raporty i wnioski, na których można polegać.</p>
         <a class="btn-ghost" href="services.html#data-analytics">Analiza danych szczegółowo →</a>
@@ -312,7 +328,7 @@
   ]
 }
 </script>
-<script src="../js/main.js?v=20261108-1" defer></script>
+<script src="../js/main.js?v=20261108-3" defer></script>
 
 </body>
 </html>

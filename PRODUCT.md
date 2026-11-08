@@ -16,12 +16,7 @@ The website exists to win enquiries, by contact form (`functions/api/contact.js`
 
 Headline message (owner decision, 2026-11-08): the home hero presents Cevano as one place for three things: IT, web design and data. The owner's exact hero copy is "IT. Web design. Data. All in one place." with the subtitle "Technology that helps your business move forward." Keep this message on the home page unless the owner changes it.
 
-Order within the services, below the hero:
-
-1. Microsoft 365 management (most detailed service; first in every service list).
-2. Websites and landing pages.
-3. IT support.
-4. Data analytics / Power BI.
+Order of the four services on the home page (owner's redesign brief, 2026-11-08): Microsoft 365, IT support, web design, data analytics / Power BI. Microsoft 365 stays the most detailed service and first in every list. services.html, the footer and the contact form still list websites second.
 
 Networking & AV, IT assets & documentation, and domains & email are secondary services.
 
