@@ -14,19 +14,20 @@ Owners and managers of small businesses, sole traders, startups and individuals,
 
 The website exists to win enquiries, by contact form (`functions/api/contact.js`) or by email to enquiries@cevano.co.uk.
 
-Service priority for the business right now:
+Headline message (owner decision, 2026-11-08): the home hero presents Cevano as one place for three things: IT, web design and data. The owner's exact hero copy is "IT. Web design. Data. All in one place." with the subtitle "Technology that helps your business move forward." Keep this message on the home page unless the owner changes it.
 
-1. Microsoft 365 management (lead service to win).
-2. Web / landing page design.
+Order within the services, below the hero:
+
+1. Microsoft 365 management (most detailed service; first in every service list).
+2. Websites and landing pages.
 3. IT support.
+4. Data analytics / Power BI.
 
-Data analytics / Power BI remains a core service. Networking & AV, IT assets & documentation, and domains / DNS are secondary services.
-
-Note: web design is currently listed only as a minor item under "Domains & Online Services". The stated priority means it may deserve more prominence. That is a content decision to confirm with the owner before any page restructure.
+Networking & AV, IT assets & documentation, and domains & email are secondary services.
 
 ## Positioning
 
-One provider for everyday IT support, Microsoft 365 administration, and data analytics with Power BI, which small businesses would otherwise source from three suppliers. Plain-language explanations and practical solutions sized for small businesses, not enterprise IT. Local on-site presence around Northamptonshire, with remote support where it makes sense.
+One provider for IT (everyday support and Microsoft 365 administration), web design (websites and landing pages) and data (analytics with Power BI), which small businesses would otherwise source from separate suppliers. Plain-language explanations and practical solutions sized for small businesses, not enterprise IT. Local on-site presence around Northamptonshire, with remote support where it makes sense.
 
 ## Operating Context
 
