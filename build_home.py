@@ -25,11 +25,12 @@ body_home_en = f'''
 <section class="hero">
   <div class="container hero-grid">
     <div>
-      <h1>Microsoft 365, set up properly and kept that way.</h1>
-      <p class="lede">We manage Microsoft 365 for small businesses (accounts, licences, security and devices) and take care of the IT support and websites around it.</p>
+      <h1>IT. Web design. Data. All in one place.</h1>
+      <p class="hero-subtitle">Technology that helps your business move forward.</p>
+      <p class="lede">We provide tailored IT solutions, modern websites and data analytics to help small businesses and startups work smarter, stay secure and grow with confidence.</p>
       <div class="hero-ctas">
         <a class="btn btn-primary" href="contact.html">Get in touch</a>
-        <a class="btn btn-outline" href="services.html">See our services</a>
+        <a class="btn btn-outline" href="services.html">Explore our services</a>
       </div>
       <p class="hero-email">Prefer email? Write to <a href="mailto:enquiries@cevano.co.uk">enquiries@cevano.co.uk</a></p>
       <p class="trust-badge">
@@ -219,11 +220,12 @@ body_home_pl = f'''
 <section class="hero">
   <div class="container hero-grid">
     <div>
-      <h1>Microsoft 365 skonfigurowany porządnie i tak utrzymany.</h1>
-      <p class="lede">Zarządzamy Microsoft 365 w małych firmach (konta, licencje, bezpieczeństwo i urządzenia) i zajmujemy się wsparciem IT oraz stronami internetowymi wokół niego.</p>
+      <h1>IT. Strony internetowe. Dane. Wszystko w jednym miejscu.</h1>
+      <p class="hero-subtitle">Technologia, która pomaga Twojej firmie iść do przodu.</p>
+      <p class="lede">Dostarczamy dopasowane rozwiązania IT, nowoczesne strony internetowe i analizę danych, które pomagają małym firmom i startupom pracować mądrzej, działać bezpiecznie i rozwijać się z pewnością siebie.</p>
       <div class="hero-ctas">
         <a class="btn btn-primary" href="contact.html">Skontaktuj się</a>
-        <a class="btn btn-outline" href="services.html">Zobacz usługi</a>
+        <a class="btn btn-outline" href="services.html">Poznaj nasze usługi</a>
       </div>
       <p class="hero-email">Wolisz e-mail? Napisz na <a href="mailto:enquiries@cevano.co.uk">enquiries@cevano.co.uk</a></p>
       <p class="trust-badge">
