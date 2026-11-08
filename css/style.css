@@ -284,6 +284,7 @@ html[data-nav-open="true"] .nav-toggle .icon-close{ display:block; }
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "m365 it" "m365 web" "data data";
 }
+.bento > *{ min-width: 0; }
 .bento-m365{ grid-area: m365; }
 .bento-it{ grid-area: it; }
 .bento-web{ grid-area: web; }
@@ -305,8 +306,8 @@ html[data-nav-open="true"] .nav-toggle .icon-close{ display:block; }
 .bento-card:focus-visible{ outline: 2px solid #7CC0FF; outline-offset: 3px; }
 .bento-head{ display:flex; align-items:center; gap:10px; }
 .bento-head .ico{ width:20px; height:20px; color:#7CC0FF; flex:none; }
-.bento-title{ font-family: var(--font-head); font-weight:600; font-size: 15px; color:#fff; line-height:1.25; }
-.bento-arrow{ margin-left:auto; color: var(--on-deep-2); transition: transform .2s ease, color .2s ease; }
+.bento-title{ flex:1; min-width:0; font-family: var(--font-head); font-weight:600; font-size: 15px; color:#fff; line-height:1.25; }
+.bento-arrow{ margin-left:auto; flex:none; color: var(--on-deep-2); transition: transform .2s ease, color .2s ease; }
 .bento-card:hover .bento-arrow{ transform: translateX(3px); color:#fff; }
 .ico-sm{ width:16px; height:16px; }
 .ico-xs{ width:12px; height:12px; }
@@ -375,15 +376,23 @@ html[data-nav-open="true"] .nav-toggle .icon-close{ display:block; }
 .mock-chart .trend{ fill:none; stroke:#7CC0FF; stroke-width:2.2; vector-effect: non-scaling-stroke; }
 
 @media (max-width: 1100px){
-  .hero-grid{ grid-template-columns: 1fr; gap: 44px; }
-  .hero--dark h1{ max-width: 16ch; }
+  .hero-grid{ grid-template-columns: minmax(0, 1fr); gap: 44px; }
+  .hero--dark h1{ max-width: 22ch; }
 }
 @media (max-width: 600px){
   .hero{ padding: 48px 0 56px; }
+  /* long Polish phrases may wrap on phones rather than run off the screen */
+  .hero--dark .nw{ white-space: normal; }
+  .hero--dark h1{ font-size: clamp(2rem, 9vw, 2.3rem); }
   .hero-ctas .btn{ flex: 1 1 100%; }
-  .bento{ grid-template-areas: "m365 m365" "it web" "data data"; gap: 10px; }
+  .bento{ grid-template-columns: minmax(0,1fr) minmax(0,1fr); grid-template-areas: "m365 m365" "it web" "data data"; gap: 10px; }
   .bento-card{ padding: 14px; gap: 12px; border-radius: var(--radius-m); }
   .bento-title{ font-size: 14px; }
+  /* half-width cards on phones: drop the arrow and the status words so names fit whole */
+  .bento-it .bento-arrow, .bento-web .bento-arrow, .it-state{ display:none; }
+  .it-name{ white-space: normal; }
+  .mock-it li{ align-items: flex-start; }
+  .mock-it .dot{ margin-top: 5px; }
   .mock-users .mock-user:nth-child(3), .mock-policy, .mock-it li:nth-child(3), .mock-phone{ display:none; }
   .mock-browser{ margin-right:0; }
   .mb-page{ grid-template-columns: 1fr; }
@@ -450,6 +459,8 @@ html[data-theme="dark"] .mark-tile{ background: rgba(61,151,242,.10); border-col
 
 @media (max-width: 960px){
   .service-grid{ grid-template-columns: 1fr 1fr; }
+  /* three cards under the lead: the last one spans the row instead of standing alone */
+  .service-grid > .service-card:last-child{ grid-column: 1 / -1; }
   .service-card.is-lead{ grid-template-columns:1fr; padding: 32px 26px; }
 }
 @media (max-width: 640px){
