@@ -267,27 +267,27 @@ body_services_pl = f'''
   <div class="container detail-grid reverse">
     <div class="detail-copy">
       {MARK_WEB}
-      <h2 style="margin-top:14px;">Strony internetowe, dzięki którym Twoja firma wygląda profesjonalnie</h2>
-      <p>Nowoczesne, responsywne strony i landing page, które jasno pokazują, czym się zajmujesz, i ułatwiają klientom kontakt. Zajmujemy się wszystkim: od samej strony po hosting, domenę i konfigurację poczty firmowej.</p>
+      <h2 style="margin-top:14px;">Strony internetowe, które pomagają Twojej firmie się wyróżnić.</h2>
+      <p>Nowoczesne, responsywne strony internetowe i landing page, które jasno przedstawiają Twoją ofertę i ułatwiają klientom kontakt. Zajmujemy się całością — od projektu i wykonania strony po hosting, domenę i konfigurację poczty firmowej.</p>
       <ul class="check-list">
         {check_items([
             "Jednostronicowe landing page",
             "Strony internetowe dla małych firm",
-            "Responsywny projekt na telefony, tablety i komputery",
-            "Formularze kontaktowe wysyłające zapytania prosto na Twoją skrzynkę",
-            "Hosting i uruchomienie strony",
+            "Responsywny design na telefony, tablety i komputery",
+            "Formularze kontaktowe wysyłające zapytania bezpośrednio na Twoją skrzynkę",
+            "Konfiguracja hostingu i uruchomienie strony",
             "Konfiguracja domeny, DNS i poczty firmowej",
         ])}
       </ul>
       <a class="btn btn-outline service-ask" href="contact.html?service=website">Zapytaj o stronę internetową</a>
     </div>
     <div class="panel">
-      <h3>Strony dopasowane do Twojej firmy</h3>
+      <h3>Strony internetowe dopasowane do Twojej firmy</h3>
       <ul>
-        <li>Profesjonalna strona, która jasno przedstawia Twoje usługi</li>
+        <li>Profesjonalna strona, która jasno przedstawia Twoją ofertę</li>
         <li>Landing page dla nowej usługi, produktu lub kampanii</li>
-        <li>Prosty sposób na kontakt dla potencjalnych klientów</li>
-        <li>Kompletna konfiguracja domeny, hostingu i poczty firmowej</li>
+        <li>Prosty sposób, aby potencjalni klienci mogli się z Tobą skontaktować</li>
+        <li>Kompleksowa konfiguracja domeny, hostingu i poczty firmowej</li>
       </ul>
     </div>
   </div>
