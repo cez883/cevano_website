@@ -73,12 +73,12 @@ body_services_en = f'''
       <a class="btn btn-outline service-ask" href="contact.html?service=website">Ask about a website</a>
     </div>
     <div class="panel">
-      <h3>What this looks like in practice</h3>
+      <h3>Websites built around your business</h3>
       <ul>
-        <li>A landing page for a new service or campaign</li>
-        <li>A small website that explains what you do and how to get in touch</li>
-        <li>Enquiries arriving by email from a simple contact form</li>
-        <li>Your domain, website and email set up and pointing in the right place</li>
+        <li>A professional website that clearly explains your services</li>
+        <li>A focused landing page for a new service, product or campaign</li>
+        <li>A simple way for potential customers to get in touch</li>
+        <li>A complete setup covering your domain, hosting and business email</li>
       </ul>
     </div>
   </div>
@@ -282,12 +282,12 @@ body_services_pl = f'''
       <a class="btn btn-outline service-ask" href="contact.html?service=website">Zapytaj o stronę internetową</a>
     </div>
     <div class="panel">
-      <h3>Jak to wygląda w praktyce</h3>
+      <h3>Strony dopasowane do Twojej firmy</h3>
       <ul>
-        <li>Landing page dla nowej usługi lub kampanii</li>
-        <li>Mała strona, która mówi, czym się zajmujesz i jak się skontaktować</li>
-        <li>Zapytania z prostego formularza trafiają na Twój e-mail</li>
-        <li>Domena, strona i poczta skonfigurowane i działające razem</li>
+        <li>Profesjonalna strona, która jasno przedstawia Twoje usługi</li>
+        <li>Landing page dla nowej usługi, produktu lub kampanii</li>
+        <li>Prosty sposób na kontakt dla potencjalnych klientów</li>
+        <li>Kompletna konfiguracja domeny, hostingu i poczty firmowej</li>
       </ul>
     </div>
   </div>
