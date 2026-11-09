@@ -58,15 +58,15 @@ body_services_en = f'''
   <div class="container detail-grid reverse">
     <div class="detail-copy">
       {MARK_WEB}
-      <h2 style="margin-top:14px;">Websites and landing pages that explain what you do.</h2>
-      <p>Clear websites and landing pages for small businesses, built to work on phones as well as desktops, with a contact form that sends enquiries straight to your inbox. We also set up the hosting, domain and business email behind them.</p>
+      <h2 style="margin-top:14px;">Websites that make your business look professional.</h2>
+      <p>Modern, responsive websites and landing pages designed to clearly communicate what you do and make it easy for customers to get in touch. We handle everything from the website itself to hosting, domain and business email setup.</p>
       <ul class="check-list">
         {check_items([
             "Single-page landing pages",
             "Small business websites",
-            "Designed to work on phones, tablets and desktops",
-            "Contact forms that send enquiries by email",
-            "Hosting setup",
+            "Responsive design for phones, tablets and desktops",
+            "Contact forms that send enquiries straight to your inbox",
+            "Hosting and website setup",
             "Domain, DNS and business email configuration",
         ])}
       </ul>
@@ -267,15 +267,15 @@ body_services_pl = f'''
   <div class="container detail-grid reverse">
     <div class="detail-copy">
       {MARK_WEB}
-      <h2 style="margin-top:14px;">Strony internetowe, które jasno mówią, czym się zajmujesz</h2>
-      <p>Przejrzyste strony i landing page dla małych firm, przygotowane z myślą o telefonach i komputerach, z formularzem kontaktowym, który wysyła zapytania prosto na Twoją skrzynkę. Konfigurujemy też hosting, domenę i firmową pocztę.</p>
+      <h2 style="margin-top:14px;">Strony internetowe, dzięki którym Twoja firma wygląda profesjonalnie</h2>
+      <p>Nowoczesne, responsywne strony i landing page, które jasno pokazują, czym się zajmujesz, i ułatwiają klientom kontakt. Zajmujemy się wszystkim: od samej strony po hosting, domenę i konfigurację poczty firmowej.</p>
       <ul class="check-list">
         {check_items([
             "Jednostronicowe landing page",
             "Strony internetowe dla małych firm",
-            "Projekt działający na telefonach, tabletach i komputerach",
-            "Formularze kontaktowe wysyłające zapytania e-mailem",
-            "Konfiguracja hostingu",
+            "Responsywny projekt na telefony, tablety i komputery",
+            "Formularze kontaktowe wysyłające zapytania prosto na Twoją skrzynkę",
+            "Hosting i uruchomienie strony",
             "Konfiguracja domeny, DNS i poczty firmowej",
         ])}
       </ul>
