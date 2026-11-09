@@ -15,10 +15,10 @@ body_services_en = f'''
 <nav class="mini-nav" data-mini-nav aria-label="Services on this page">
   <div class="mini-nav-inner">
     <a href="#microsoft-365">Microsoft 365</a>
-    <a href="#websites">Websites</a>
-    <a href="#it-support">IT support</a>
-    <a href="#data-analytics">Data analytics</a>
-    <a href="#additional-services">Additional services</a>
+    <a href="#websites">Web Design</a>
+    <a href="#it-support">IT Support</a>
+    <a href="#data-analytics">Data Analytics</a>
+    <a href="#additional-services">Additional Services</a>
   </div>
 </nav>
 
@@ -224,10 +224,10 @@ body_services_pl = f'''
 <nav class="mini-nav" data-mini-nav aria-label="Usługi na tej stronie">
   <div class="mini-nav-inner">
     <a href="#microsoft-365">Microsoft 365</a>
-    <a href="#websites">Strony internetowe</a>
+    <a href="#websites">Web Design</a>
     <a href="#it-support">Wsparcie IT</a>
-    <a href="#data-analytics">Analiza danych</a>
-    <a href="#additional-services">Usługi dodatkowe</a>
+    <a href="#data-analytics">Analiza Danych</a>
+    <a href="#additional-services">Usługi Dodatkowe</a>
   </div>
 </nav>
 
