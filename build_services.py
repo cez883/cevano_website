@@ -7,8 +7,8 @@ from build import *
 body_services_en = f'''
 <section class="page-hero">
   <div class="container">
-    <h1>Services for small businesses without an IT department</h1>
-    <p>Microsoft 365 first, plus websites, everyday IT support and Power BI reporting, and the extras that keep a small office running.</p>
+    <h1>Everything your business needs to work smarter</h1>
+    <p>From Microsoft 365 and everyday IT support to modern websites and Power BI reporting, we provide practical technology solutions for small businesses and startups.</p>
   </div>
 </section>
 
@@ -216,8 +216,8 @@ write("services.html", page(
 body_services_pl = f'''
 <section class="page-hero">
   <div class="container">
-    <h1>Usługi dla małych firm bez własnego działu IT</h1>
-    <p>Przede wszystkim Microsoft 365, a do tego strony internetowe, codzienne wsparcie IT i raporty Power BI oraz dodatki, które utrzymują małe biuro w sprawnym działaniu.</p>
+    <h1>Wszystko, czego Twoja firma potrzebuje, by pracować mądrzej</h1>
+    <p>Od Microsoft 365 i codziennego wsparcia IT po nowoczesne strony internetowe i raporty Power BI – dostarczamy praktyczne rozwiązania technologiczne dla małych firm i startupów.</p>
   </div>
 </section>
 
