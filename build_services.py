@@ -238,29 +238,29 @@ body_services_pl = f'''
   <div class="container detail-grid">
     <div class="detail-copy">
       {MARK_M365}
-      <h2 style="margin-top:14px;">Microsoft 365 zarządzane jak należy</h2>
-      <p>Od kont użytkowników i licencji po bezpieczeństwo, uprawnienia i zarządzanie urządzeniami pomagamy małym firmom skutecznie zarządzać Microsoft 365, dbać o bezpieczeństwo środowiska i lepiej wykorzystywać narzędzia, z których już korzystają — bez kosztów zatrudniania administratora IT na pełen etat.</p>
+      <h2 style="margin-top:14px;">Microsoft 365 pod właściwą opieką.</h2>
+      <p>Od zarządzania kontami użytkowników i licencjami po bezpieczeństwo, uprawnienia i urządzenia — pomagamy małym firmom efektywnie korzystać z Microsoft 365, dbać o bezpieczeństwo środowiska IT i w pełni wykorzystywać dostępne narzędzia, bez konieczności zatrudniania administratora IT na pełen etat.</p>
       <ul class="check-list">
         {check_items([
-            "Zarządzanie kontami użytkowników, wdrażanie i offboarding pracowników",
-            "Zarządzanie licencjami i subskrypcjami Microsoft 365",
-            "Grupy zabezpieczeń, dostępy i uprawnienia",
-            "Konfiguracja bezpieczeństwa Microsoft 365 zgodnie z dobrymi praktykami",
-            "Konfiguracja i zarządzanie urządzeniami w Microsoft Intune",
+            "Zarządzanie kontami użytkowników, wdrażanie nowych pracowników i odbieranie dostępów",
+            "Licencje i subskrypcje Microsoft 365",
+            "Zarządzanie grupami zabezpieczeń, dostępami i uprawnieniami",
+            "Konfiguracja zabezpieczeń Microsoft 365 i dobre praktyki bezpieczeństwa",
+            "Konfiguracja i zarządzanie urządzeniami za pomocą Microsoft Intune",
             "Konfiguracja i wsparcie SharePoint, OneDrive i Microsoft Teams",
-            "Migracje Microsoft 365 i konfiguracja tenanta",
+            "Migracje Microsoft 365 i konfiguracja środowiska firmowego",
         ])}
       </ul>
       <a class="btn btn-outline service-ask" href="contact.html?service=m365">Zapytaj o Microsoft 365</a>
     </div>
     <div class="panel">
-      <h3>Jak możemy pomóc?</h3>
+      <h3>W czym możemy pomóc?</h3>
       <ul>
-        <li>Przygotowanie kont, licencji i dostępów dla nowych pracowników od pierwszego dnia</li>
-        <li>Bezpieczny offboarding odchodzących pracowników i zamykanie ich dostępów</li>
-        <li>Porządkowanie plików, uprawnień i wspólnych dokumentów w SharePoint</li>
-        <li>Konfiguracja i zarządzanie firmowymi urządzeniami w Microsoft Intune</li>
-        <li>Przegląd licencji Microsoft 365, żebyś nie płacił za więcej, niż potrzebujesz</li>
+        <li>Przygotowanie kont, licencji i odpowiednich dostępów dla nowych pracowników już od pierwszego dnia pracy</li>
+        <li>Bezpieczne zamykanie kont odchodzących pracowników i odbieranie im dostępów</li>
+        <li>Porządkowanie firmowych plików, uprawnień i dokumentów współdzielonych w SharePoint</li>
+        <li>Konfiguracja i zarządzanie urządzeniami firmowymi za pomocą Microsoft Intune</li>
+        <li>Przegląd licencji Microsoft 365, aby firma nie płaciła za więcej, niż faktycznie potrzebuje</li>
       </ul>
     </div>
   </div>
