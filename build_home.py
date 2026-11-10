@@ -55,7 +55,7 @@ body_home_en = f'''
         <div class="lead-copy">
           <span class="mark-tile">{MARK_M365}</span>
           <h3>Microsoft 365</h3>
-          <p>Microsoft 365 managed for you: user accounts, licensing, security, permissions and devices, without employing a full-time administrator.</p>
+          <p>We manage your Microsoft 365 environment, from user accounts and licensing to security, permissions and device management — helping your business stay organised and secure.</p>
           <a class="btn-ghost" href="services.html#microsoft-365">Microsoft 365 in detail →</a>
         </div>
         <ul class="check-list">
@@ -70,20 +70,20 @@ body_home_en = f'''
       <div class="service-card">
         <span class="mark-tile">{MARK_SUPPORT}</span>
         <h3>IT Support</h3>
-        <p>Practical technology support for small businesses, offices and professionals — from everyday troubleshooting to setting up a new office.</p>
-        <a class="btn-ghost" href="services.html#it-support">IT support in detail →</a>
+        <p>Practical IT Support for the technology your business relies on every day — from troubleshooting and device setup to office moves and ongoing technical assistance.</p>
+        <a class="btn-ghost" href="services.html#it-support">IT Support in detail →</a>
       </div>
       <div class="service-card">
         <span class="mark-tile">{MARK_WEB}</span>
-        <h3>Websites &amp; Landing Pages</h3>
-        <p>Websites and landing pages for small businesses that explain clearly what you do, with the domain, DNS and business email set up behind them.</p>
-        <a class="btn-ghost" href="services.html#websites">Websites in detail →</a>
+        <h3>Web Design</h3>
+        <p>Modern, professional websites and landing pages that showcase your business, communicate your services clearly and make it easy for customers to get in touch.</p>
+        <a class="btn-ghost" href="services.html#websites">Web Design in detail →</a>
       </div>
       <div class="service-card">
         <span class="mark-tile">{MARK_DATA}</span>
         <h3>Data Analytics &amp; Power BI</h3>
-        <p>Turning business data into clear Power BI dashboards, reports and insight you can act on.</p>
-        <a class="btn-ghost" href="services.html#data-analytics">Data analytics in detail →</a>
+        <p>We turn your business data into clear Power BI dashboards and reports, helping you track performance, identify trends and make better-informed decisions.</p>
+        <a class="btn-ghost" href="services.html#data-analytics">Data Analytics in detail →</a>
       </div>
     </div>
   </div>
@@ -93,7 +93,7 @@ body_home_en = f'''
   <div class="container">
     <div class="section-head">
       <span class="kicker">Also available</span>
-      <h2>Additional support when you need it</h2>
+      <h2>Additional IT Services</h2>
       <p>Alongside our core services, we help with the practical details that keep an office running.</p>
     </div>
     <div class="subservice-grid">
@@ -240,9 +240,9 @@ body_home_pl = f'''
 <section class="section" id="services">
   <div class="container">
     <div class="section-head">
-      <span class="kicker">Czym się zajmujemy</span>
-      <h2>Cztery usługi, jeden punkt kontaktu</h2>
-      <p>Dobrze zarządzane środowisko Microsoft 365, strona internetowa, która jasno mówi, czym się zajmujesz, codzienne wsparcie IT i dane, z których da się korzystać, bez żonglowania dostawcami.</p>
+      <span class="kicker">Co robimy?</span>
+      <h2>Cztery obszary usług, jeden partner.</h2>
+      <p>Od Microsoft 365 i codziennego wsparcia IT po profesjonalne strony internetowe i raportowanie Power BI — zapewniamy technologie, których potrzebuje Twoja firma, w jednym miejscu.</p>
     </div>
 
     <div class="service-grid">
@@ -250,8 +250,8 @@ body_home_pl = f'''
         <div class="lead-copy">
           <span class="mark-tile">{MARK_M365}</span>
           <h3>Microsoft 365</h3>
-          <p>Zarządzamy Twoim Microsoft 365: konta użytkowników, licencje, bezpieczeństwo, uprawnienia i urządzenia, bez zatrudniania administratora na pełen etat.</p>
-          <a class="btn-ghost" href="services.html#microsoft-365">Microsoft 365 szczegółowo →</a>
+          <p>Zajmujemy się obsługą środowiska Microsoft 365 — od kont użytkowników i licencji po bezpieczeństwo, uprawnienia i zarządzanie urządzeniami. Pomagamy Twojej firmie działać sprawnie i bezpiecznie.</p>
+          <a class="btn-ghost" href="services.html#microsoft-365">Więcej o Microsoft 365 →</a>
         </div>
         <ul class="check-list">
           {check_items([
@@ -264,21 +264,21 @@ body_home_pl = f'''
       </div>
       <div class="service-card">
         <span class="mark-tile">{MARK_SUPPORT}</span>
-        <h3>Wsparcie IT</h3>
-        <p>Praktyczne wsparcie technologiczne dla małych firm, biur i specjalistów — od codziennych problemów po organizację nowego biura.</p>
-        <a class="btn-ghost" href="services.html#it-support">Wsparcie IT szczegółowo →</a>
+        <h3>IT Support</h3>
+        <p>Praktyczne wsparcie IT w codziennych potrzebach Twojej firmy — od rozwiązywania problemów i konfiguracji urządzeń po przeprowadzki biur i bieżącą pomoc techniczną.</p>
+        <a class="btn-ghost" href="services.html#it-support">Więcej o IT Support →</a>
       </div>
       <div class="service-card">
         <span class="mark-tile">{MARK_WEB}</span>
-        <h3>Strony internetowe</h3>
-        <p>Strony i landing page dla małych firm, które jasno mówią, czym się zajmujesz, wraz z domeną, DNS i firmową pocztą.</p>
-        <a class="btn-ghost" href="services.html#websites">Strony internetowe szczegółowo →</a>
+        <h3>Web Design</h3>
+        <p>Nowoczesne, profesjonalne strony internetowe i landing page, które prezentują Twoją firmę, jasno przedstawiają ofertę i ułatwiają klientom kontakt.</p>
+        <a class="btn-ghost" href="services.html#websites">Więcej o Web Design →</a>
       </div>
       <div class="service-card">
         <span class="mark-tile">{MARK_DATA}</span>
-        <h3>Analiza danych i Power BI</h3>
-        <p>Przekształcanie danych biznesowych w przejrzyste pulpity Power BI, raporty i wnioski, na których można polegać.</p>
-        <a class="btn-ghost" href="services.html#data-analytics">Analiza danych szczegółowo →</a>
+        <h3>Data Analytics &amp; Power BI</h3>
+        <p>Przekształcamy dane Twojej firmy w przejrzyste dashboardy i raporty Power BI, które pomagają monitorować wyniki, dostrzegać trendy i podejmować lepsze decyzje biznesowe.</p>
+        <a class="btn-ghost" href="services.html#data-analytics">Więcej o Data Analytics →</a>
       </div>
     </div>
   </div>
@@ -288,7 +288,7 @@ body_home_pl = f'''
   <div class="container">
     <div class="section-head">
       <span class="kicker">Dostępne również</span>
-      <h2>Dodatkowe wsparcie, gdy go potrzebujesz</h2>
+      <h2>Dodatkowe Usługi IT</h2>
       <p>Oprócz naszych głównych usług pomagamy również w praktycznych sprawach, które utrzymują biuro w sprawnym działaniu.</p>
     </div>
     <div class="subservice-grid">
