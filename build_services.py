@@ -328,29 +328,29 @@ body_services_pl = f'''
   <div class="container detail-grid reverse">
     <div class="detail-copy">
       {MARK_DATA}
-      <h2 style="margin-top:14px;">Zamień dane w lepsze decyzje biznesowe</h2>
-      <p>Pomagamy małym firmom przekształcać dane z Excela, systemów biznesowych i innych źródeł w przejrzyste, użyteczne pulpity i raporty Power BI. Sprawiamy, że Twoje dane są łatwiejsze do zrozumienia, co pomaga śledzić wyniki, dostrzegać trendy i podejmować lepiej przemyślane decyzje.</p>
-      <p class="trust-badge">{ICON_CERT}Certyfikat Microsoft Certified: Power BI Data Analyst Associate (PL-300)</p>
+      <h2 style="margin-top:14px;">Wykorzystaj dane, aby podejmować lepsze decyzje biznesowe.</h2>
+      <p>Pomagamy małym firmom przekształcać dane z Excela, systemów biznesowych i innych źródeł w przejrzyste dashboardy i raporty Power BI. Dzięki temu łatwiej zrozumiesz wyniki swojej firmy, dostrzeżesz ważne trendy i podejmiesz bardziej świadome decyzje.</p>
+      <p class="trust-badge">{ICON_CERT}Microsoft Certified: Power BI Data Analyst Associate (PL-300)</p>
       <ul class="check-list">
         {check_items([
-            "Analiza danych i business intelligence",
-            "Pulpity Power BI i wizualizacja danych",
-            "Raportowanie KPI i wyników",
-            "Przekształcanie i przygotowanie danych w Power Query",
-            "Zamiana arkuszy i danych biznesowych w użyteczne wnioski",
-            "Raporty przygotowane na spotkania zarządu i przeglądy biznesowe",
+            "Analiza danych i Business Intelligence",
+            "Dashboardy Power BI i wizualizacja danych",
+            "Raportowanie KPI i wyników biznesowych",
+            "Przygotowanie i przekształcanie danych za pomocą Power Query",
+            "Zamiana arkuszy Excel i danych firmowych w praktyczne informacje",
+            "Raporty na potrzeby spotkań zarządczych i przeglądów biznesowych",
         ])}
       </ul>
       <a class="btn btn-outline service-ask" href="contact.html?service=data">Zapytaj o Power BI</a>
     </div>
     <div class="panel">
-      <h3>Jak możemy pomóc</h3>
+      <h3>Jak możemy pomóc?</h3>
       <ul>
-        <li>Zebranie danych sprzedażowych, finansowych lub operacyjnych w jednym przejrzystym pulpicie</li>
-        <li>Zastąpienie ręcznych raportów w Excelu zautomatyzowanymi raportami Power BI</li>
-        <li>Śledzenie KPI, które są najważniejsze dla Twojej firmy</li>
-        <li>Łączenie danych z wielu źródeł w jednym widoku</li>
-        <li>Przygotowanie przejrzystych raportów na spotkania zarządu i przeglądy biznesowe</li>
+        <li>Zebranie danych sprzedażowych, finansowych lub operacyjnych w jednym przejrzystym dashboardzie</li>
+        <li>Zastąpienie ręcznie przygotowywanych raportów Excel automatycznym raportowaniem w Power BI</li>
+        <li>Monitorowanie najważniejszych wskaźników KPI Twojej firmy</li>
+        <li>Łączenie danych z różnych systemów w jednym raporcie</li>
+        <li>Przygotowanie czytelnych raportów na potrzeby spotkań i podejmowania decyzji biznesowych</li>
       </ul>
     </div>
   </div>
