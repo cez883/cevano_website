@@ -149,42 +149,44 @@ body_services_en = f'''
 <section class="section section-alt" id="additional-services">
   <div class="container">
     <div class="section-head">
-      <span class="kicker">Additional support</span>
-      <h2>Networking, assets and domains</h2>
-      <p>Secondary services we provide alongside our core offering.</p>
+      <span class="kicker">Additional IT Services</span>
+      <h2>The extra services that keep your business connected and organised.</h2>
+      <p>Alongside our core services, we provide additional technical support to help small businesses manage their office technology, IT equipment, network infrastructure and online services.</p>
     </div>
     <div class="subservice-grid">
       <div class="subservice-card">
         {MARK_NET}
         <h3>Networking &amp; AV</h3>
-        <p>Keeping your office connected and your meeting rooms working.</p>
+        <p>Reliable connectivity and meeting room technology for your workplace.</p>
         <ul>
-          <li>Business networking and Wi-Fi</li>
-          <li>Network troubleshooting</li>
-          <li>Office connectivity</li>
-          <li>AV systems and meeting room technology</li>
-          <li>Comms cabinets and cabling-related support</li>
+          <li>Business network and Wi-Fi setup</li>
+          <li>Network troubleshooting and connectivity support</li>
+          <li>Office network infrastructure</li>
+          <li>Meeting room AV and video conferencing systems</li>
+          <li>Network cabling and communications cabinet support</li>
         </ul>
       </div>
       <div class="subservice-card">
         {MARK_ASSETS}
         <h3>IT Assets &amp; Documentation</h3>
-        <p>Knowing what you have, and where it is.</p>
+        <p>A clear picture of your IT equipment, systems and technical setup.</p>
         <ul>
           <li>IT asset and device inventories</li>
-          <li>Technical documentation</li>
-          <li>Documentation to support audits</li>
-          <li>Asset tracking</li>
+          <li>Hardware and software records</li>
+          <li>IT infrastructure and system documentation</li>
+          <li>Technical documentation for audits and reviews</li>
+          <li>Asset tracking and lifecycle records</li>
         </ul>
       </div>
       <div class="subservice-card">
         {MARK_DOMAIN}
         <h3>Domains &amp; Email</h3>
-        <p>The foundations behind your website and email.</p>
+        <p>The essential services behind your website and business communications.</p>
         <ul>
-          <li>Domain name services and configuration</li>
-          <li>DNS-related support</li>
-          <li>Business email and domain setup</li>
+          <li>Domain registration and configuration</li>
+          <li>DNS management and troubleshooting</li>
+          <li>Business email setup and configuration</li>
+          <li>Domain and email integration with Microsoft 365</li>
         </ul>
       </div>
     </div>
@@ -359,42 +361,44 @@ body_services_pl = f'''
 <section class="section section-alt" id="additional-services">
   <div class="container">
     <div class="section-head">
-      <span class="kicker">Dodatkowe wsparcie</span>
-      <h2>Sieci, zasoby i domeny</h2>
-      <p>Usługi dodatkowe, świadczone obok naszej głównej oferty.</p>
+      <span class="kicker">Dodatkowe Usługi IT</span>
+      <h2>Wszystko, czego potrzebujesz, aby Twoja firma działała sprawnie i bezpiecznie.</h2>
+      <p>Oprócz naszych głównych usług oferujemy również dodatkowe wsparcie techniczne, pomagając małym firmom w zarządzaniu infrastrukturą sieciową, sprzętem IT, technologią biurową i usługami internetowymi.</p>
     </div>
     <div class="subservice-grid">
       <div class="subservice-card">
         {MARK_NET}
-        <h3>Sieci i AV</h3>
-        <p>Dbamy o łączność w biurze i działanie sal spotkań.</p>
+        <h3>Sieci Komputerowe i AV</h3>
+        <p>Niezawodna sieć i nowoczesne rozwiązania audiowizualne w Twoim biurze.</p>
         <ul>
-          <li>Sieci firmowe i Wi-Fi</li>
-          <li>Rozwiązywanie problemów sieciowych</li>
-          <li>Łączność biurowa</li>
-          <li>Systemy AV i technologia sal spotkań</li>
-          <li>Szafy komunikacyjne i wsparcie związane z okablowaniem</li>
+          <li>Konfiguracja sieci firmowych i Wi-Fi</li>
+          <li>Diagnostyka i rozwiązywanie problemów z siecią</li>
+          <li>Infrastruktura sieciowa biura</li>
+          <li>Systemy AV i wideokonferencyjne w salach spotkań</li>
+          <li>Okablowanie sieciowe i szafy teleinformatyczne</li>
         </ul>
       </div>
       <div class="subservice-card">
         {MARK_ASSETS}
-        <h3>Zasoby IT i dokumentacja</h3>
-        <p>Wiedza o tym, co posiadasz i gdzie się to znajduje.</p>
+        <h3>Sprzęt IT i Dokumentacja</h3>
+        <p>Pełna wiedza o posiadanym sprzęcie, systemach i infrastrukturze IT.</p>
         <ul>
-          <li>Inwentaryzacja zasobów i urządzeń IT</li>
-          <li>Dokumentacja techniczna</li>
-          <li>Dokumentacja wspierająca audyty</li>
-          <li>Śledzenie zasobów</li>
+          <li>Inwentaryzacja sprzętu i urządzeń IT</li>
+          <li>Ewidencja sprzętu i oprogramowania</li>
+          <li>Dokumentacja infrastruktury i systemów IT</li>
+          <li>Dokumentacja techniczna na potrzeby audytów i przeglądów</li>
+          <li>Ewidencja sprzętu i monitorowanie jego cyklu życia</li>
         </ul>
       </div>
       <div class="subservice-card">
         {MARK_DOMAIN}
-        <h3>Domeny i poczta</h3>
-        <p>Podstawy działania Twojej strony internetowej i poczty.</p>
+        <h3>Domeny i Poczta Firmowa</h3>
+        <p>Podstawowe usługi niezbędne do działania Twojej strony internetowej i komunikacji firmowej.</p>
         <ul>
-          <li>Usługi domenowe i konfiguracja</li>
-          <li>Wsparcie związane z DNS</li>
-          <li>Konfiguracja poczty firmowej i domeny</li>
+          <li>Rejestracja i konfiguracja domen</li>
+          <li>Zarządzanie DNS i rozwiązywanie problemów z konfiguracją</li>
+          <li>Konfiguracja poczty firmowej</li>
+          <li>Integracja domen i poczty z Microsoft 365</li>
         </ul>
       </div>
     </div>
