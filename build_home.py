@@ -47,7 +47,7 @@ body_home_en = f'''
     <div class="section-head">
       <span class="kicker">What we do</span>
       <h2>Four services, one point of contact</h2>
-      <p>A properly managed Microsoft 365 environment, a website that explains what you do, everyday IT support and data you can actually use, without juggling different suppliers.</p>
+      <p>From Microsoft 365 and everyday IT support to professional websites and Power BI reporting, we bring the technology your business needs together under one roof.</p>
     </div>
 
     <div class="service-grid">
