@@ -58,14 +58,17 @@ body_home_en = f'''
           <p>We manage your Microsoft 365 environment, from user accounts and licensing to security, permissions and device management — helping your business stay organised and secure.</p>
           <a class="btn-ghost" href="services.html#microsoft-365">Microsoft 365 in detail →</a>
         </div>
-        <ul class="check-list">
+        <div class="lead-help">
+          <h4 class="lead-help-title">Common ways we can help</h4>
+          <ul class="check-list">
           {check_items([
-              "A new employee has the right access from day one",
-              "Leavers are offboarded properly, with nothing left open",
-              "Company files are organised and easy to find in SharePoint",
-              "Licensing matches what your team actually needs",
+              "Setting up user accounts, licences and access for new employees",
+              "Managing employee access securely when someone leaves the business",
+              "Organising company files, shared folders and permissions in SharePoint and OneDrive",
+              "Configuring device management and security with Microsoft Intune",
           ])}
-        </ul>
+          </ul>
+        </div>
       </div>
       <div class="service-card">
         <span class="mark-tile">{MARK_SUPPORT}</span>
@@ -253,14 +256,17 @@ body_home_pl = f'''
           <p>Zajmujemy się obsługą środowiska Microsoft 365 — od kont użytkowników i licencji po bezpieczeństwo, uprawnienia i zarządzanie urządzeniami. Pomagamy Twojej firmie działać sprawnie i bezpiecznie.</p>
           <a class="btn-ghost" href="services.html#microsoft-365">Więcej o Microsoft 365 →</a>
         </div>
-        <ul class="check-list">
+        <div class="lead-help">
+          <h4 class="lead-help-title">Jak możemy pomóc?</h4>
+          <ul class="check-list">
           {check_items([
-              "Nowy pracownik ma odpowiedni dostęp od pierwszego dnia",
-              "Konta osób odchodzących są prawidłowo zamykane",
-              "Firmowe pliki są uporządkowane i łatwe do znalezienia w SharePoint",
-              "Licencje odpowiadają rzeczywistym potrzebom zespołu",
+              "Konfiguracja kont użytkowników, licencji i dostępów dla nowych pracowników",
+              "Bezpieczne odbieranie dostępów pracownikom kończącym współpracę z firmą",
+              "Porządkowanie firmowych plików, folderów współdzielonych i uprawnień w SharePoint i OneDrive",
+              "Konfiguracja zarządzania urządzeniami i zabezpieczeń za pomocą Microsoft Intune",
           ])}
-        </ul>
+          </ul>
+        </div>
       </div>
       <div class="service-card">
         <span class="mark-tile">{MARK_SUPPORT}</span>

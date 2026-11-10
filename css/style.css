@@ -461,7 +461,9 @@ html[data-theme="dark"] .mark-tile{ background: rgba(61,151,242,.10); border-col
 }
 .service-card.is-lead .lead-copy{ display:flex; flex-direction:column; gap:14px; }
 .service-card.is-lead .btn-ghost{ margin-top:4px; }
-.service-card.is-lead .check-list{ margin:0; padding: 20px 22px; border-radius: 12px; background: var(--bg); border: 1px solid var(--line); }
+.service-card.is-lead .lead-help{ padding: 20px 22px; border-radius: 12px; background: var(--bg); border: 1px solid var(--line); }
+.lead-help-title{ font-family: var(--font-body); font-size: 14px; font-weight: 700; color: var(--slate); margin: 0 0 6px; }
+.service-card.is-lead .check-list{ margin:0; }
 .service-card.is-lead .check-list li{ color: var(--ink); }
 
 @media (max-width: 960px){
