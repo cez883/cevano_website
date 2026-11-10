@@ -87,14 +87,14 @@ body_services_en = f'''
 <section class="detail-service section-alt" id="it-support">
   <div class="container detail-grid">
     <div>{MARK_SUPPORT}
-      <h2 style="margin-top:14px;">IT support without the jargon.</h2>
-      <p>Reliable IT support without the complexity. We handle the day-to-day technology issues that get in the way of running your business — troubleshooting, setup, and advice you can actually understand.</p>
+      <h2 style="margin-top:14px;">IT Support that keeps your business running.</h2>
+      <p>Reliable, practical IT Support for the technology your business depends on every day. From troubleshooting and device setup to office moves and technical advice, we help keep your systems working and your people productive.</p>
       <ul class="check-list">
         {check_items([
-            "General IT support and troubleshooting",
+            "General IT Support and troubleshooting",
             "Hardware and software support",
             "PC and laptop setup and configuration",
-            "Office IT support and remote support",
+            "On-site and remote IT Support",
             "Office moves and technical relocation setup",
             "Practical IT advice and consultancy",
         ])}
@@ -102,13 +102,13 @@ body_services_en = f'''
       <a class="btn btn-outline service-ask" href="contact.html?service=it-support">Ask about IT support</a>
     </div>
     <div class="panel">
-      <h3>Common requests we help with</h3>
+      <h3>Common ways we can help</h3>
       <ul>
-        <li>Setting up a new starter's laptop and accounts</li>
-        <li>Fixing recurring printer or network issues</li>
-        <li>Technical setup for a new or moving office</li>
-        <li>Ad-hoc remote support when something isn't working</li>
-        <li>Plain-English advice before buying new hardware or software</li>
+        <li>Setting up new users, PCs, laptops and Microsoft 365 accounts</li>
+        <li>Troubleshooting Microsoft 365, email, printers, Wi-Fi and network issues</li>
+        <li>Fixing recurring IT problems and identifying the root cause</li>
+        <li>Setting up and supporting IT for new or relocated offices</li>
+        <li>Providing practical advice on hardware, software and IT improvements</li>
       </ul>
     </div>
   </div>
@@ -296,28 +296,28 @@ body_services_pl = f'''
 <section class="detail-service section-alt" id="it-support">
   <div class="container detail-grid">
     <div>{MARK_SUPPORT}
-      <h2 style="margin-top:14px;">Wsparcie IT bez żargonu</h2>
-      <p>Niezawodne wsparcie IT bez zbędnej złożoności. Zajmujemy się codziennymi problemami technologicznymi, które przeszkadzają w prowadzeniu firmy — rozwiązywaniem problemów, konfiguracją i doradztwem w zrozumiałym języku.</p>
+      <h2 style="margin-top:14px;">Wsparcie IT, dzięki któremu Twoja firma działa sprawnie</h2>
+      <p>Niezawodne, praktyczne wsparcie IT dla technologii, na których Twoja firma opiera się każdego dnia. Od rozwiązywania problemów i konfiguracji urządzeń po przeprowadzki biura i doradztwo techniczne — dbamy o to, by Twoje systemy działały, a zespół mógł spokojnie pracować.</p>
       <ul class="check-list">
         {check_items([
             "Ogólne wsparcie IT i rozwiązywanie problemów",
-            "Wsparcie sprzętowe i programowe",
-            "Konfiguracja komputerów i laptopów",
-            "Wsparcie IT w biurze oraz wsparcie zdalne",
-            "Przeprowadzki biura i techniczna organizacja nowego miejsca",
+            "Wsparcie sprzętu i oprogramowania",
+            "Instalacja i konfiguracja komputerów i laptopów",
+            "Wsparcie IT na miejscu i zdalnie",
+            "Przeprowadzki biura i przeniesienie infrastruktury IT",
             "Praktyczne doradztwo IT",
         ])}
       </ul>
       <a class="btn btn-outline service-ask" href="contact.html?service=it-support">Zapytaj o wsparcie IT</a>
     </div>
     <div class="panel">
-      <h3>Typowe zgłoszenia, z którymi pomagamy</h3>
+      <h3>Jak możemy pomóc</h3>
       <ul>
-        <li>Konfiguracja laptopa i kont dla nowego pracownika</li>
-        <li>Naprawa powtarzających się problemów z drukarką lub siecią</li>
-        <li>Techniczna organizacja nowego lub przenoszonego biura</li>
-        <li>Doraźne wsparcie zdalne, gdy coś nie działa</li>
-        <li>Rzeczowe porady przed zakupem nowego sprzętu lub oprogramowania</li>
+        <li>Konfiguracja nowych użytkowników, komputerów, laptopów i kont Microsoft 365</li>
+        <li>Rozwiązywanie problemów z Microsoft 365, pocztą, drukarkami, Wi-Fi i siecią</li>
+        <li>Naprawa powtarzających się problemów IT i ustalanie ich przyczyny</li>
+        <li>Uruchomienie i wsparcie IT w nowym lub przeniesionym biurze</li>
+        <li>Praktyczne porady dotyczące sprzętu, oprogramowania i usprawnień IT</li>
       </ul>
     </div>
   </div>
