@@ -198,7 +198,7 @@ body_services_en = f'''
     <div class="cta-banner">
       <div>
         <h2>Not sure which service is right for your business?</h2>
-        <p>Tell us what you need help with. We'll help you find the right solution for your business.</p>
+        <p>Tell us what you need help with, and we'll find the right solution for you.</p>
       </div>
       <a class="btn btn-primary" href="contact.html">Get in touch</a>
     </div>
@@ -409,8 +409,8 @@ body_services_pl = f'''
   <div class="container">
     <div class="cta-banner">
       <div>
-        <h2>Nie wiesz, która usługa będzie odpowiednia dla Twojej firmy?</h2>
-        <p>Opowiedz nam, czego potrzebujesz. Pomożemy Ci znaleźć odpowiednie rozwiązanie.</p>
+        <h2>Nie wiesz, która usługa będzie najlepsza dla Twojej firmy?</h2>
+        <p>Powiedz nam, w czym możemy Ci pomóc, a znajdziemy rozwiązanie dopasowane do Twoich potrzeb.</p>
       </div>
       <a class="btn btn-primary" href="contact.html">Skontaktuj się z nami</a>
     </div>
