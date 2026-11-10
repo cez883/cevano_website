@@ -27,28 +27,28 @@ body_services_en = f'''
     <div class="detail-copy">
       {MARK_M365}
       <h2 style="margin-top:14px;">Microsoft 365, managed properly.</h2>
-      <p>From user accounts and licensing to security, permissions and device management, Cevano helps small businesses get more from Microsoft 365 while keeping their environment organised and secure — without needing to employ a full-time administrator.</p>
+      <p>From user accounts and licensing to security, permissions and device management, we help small businesses manage Microsoft 365 effectively, keep their environment secure and get more from the tools they already use — without the cost of a full-time IT administrator.</p>
       <ul class="check-list">
         {check_items([
-            "User accounts, onboarding and offboarding",
-            "Microsoft 365 licensing",
-            "Security groups and permissions management",
-            "Microsoft 365 security configuration",
-            "Device configuration and Microsoft Intune",
-            "SharePoint, OneDrive and Microsoft Teams support",
-            "Microsoft 365 migrations where appropriate",
+            "User account management, onboarding and offboarding",
+            "Microsoft 365 licensing and subscription management",
+            "Security groups, access and permissions management",
+            "Microsoft 365 security configuration and best practices",
+            "Device setup and management with Microsoft Intune",
+            "SharePoint, OneDrive and Microsoft Teams setup and support",
+            "Microsoft 365 migrations and tenant setup",
         ])}
       </ul>
       <a class="btn btn-outline service-ask" href="contact.html?service=m365">Ask about Microsoft 365</a>
     </div>
     <div class="panel">
-      <h3>What this looks like in practice</h3>
+      <h3>Common ways we can help</h3>
       <ul>
-        <li>A new employee has the right access from day one</li>
-        <li>Leavers are offboarded properly, with nothing left open</li>
-        <li>Company files are organised and easy to find in SharePoint</li>
-        <li>Devices are set up consistently with Intune</li>
-        <li>Licensing matches what your team actually needs</li>
+        <li>Setting up new employees with the right accounts, licences and access from day one</li>
+        <li>Securely offboarding departing employees and managing their access</li>
+        <li>Organising company files, permissions and shared documents in SharePoint</li>
+        <li>Configuring and managing company devices with Microsoft Intune</li>
+        <li>Reviewing Microsoft 365 licences to make sure you're not paying for more than you need</li>
       </ul>
     </div>
   </div>
@@ -239,28 +239,28 @@ body_services_pl = f'''
     <div class="detail-copy">
       {MARK_M365}
       <h2 style="margin-top:14px;">Microsoft 365 zarządzane jak należy</h2>
-      <p>Od kont użytkowników i licencji po bezpieczeństwo, uprawnienia i zarządzanie urządzeniami — Cevano pomaga małym firmom w pełni wykorzystać Microsoft 365, zachowując uporządkowane i bezpieczne środowisko, bez potrzeby zatrudniania administratora na pełen etat.</p>
+      <p>Od kont użytkowników i licencji po bezpieczeństwo, uprawnienia i zarządzanie urządzeniami pomagamy małym firmom skutecznie zarządzać Microsoft 365, dbać o bezpieczeństwo środowiska i lepiej wykorzystywać narzędzia, z których już korzystają — bez kosztów zatrudniania administratora IT na pełen etat.</p>
       <ul class="check-list">
         {check_items([
-            "Konta użytkowników, wdrażanie i wyrejestrowywanie",
-            "Licencjonowanie Microsoft 365",
-            "Grupy zabezpieczeń i zarządzanie uprawnieniami",
-            "Konfiguracja bezpieczeństwa Microsoft 365",
-            "Konfiguracja urządzeń i Microsoft Intune",
-            "Wsparcie SharePoint, OneDrive i Microsoft Teams",
-            "Migracje Microsoft 365 w uzasadnionych przypadkach",
+            "Zarządzanie kontami użytkowników, wdrażanie i offboarding pracowników",
+            "Zarządzanie licencjami i subskrypcjami Microsoft 365",
+            "Grupy zabezpieczeń, dostępy i uprawnienia",
+            "Konfiguracja bezpieczeństwa Microsoft 365 zgodnie z dobrymi praktykami",
+            "Konfiguracja i zarządzanie urządzeniami w Microsoft Intune",
+            "Konfiguracja i wsparcie SharePoint, OneDrive i Microsoft Teams",
+            "Migracje Microsoft 365 i konfiguracja tenanta",
         ])}
       </ul>
       <a class="btn btn-outline service-ask" href="contact.html?service=m365">Zapytaj o Microsoft 365</a>
     </div>
     <div class="panel">
-      <h3>Jak to wygląda w praktyce</h3>
+      <h3>Jak możemy pomóc?</h3>
       <ul>
-        <li>Nowy pracownik ma odpowiedni dostęp od pierwszego dnia</li>
-        <li>Konta osób odchodzących są prawidłowo zamykane</li>
-        <li>Firmowe pliki są uporządkowane i łatwe do znalezienia w SharePoint</li>
-        <li>Urządzenia są konfigurowane spójnie za pomocą Intune</li>
-        <li>Licencje odpowiadają rzeczywistym potrzebom zespołu</li>
+        <li>Przygotowanie kont, licencji i dostępów dla nowych pracowników od pierwszego dnia</li>
+        <li>Bezpieczny offboarding odchodzących pracowników i zamykanie ich dostępów</li>
+        <li>Porządkowanie plików, uprawnień i wspólnych dokumentów w SharePoint</li>
+        <li>Konfiguracja i zarządzanie firmowymi urządzeniami w Microsoft Intune</li>
+        <li>Przegląd licencji Microsoft 365, żebyś nie płacił za więcej, niż potrzebujesz</li>
       </ul>
     </div>
   </div>
