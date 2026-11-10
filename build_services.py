@@ -118,28 +118,29 @@ body_services_en = f'''
   <div class="container detail-grid reverse">
     <div class="detail-copy">
       {MARK_DATA}
-      <h2 style="margin-top:14px;">Make better decisions with your data.</h2>
-      <p>Cevano helps small businesses turn data from Excel, systems and other sources into clear Power BI dashboards and meaningful business insight — explained in plain terms, not jargon.</p>
+      <h2 style="margin-top:14px;">Turn your data into better business decisions.</h2>
+      <p>We help small businesses turn data from Excel, business systems and other sources into clear, useful Power BI dashboards and reports. We make your data easier to understand, helping you track performance, spot trends and make more informed decisions.</p>
       <p class="trust-badge">{ICON_CERT}Microsoft Certified: Power BI Data Analyst Associate (PL-300)</p>
       <ul class="check-list">
         {check_items([
             "Data analysis and business intelligence",
             "Power BI dashboards and data visualisation",
-            "KPI reporting for your business",
-            "Data transformation using Power Query",
-            "Turning spreadsheets into useful insight",
-            "Building presentations for meetings and reports",
+            "KPI and performance reporting",
+            "Data transformation and preparation with Power Query",
+            "Turning spreadsheets and business data into useful insights",
+            "Reports designed for management meetings and business reviews",
         ])}
       </ul>
       <a class="btn btn-outline service-ask" href="contact.html?service=data">Ask about Power BI</a>
     </div>
     <div class="panel">
-      <h3>Example uses</h3>
+      <h3>Common ways we can help</h3>
       <ul>
-        <li>A single dashboard showing sales performance at a glance</li>
-        <li>Reports that refresh automatically, saving hours of manual work each month</li>
-        <li>Clear visuals for a board meeting or investor update</li>
-        <li>Combining data from more than one system into one view</li>
+        <li>Bringing sales, financial or operational data into one clear dashboard</li>
+        <li>Replacing manual Excel reports with automated Power BI reporting</li>
+        <li>Tracking the KPIs that matter most to your business</li>
+        <li>Combining data from multiple sources into a single view</li>
+        <li>Creating clear reports for management meetings and business reviews</li>
       </ul>
     </div>
   </div>
@@ -327,28 +328,29 @@ body_services_pl = f'''
   <div class="container detail-grid reverse">
     <div class="detail-copy">
       {MARK_DATA}
-      <h2 style="margin-top:14px;">Podejmuj lepsze decyzje dzięki danym</h2>
-      <p>Cevano pomaga małym firmom przekształcać dane z Excela, systemów i innych źródeł w przejrzyste pulpity Power BI oraz konkretne wnioski biznesowe — wyjaśnione prostym językiem, bez żargonu.</p>
+      <h2 style="margin-top:14px;">Zamień dane w lepsze decyzje biznesowe</h2>
+      <p>Pomagamy małym firmom przekształcać dane z Excela, systemów biznesowych i innych źródeł w przejrzyste, użyteczne pulpity i raporty Power BI. Sprawiamy, że Twoje dane są łatwiejsze do zrozumienia, co pomaga śledzić wyniki, dostrzegać trendy i podejmować lepiej przemyślane decyzje.</p>
       <p class="trust-badge">{ICON_CERT}Certyfikat Microsoft Certified: Power BI Data Analyst Associate (PL-300)</p>
       <ul class="check-list">
         {check_items([
             "Analiza danych i business intelligence",
             "Pulpity Power BI i wizualizacja danych",
-            "Raportowanie KPI dla Twojej firmy",
-            "Przekształcanie danych za pomocą Power Query",
-            "Zamiana arkuszy kalkulacyjnych w użyteczne wnioski",
-            "Budowanie prezentacji na spotkania i raporty",
+            "Raportowanie KPI i wyników",
+            "Przekształcanie i przygotowanie danych w Power Query",
+            "Zamiana arkuszy i danych biznesowych w użyteczne wnioski",
+            "Raporty przygotowane na spotkania zarządu i przeglądy biznesowe",
         ])}
       </ul>
       <a class="btn btn-outline service-ask" href="contact.html?service=data">Zapytaj o Power BI</a>
     </div>
     <div class="panel">
-      <h3>Przykładowe zastosowania</h3>
+      <h3>Jak możemy pomóc</h3>
       <ul>
-        <li>Jeden pulpit pokazujący wyniki sprzedaży na pierwszy rzut oka</li>
-        <li>Raporty aktualizujące się automatycznie, oszczędzające godziny pracy każdego miesiąca</li>
-        <li>Przejrzyste wizualizacje na spotkanie zarządu lub dla inwestora</li>
-        <li>Połączenie danych z kilku systemów w jednym widoku</li>
+        <li>Zebranie danych sprzedażowych, finansowych lub operacyjnych w jednym przejrzystym pulpicie</li>
+        <li>Zastąpienie ręcznych raportów w Excelu zautomatyzowanymi raportami Power BI</li>
+        <li>Śledzenie KPI, które są najważniejsze dla Twojej firmy</li>
+        <li>Łączenie danych z wielu źródeł w jednym widoku</li>
+        <li>Przygotowanie przejrzystych raportów na spotkania zarządu i przeglądy biznesowe</li>
       </ul>
     </div>
   </div>
