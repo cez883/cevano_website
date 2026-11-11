@@ -27,7 +27,7 @@ body_about_en = f'''
           <li>Practical solutions over unnecessary complexity</li>
           <li>Clear explanations, without jargon overload</li>
           <li>Flexible support built around your business</li>
-          <li>One trusted point of contact for IT, Microsoft 365 and data</li>
+          <li>One trusted point of contact for IT, Microsoft 365, websites and data</li>
           <li>Local roots, with remote support where it makes sense</li>
         </ul>
       </div>
@@ -96,7 +96,7 @@ body_about_pl = f'''
           <li>Praktyczne rozwiązania zamiast zbędnej złożoności</li>
           <li>Jasne wyjaśnienia, bez nadmiaru żargonu</li>
           <li>Elastyczne wsparcie dopasowane do Twojej firmy</li>
-          <li>Jeden zaufany punkt kontaktu dla IT, Microsoft 365 i danych</li>
+          <li>Jeden zaufany punkt kontaktu dla IT, Microsoft 365, stron internetowych i danych</li>
           <li>Lokalne korzenie, ze wsparciem zdalnym tam, gdzie ma to sens</li>
         </ul>
       </div>
